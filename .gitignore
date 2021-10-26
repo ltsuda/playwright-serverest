@@ -2,6 +2,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,linux,node,windows,git
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,node,windows,git
 
+### Playwright ####
+test_results/
+
 ### Git ###
 # Created by git for backups. To disable backups in Git:
 # $ git config --global mergetool.keepBackup false
