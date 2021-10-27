@@ -58,9 +58,12 @@ module.exports = base.test.extend({
     cadastrarCarrinho: async ({ baseURL, request, cartPath }, use) => {
         await use(async (authorization, produtos) => {
             let data = { produtos: [] }
+            if (produtos instanceof Object) {
+                produtos = [produtos]
+            }
             for (produto of produtos) {
                 data.produtos.push({
-                    idProduto: produto.id,
+                    idProduto: produto._id,
                     quantidade: produto.quantidade,
                 })
             }
