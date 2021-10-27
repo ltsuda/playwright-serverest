@@ -1,7 +1,7 @@
 const { expect } = require("@playwright/test")
 const test = require("../../api/fixtures")
 
-test.describe("Login endpoint @login", () => {
+test.describe.parallel("Login endpoint @login", () => {
     test("Login com usuário válido", async ({ baseURL, loginPath, cadastrarUsuario, request }) => {
         const { email, password } = await cadastrarUsuario()
         const response = await request.post(`${baseURL}${loginPath}`, {
