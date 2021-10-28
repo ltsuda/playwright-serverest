@@ -1,4 +1,4 @@
-name: ServeRest API testing with Playwright
+name: API Tests
 
 on:
   push:
