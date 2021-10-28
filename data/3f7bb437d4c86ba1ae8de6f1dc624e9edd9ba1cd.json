@@ -1,0 +1,160 @@
+{
+  "fileId": "3f7bb437d4c86ba1ae8de6f1dc624e9edd9ba1cd",
+  "fileName": "login.spec.js",
+  "tests": [
+    {
+      "testId": "3f7bb437d4c86ba1ae8de6f1dc624e9edd9ba1cd-9218934e78f3046f50c7917410ac6d3162170651",
+      "title": "Login com usuário válido",
+      "projectName": "",
+      "location": {
+        "file": "login.spec.js",
+        "line": 5,
+        "column": 5
+      },
+      "duration": 96,
+      "outcome": "expected",
+      "path": [
+        "login.spec.js:5",
+        "Login endpoint @login"
+      ],
+      "results": [
+        {
+          "duration": 96,
+          "startTime": "2021-10-28T04:34:24.396Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-28T04:34:24.397Z",
+              "duration": 9,
+              "steps": []
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-10-28T04:34:24.467Z",
+              "duration": 1,
+              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+              "steps": [],
+              "location": {
+                "file": "../../api/fixtures.js",
+                "line": 34,
+                "column": 39
+              }
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-10-28T04:34:24.486Z",
+              "duration": 1,
+              "snippet": "  10 |\n  11 |         expect(response.status()).toBe(200)\n     |                                   ^\n  12 |",
+              "steps": [],
+              "location": {
+                "file": "login.spec.js",
+                "line": 11,
+                "column": 35
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-28T04:34:24.488Z",
+              "duration": 1,
+              "snippet": "  13 |         const responseData = await response.json()\n  14 |         expect(responseData).toHaveProperty(\"message\", \"Login realizado com sucesso\")\n     |                              ^\n  15 |         expect(responseData).toHaveProperty(\"authorization\", responseData.authorization)",
+              "steps": [],
+              "location": {
+                "file": "login.spec.js",
+                "line": 14,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-28T04:34:24.489Z",
+              "duration": 1,
+              "snippet": "  14 |         expect(responseData).toHaveProperty(\"message\", \"Login realizado com sucesso\")\n  15 |         expect(responseData).toHaveProperty(\"authorization\", responseData.authorization)\n     |                              ^\n  16 |     })",
+              "steps": [],
+              "location": {
+                "file": "login.spec.js",
+                "line": 15,
+                "column": 30
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-28T04:34:24.490Z",
+              "duration": 2,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "3f7bb437d4c86ba1ae8de6f1dc624e9edd9ba1cd-2618cbb312dea49d4387bcf9bc43e5bf156417cd",
+      "title": "Login com email e/ou senha inválidos",
+      "projectName": "",
+      "location": {
+        "file": "login.spec.js",
+        "line": 18,
+        "column": 5
+      },
+      "duration": 37,
+      "outcome": "expected",
+      "path": [
+        "login.spec.js:18",
+        "Login endpoint @login"
+      ],
+      "results": [
+        {
+          "duration": 37,
+          "startTime": "2021-10-28T04:34:24.675Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-28T04:34:24.676Z",
+              "duration": 8,
+              "steps": []
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-10-28T04:34:24.705Z",
+              "duration": 0,
+              "snippet": "  21 |         })\n  22 |         expect(response.status()).toBe(401)\n     |                                   ^\n  23 |",
+              "steps": [],
+              "location": {
+                "file": "login.spec.js",
+                "line": 22,
+                "column": 35
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-28T04:34:24.707Z",
+              "duration": 1,
+              "snippet": "  24 |         const responseData = await response.json()\n  25 |         expect(responseData).toHaveProperty(\"message\", \"Email e/ou senha inválidos\")\n     |                              ^\n  26 |     })",
+              "steps": [],
+              "location": {
+                "file": "login.spec.js",
+                "line": 25,
+                "column": 30
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-28T04:34:24.708Z",
+              "duration": 4,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    }
+  ]
+}
