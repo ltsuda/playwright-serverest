@@ -11,7 +11,7 @@
         "line": 6,
         "column": 5
       },
-      "duration": 16,
+      "duration": 18,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:6",
@@ -19,19 +19,19 @@
       ],
       "results": [
         {
-          "duration": 16,
-          "startTime": "2021-10-28T04:34:25.095Z",
+          "duration": 18,
+          "startTime": "2021-10-28T04:40:31.989Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.095Z",
+              "startTime": "2021-10-28T04:40:31.990Z",
               "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.105Z",
+              "startTime": "2021-10-28T04:40:31.996Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -43,7 +43,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.109Z",
+              "startTime": "2021-10-28T04:40:32.005Z",
               "duration": 0,
               "snippet": "   9 |\n   10 |         expect(response.status()).toBe(200)\n      |                                   ^\n   11 |",
               "steps": [],
@@ -55,8 +55,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.110Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.006Z",
+              "duration": 1,
               "snippet": "   12 |         const responseData = await response.json()\n   13 |         expect(responseData).toHaveProperty(\"quantidade\")\n      |                              ^\n   14 |         expect(responseData).toHaveProperty(\"usuarios\", expect.arrayContaining([usuario]))",
               "steps": [],
               "location": {
@@ -67,8 +67,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.110Z",
-              "duration": 1,
+              "startTime": "2021-10-28T04:40:32.007Z",
+              "duration": 0,
               "snippet": "   13 |         expect(responseData).toHaveProperty(\"quantidade\")\n   14 |         expect(responseData).toHaveProperty(\"usuarios\", expect.arrayContaining([usuario]))\n      |                              ^\n   15 |     })",
               "steps": [],
               "location": {
@@ -79,8 +79,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.111Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.007Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -100,7 +100,7 @@
         "line": 17,
         "column": 5
       },
-      "duration": 19,
+      "duration": 16,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:17",
@@ -108,19 +108,19 @@
       ],
       "results": [
         {
-          "duration": 19,
-          "startTime": "2021-10-28T04:34:25.114Z",
+          "duration": 16,
+          "startTime": "2021-10-28T04:40:32.009Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.114Z",
+              "startTime": "2021-10-28T04:40:32.009Z",
               "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.120Z",
+              "startTime": "2021-10-28T04:40:32.018Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -132,7 +132,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.131Z",
+              "startTime": "2021-10-28T04:40:32.023Z",
               "duration": 0,
               "snippet": "   20 |\n   21 |         expect(response.status()).toBe(200)\n      |                                   ^\n   22 |",
               "steps": [],
@@ -144,8 +144,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.131Z",
-              "duration": 1,
+              "startTime": "2021-10-28T04:40:32.024Z",
+              "duration": 0,
               "snippet": "   23 |         const responseData = await response.json()\n   24 |         expect(responseData).toHaveProperty(\"quantidade\", 1)\n      |                              ^\n   25 |         expect(responseData).toHaveProperty(\"usuarios\", expect.arrayContaining([usuario]))",
               "steps": [],
               "location": {
@@ -156,7 +156,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.132Z",
+              "startTime": "2021-10-28T04:40:32.024Z",
               "duration": 0,
               "snippet": "   24 |         expect(responseData).toHaveProperty(\"quantidade\", 1)\n   25 |         expect(responseData).toHaveProperty(\"usuarios\", expect.arrayContaining([usuario]))\n      |                              ^\n   26 |     })",
               "steps": [],
@@ -168,7 +168,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.132Z",
+              "startTime": "2021-10-28T04:40:32.025Z",
               "duration": 0,
               "steps": []
             }
@@ -189,7 +189,7 @@
         "line": 28,
         "column": 5
       },
-      "duration": 19,
+      "duration": 17,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:28",
@@ -197,20 +197,20 @@
       ],
       "results": [
         {
-          "duration": 19,
-          "startTime": "2021-10-28T04:34:25.123Z",
+          "duration": 17,
+          "startTime": "2021-10-28T04:40:32.030Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.123Z",
+              "startTime": "2021-10-28T04:40:32.030Z",
               "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.129Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.041Z",
+              "duration": 1,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
               "location": {
@@ -221,7 +221,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.141Z",
+              "startTime": "2021-10-28T04:40:32.045Z",
               "duration": 0,
               "snippet": "   31 |\n   32 |         expect(response.status()).toBe(200)\n      |                                   ^\n   33 |",
               "steps": [],
@@ -233,7 +233,7 @@
             },
             {
               "title": "expect.toBeGreaterThanOrEqual",
-              "startTime": "2021-10-28T04:34:25.142Z",
+              "startTime": "2021-10-28T04:40:32.046Z",
               "duration": 0,
               "snippet": "   34 |         const responseData = await response.json()\n   35 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n      |                                         ^\n   36 |         expect(responseData).toHaveProperty(\"usuarios\", expect.arrayContaining([usuario]))",
               "steps": [],
@@ -245,7 +245,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.142Z",
+              "startTime": "2021-10-28T04:40:32.046Z",
               "duration": 0,
               "snippet": "   35 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n   36 |         expect(responseData).toHaveProperty(\"usuarios\", expect.arrayContaining([usuario]))\n      |                              ^\n   37 |     })",
               "steps": [],
@@ -257,8 +257,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.142Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.046Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -278,7 +278,7 @@
         "line": 39,
         "column": 5
       },
-      "duration": 17,
+      "duration": 22,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:39",
@@ -286,19 +286,19 @@
       ],
       "results": [
         {
-          "duration": 17,
-          "startTime": "2021-10-28T04:34:25.133Z",
+          "duration": 22,
+          "startTime": "2021-10-28T04:40:32.029Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.133Z",
-              "duration": 1,
+              "startTime": "2021-10-28T04:40:32.030Z",
+              "duration": 2,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.142Z",
+              "startTime": "2021-10-28T04:40:32.037Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -310,7 +310,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.148Z",
+              "startTime": "2021-10-28T04:40:32.044Z",
               "duration": 0,
               "snippet": "   42 |\n   43 |         expect(response.status()).toBe(200)\n      |                                   ^\n   44 |",
               "steps": [],
@@ -322,7 +322,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.149Z",
+              "startTime": "2021-10-28T04:40:32.047Z",
               "duration": 0,
               "snippet": "   45 |         const responseData = await response.json()\n   46 |         expect(responseData).toHaveProperty(\"quantidade\", 1)\n      |                              ^\n   47 |         expect(responseData).toHaveProperty(\"usuarios\", expect.arrayContaining([usuario]))",
               "steps": [],
@@ -334,7 +334,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.150Z",
+              "startTime": "2021-10-28T04:40:32.048Z",
               "duration": 0,
               "snippet": "   46 |         expect(responseData).toHaveProperty(\"quantidade\", 1)\n   47 |         expect(responseData).toHaveProperty(\"usuarios\", expect.arrayContaining([usuario]))\n      |                              ^\n   48 |     })",
               "steps": [],
@@ -346,8 +346,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.150Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.048Z",
+              "duration": 4,
               "steps": []
             }
           ],
@@ -367,7 +367,7 @@
         "line": 50,
         "column": 5
       },
-      "duration": 12,
+      "duration": 17,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:50",
@@ -375,19 +375,19 @@
       ],
       "results": [
         {
-          "duration": 12,
-          "startTime": "2021-10-28T04:34:25.143Z",
+          "duration": 17,
+          "startTime": "2021-10-28T04:40:32.049Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.143Z",
+              "startTime": "2021-10-28T04:40:32.049Z",
               "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.149Z",
+              "startTime": "2021-10-28T04:40:32.057Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -399,7 +399,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.153Z",
+              "startTime": "2021-10-28T04:40:32.063Z",
               "duration": 0,
               "snippet": "   53 |\n   54 |         expect(response.status()).toBe(200)\n      |                                   ^\n   55 |",
               "steps": [],
@@ -411,7 +411,7 @@
             },
             {
               "title": "expect.toBeGreaterThanOrEqual",
-              "startTime": "2021-10-28T04:34:25.154Z",
+              "startTime": "2021-10-28T04:40:32.065Z",
               "duration": 0,
               "snippet": "   56 |         const responseData = await response.json()\n   57 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n      |                                         ^\n   58 |         expect(responseData).toHaveProperty(\"usuarios\", expect.arrayContaining([usuario]))",
               "steps": [],
@@ -423,7 +423,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.154Z",
+              "startTime": "2021-10-28T04:40:32.065Z",
               "duration": 0,
               "snippet": "   57 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n   58 |         expect(responseData).toHaveProperty(\"usuarios\", expect.arrayContaining([usuario]))\n      |                              ^\n   59 |     })",
               "steps": [],
@@ -435,7 +435,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.154Z",
+              "startTime": "2021-10-28T04:40:32.065Z",
               "duration": 1,
               "steps": []
             }
@@ -456,7 +456,7 @@
         "line": 61,
         "column": 5
       },
-      "duration": 18,
+      "duration": 29,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:61",
@@ -464,20 +464,20 @@
       ],
       "results": [
         {
-          "duration": 18,
-          "startTime": "2021-10-28T04:34:25.151Z",
+          "duration": 29,
+          "startTime": "2021-10-28T04:40:32.052Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.151Z",
-              "duration": 1,
+              "startTime": "2021-10-28T04:40:32.052Z",
+              "duration": 2,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.160Z",
-              "duration": 1,
+              "startTime": "2021-10-28T04:40:32.061Z",
+              "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
               "location": {
@@ -488,7 +488,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.166Z",
+              "startTime": "2021-10-28T04:40:32.078Z",
               "duration": 0,
               "snippet": "   64 |\n   65 |         expect(response.status()).toBe(200)\n      |                                   ^\n   66 |",
               "steps": [],
@@ -500,7 +500,7 @@
             },
             {
               "title": "expect.toBeGreaterThanOrEqual",
-              "startTime": "2021-10-28T04:34:25.167Z",
+              "startTime": "2021-10-28T04:40:32.079Z",
               "duration": 0,
               "snippet": "   67 |         const responseData = await response.json()\n   68 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n      |                                         ^\n   69 |         expect(responseData).toHaveProperty(",
               "steps": [],
@@ -512,8 +512,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.167Z",
-              "duration": 1,
+              "startTime": "2021-10-28T04:40:32.080Z",
+              "duration": 0,
               "snippet": "   68 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n   69 |         expect(responseData).toHaveProperty(\n      |                              ^\n   70 |             \"usuarios\",",
               "steps": [],
               "location": {
@@ -524,7 +524,7 @@
             },
             {
               "title": "expect.not.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.168Z",
+              "startTime": "2021-10-28T04:40:32.080Z",
               "duration": 0,
               "snippet": "   72 |         )\n   73 |         expect(responseData).not.toHaveProperty(\n      |                                  ^\n   74 |             \"usuarios\",",
               "steps": [],
@@ -536,8 +536,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.169Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.080Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -557,7 +557,7 @@
         "line": 79,
         "column": 5
       },
-      "duration": 7,
+      "duration": 12,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:79",
@@ -565,19 +565,19 @@
       ],
       "results": [
         {
-          "duration": 7,
-          "startTime": "2021-10-28T04:34:25.156Z",
+          "duration": 12,
+          "startTime": "2021-10-28T04:40:32.072Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.157Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.072Z",
+              "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.162Z",
+              "startTime": "2021-10-28T04:40:32.082Z",
               "duration": 0,
               "snippet": "   88 |\n   89 |         expect(response.status()).toBe(201)\n      |                                   ^\n   90 |",
               "steps": [],
@@ -589,7 +589,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.162Z",
+              "startTime": "2021-10-28T04:40:32.083Z",
               "duration": 0,
               "snippet": "   91 |         const responseData = await response.json()\n   92 |         expect(responseData).toHaveProperty(\"message\", \"Cadastro realizado com sucesso\")\n      |                              ^\n   93 |         expect(responseData).toHaveProperty(\"_id\", responseData._id)",
               "steps": [],
@@ -601,7 +601,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.163Z",
+              "startTime": "2021-10-28T04:40:32.083Z",
               "duration": 0,
               "snippet": "   92 |         expect(responseData).toHaveProperty(\"message\", \"Cadastro realizado com sucesso\")\n   93 |         expect(responseData).toHaveProperty(\"_id\", responseData._id)\n      |                              ^\n   94 |     })",
               "steps": [],
@@ -613,8 +613,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.163Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.083Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -634,7 +634,7 @@
         "line": 96,
         "column": 5
       },
-      "duration": 15,
+      "duration": 21,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:96",
@@ -642,19 +642,19 @@
       ],
       "results": [
         {
-          "duration": 15,
-          "startTime": "2021-10-28T04:34:25.165Z",
+          "duration": 21,
+          "startTime": "2021-10-28T04:40:32.084Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.165Z",
-              "duration": 1,
+              "startTime": "2021-10-28T04:40:32.084Z",
+              "duration": 3,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.170Z",
+              "startTime": "2021-10-28T04:40:32.098Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -666,7 +666,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.179Z",
+              "startTime": "2021-10-28T04:40:32.104Z",
               "duration": 0,
               "snippet": "  106 |\n  107 |         expect(response.status()).toBe(400)\n      |                                   ^\n  108 |",
               "steps": [],
@@ -678,8 +678,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.180Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.104Z",
+              "duration": 1,
               "snippet": "  109 |         const responseData = await response.json()\n  110 |         expect(responseData).toHaveProperty(\"message\", \"Este email já está sendo usado\")\n      |                              ^\n  111 |     })",
               "steps": [],
               "location": {
@@ -690,7 +690,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.180Z",
+              "startTime": "2021-10-28T04:40:32.105Z",
               "duration": 0,
               "steps": []
             }
@@ -711,7 +711,7 @@
         "line": 113,
         "column": 5
       },
-      "duration": 21,
+      "duration": 23,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:113",
@@ -719,19 +719,19 @@
       ],
       "results": [
         {
-          "duration": 21,
-          "startTime": "2021-10-28T04:34:25.170Z",
+          "duration": 23,
+          "startTime": "2021-10-28T04:40:32.088Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.170Z",
+              "startTime": "2021-10-28T04:40:32.088Z",
               "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.181Z",
+              "startTime": "2021-10-28T04:40:32.096Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -743,7 +743,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.188Z",
+              "startTime": "2021-10-28T04:40:32.110Z",
               "duration": 0,
               "snippet": "  116 |\n  117 |         expect(response.status()).toBe(200)\n      |                                   ^\n  118 |",
               "steps": [],
@@ -755,8 +755,8 @@
             },
             {
               "title": "expect.toEqual",
-              "startTime": "2021-10-28T04:34:25.189Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.110Z",
+              "duration": 1,
               "snippet": "  119 |         const responseData = await response.json()\n  120 |         expect(responseData).toEqual(usuario)\n      |                              ^\n  121 |     })",
               "steps": [],
               "location": {
@@ -767,8 +767,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.190Z",
-              "duration": 2,
+              "startTime": "2021-10-28T04:40:32.111Z",
+              "duration": 0,
               "steps": []
             }
           ],
@@ -788,7 +788,7 @@
         "line": 123,
         "column": 5
       },
-      "duration": 15,
+      "duration": 12,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:123",
@@ -796,19 +796,19 @@
       ],
       "results": [
         {
-          "duration": 15,
-          "startTime": "2021-10-28T04:34:25.182Z",
+          "duration": 12,
+          "startTime": "2021-10-28T04:40:32.106Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.182Z",
-              "duration": 2,
+              "startTime": "2021-10-28T04:40:32.106Z",
+              "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.196Z",
+              "startTime": "2021-10-28T04:40:32.117Z",
               "duration": 0,
               "snippet": "  125 |\n  126 |         expect(response.status()).toBe(400)\n      |                                   ^\n  127 |",
               "steps": [],
@@ -820,7 +820,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.197Z",
+              "startTime": "2021-10-28T04:40:32.117Z",
               "duration": 0,
               "snippet": "  128 |         const responseData = await response.json()\n  129 |         expect(responseData).toHaveProperty(\"message\", \"Usuário não encontrado\")\n      |                              ^\n  130 |     })",
               "steps": [],
@@ -832,8 +832,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.197Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.117Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -853,7 +853,7 @@
         "line": 132,
         "column": 5
       },
-      "duration": 14,
+      "duration": 28,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:132",
@@ -861,19 +861,19 @@
       ],
       "results": [
         {
-          "duration": 14,
-          "startTime": "2021-10-28T04:34:25.192Z",
+          "duration": 28,
+          "startTime": "2021-10-28T04:40:32.112Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.193Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.112Z",
+              "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.199Z",
+              "startTime": "2021-10-28T04:40:32.123Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -885,7 +885,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.204Z",
+              "startTime": "2021-10-28T04:40:32.134Z",
               "duration": 0,
               "snippet": "  135 |\n  136 |         expect(response.status()).toBe(200)\n      |                                   ^\n  137 |",
               "steps": [],
@@ -897,8 +897,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.206Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.137Z",
+              "duration": 1,
               "snippet": "  138 |         const responseData = await response.json()\n  139 |         expect(responseData).toHaveProperty(\"message\", \"Registro excluído com sucesso\")\n      |                              ^\n  140 |     })",
               "steps": [],
               "location": {
@@ -909,7 +909,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.206Z",
+              "startTime": "2021-10-28T04:40:32.138Z",
               "duration": 1,
               "steps": []
             }
@@ -930,7 +930,7 @@
         "line": 142,
         "column": 5
       },
-      "duration": 12,
+      "duration": 8,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:142",
@@ -938,19 +938,19 @@
       ],
       "results": [
         {
-          "duration": 12,
-          "startTime": "2021-10-28T04:34:25.198Z",
+          "duration": 8,
+          "startTime": "2021-10-28T04:40:32.119Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.198Z",
-              "duration": 2,
+              "startTime": "2021-10-28T04:40:32.119Z",
+              "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.205Z",
+              "startTime": "2021-10-28T04:40:32.127Z",
               "duration": 0,
               "snippet": "  144 |\n  145 |         expect(response.status()).toBe(200)\n      |                                   ^\n  146 |",
               "steps": [],
@@ -962,7 +962,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.210Z",
+              "startTime": "2021-10-28T04:40:32.128Z",
               "duration": 0,
               "snippet": "  147 |         const responseData = await response.json()\n  148 |         expect(responseData).toHaveProperty(\"message\", \"Nenhum registro excluído\")\n      |                              ^\n  149 |     })",
               "steps": [],
@@ -974,8 +974,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.210Z",
-              "duration": 1,
+              "startTime": "2021-10-28T04:40:32.128Z",
+              "duration": 0,
               "steps": []
             }
           ],
@@ -995,7 +995,7 @@
         "line": 151,
         "column": 5
       },
-      "duration": 44,
+      "duration": 34,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:151",
@@ -1003,19 +1003,19 @@
       ],
       "results": [
         {
-          "duration": 44,
-          "startTime": "2021-10-28T04:34:25.207Z",
+          "duration": 34,
+          "startTime": "2021-10-28T04:40:32.129Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.208Z",
-              "duration": 12,
+              "startTime": "2021-10-28T04:40:32.129Z",
+              "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.224Z",
+              "startTime": "2021-10-28T04:40:32.135Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -1027,7 +1027,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.231Z",
+              "startTime": "2021-10-28T04:40:32.140Z",
               "duration": 0,
               "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
               "steps": [],
@@ -1039,7 +1039,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.239Z",
+              "startTime": "2021-10-28T04:40:32.147Z",
               "duration": 0,
               "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
               "steps": [],
@@ -1051,7 +1051,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.246Z",
+              "startTime": "2021-10-28T04:40:32.154Z",
               "duration": 0,
               "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
               "steps": [],
@@ -1063,7 +1063,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.250Z",
+              "startTime": "2021-10-28T04:40:32.161Z",
               "duration": 0,
               "snippet": "  165 |\n  166 |         expect(response.status()).toBe(400)\n      |                                   ^\n  167 |",
               "steps": [],
@@ -1075,7 +1075,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.250Z",
+              "startTime": "2021-10-28T04:40:32.162Z",
               "duration": 0,
               "snippet": "  168 |         const responseData = await response.json()\n  169 |         expect(responseData).toHaveProperty(\"message\", \"Não é permitido excluir usuário com carrinho cadastrado\")\n      |                              ^\n  170 |         expect(responseData).toHaveProperty(\"idCarrinho\", carrinho._id)",
               "steps": [],
@@ -1087,7 +1087,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.251Z",
+              "startTime": "2021-10-28T04:40:32.162Z",
               "duration": 0,
               "snippet": "  169 |         expect(responseData).toHaveProperty(\"message\", \"Não é permitido excluir usuário com carrinho cadastrado\")\n  170 |         expect(responseData).toHaveProperty(\"idCarrinho\", carrinho._id)\n      |                              ^\n  171 |     })",
               "steps": [],
@@ -1099,8 +1099,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.251Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.162Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -1120,7 +1120,7 @@
         "line": 173,
         "column": 5
       },
-      "duration": 17,
+      "duration": 19,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:173",
@@ -1128,19 +1128,19 @@
       ],
       "results": [
         {
-          "duration": 17,
-          "startTime": "2021-10-28T04:34:25.211Z",
+          "duration": 19,
+          "startTime": "2021-10-28T04:40:32.140Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.211Z",
-              "duration": 1,
+              "startTime": "2021-10-28T04:40:32.141Z",
+              "duration": 2,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.220Z",
+              "startTime": "2021-10-28T04:40:32.149Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -1152,7 +1152,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.227Z",
+              "startTime": "2021-10-28T04:40:32.156Z",
               "duration": 0,
               "snippet": "  183 |\n  184 |         expect(response.status()).toBe(200)\n      |                                   ^\n  185 |",
               "steps": [],
@@ -1164,7 +1164,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.228Z",
+              "startTime": "2021-10-28T04:40:32.159Z",
               "duration": 0,
               "snippet": "  186 |         const responseData = await response.json()\n  187 |         expect(responseData).toHaveProperty(\"message\", \"Registro alterado com sucesso\")\n      |                              ^\n  188 |     })",
               "steps": [],
@@ -1176,8 +1176,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.228Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.159Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -1197,7 +1197,7 @@
         "line": 190,
         "column": 5
       },
-      "duration": 8,
+      "duration": 25,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:190",
@@ -1205,19 +1205,19 @@
       ],
       "results": [
         {
-          "duration": 8,
-          "startTime": "2021-10-28T04:34:25.230Z",
+          "duration": 25,
+          "startTime": "2021-10-28T04:40:32.160Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.230Z",
-              "duration": 1,
+              "startTime": "2021-10-28T04:40:32.160Z",
+              "duration": 6,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.236Z",
+              "startTime": "2021-10-28T04:40:32.183Z",
               "duration": 0,
               "snippet": "  199 |\n  200 |         expect(response.status()).toBe(201)\n      |                                   ^\n  201 |",
               "steps": [],
@@ -1229,7 +1229,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.237Z",
+              "startTime": "2021-10-28T04:40:32.184Z",
               "duration": 0,
               "snippet": "  202 |         const responseData = await response.json()\n  203 |         expect(responseData).toHaveProperty(\"message\", \"Cadastro realizado com sucesso\")\n      |                              ^\n  204 |         expect(responseData).toHaveProperty(\"_id\", responseData._id)",
               "steps": [],
@@ -1241,7 +1241,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.238Z",
+              "startTime": "2021-10-28T04:40:32.184Z",
               "duration": 0,
               "snippet": "  203 |         expect(responseData).toHaveProperty(\"message\", \"Cadastro realizado com sucesso\")\n  204 |         expect(responseData).toHaveProperty(\"_id\", responseData._id)\n      |                              ^\n  205 |     })",
               "steps": [],
@@ -1253,8 +1253,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.238Z",
-              "duration": 0,
+              "startTime": "2021-10-28T04:40:32.184Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -1274,7 +1274,7 @@
         "line": 207,
         "column": 5
       },
-      "duration": 17,
+      "duration": 26,
       "outcome": "expected",
       "path": [
         "usuarios.spec.js:207",
@@ -1282,19 +1282,19 @@
       ],
       "results": [
         {
-          "duration": 17,
-          "startTime": "2021-10-28T04:34:25.239Z",
+          "duration": 26,
+          "startTime": "2021-10-28T04:40:32.167Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T04:34:25.239Z",
+              "startTime": "2021-10-28T04:40:32.167Z",
               "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.247Z",
+              "startTime": "2021-10-28T04:40:32.180Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -1306,7 +1306,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.252Z",
+              "startTime": "2021-10-28T04:40:32.188Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -1318,8 +1318,8 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-28T04:34:25.255Z",
-              "duration": 1,
+              "startTime": "2021-10-28T04:40:32.191Z",
+              "duration": 0,
               "snippet": "  218 |\n  219 |         expect(response.status()).toBe(400)\n      |                                   ^\n  220 |",
               "steps": [],
               "location": {
@@ -1330,7 +1330,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-28T04:34:25.256Z",
+              "startTime": "2021-10-28T04:40:32.192Z",
               "duration": 0,
               "snippet": "  221 |         const responseData = await response.json()\n  222 |         expect(responseData).toHaveProperty(\"message\", \"Este email já está sendo usado\")\n      |                              ^\n  223 |     })",
               "steps": [],
@@ -1342,7 +1342,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T04:34:25.256Z",
+              "startTime": "2021-10-28T04:40:32.192Z",
               "duration": 1,
               "steps": []
             }
