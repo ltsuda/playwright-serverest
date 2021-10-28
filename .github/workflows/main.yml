@@ -1,0 +1,39 @@
+name: ServeRest API testing with Playwright
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: Setup Node.js/Playwright Test environment
+        uses: actions/setup-node@v2.4.0
+        with:
+          node-version: "16"
+          cache: npm
+      - run: npm ci
+      - run: npm run test
+
+      - name: Upload html reporter results
+        uses: actions/upload-artifact@v2.2.4
+        if: ${{ github.event_name == 'push' && always() }}
+        with:
+          name: test-results
+          path: test-results
+
+      - name: Deploy report to Github Pages
+        if: ${{ github.event_name == 'push' && always() }}
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: test-results
