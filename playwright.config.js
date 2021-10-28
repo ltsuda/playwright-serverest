@@ -7,11 +7,11 @@ const config = {
     workers: process.env.CI ? 2 : undefined,
 
     webServer: {
-        command: "NODE_ENV=serverest-test npx serverest --nodoc",
+        command: "npx serverest --nodoc",
         port: 3000,
         timeout: 60 * 1000,
         reuseExistingServer: !process.env.CI,
-        cwd: "serverest",
+        cwd: ".",
     },
 
     use: {
