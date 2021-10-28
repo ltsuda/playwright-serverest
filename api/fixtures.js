@@ -26,7 +26,7 @@ module.exports = base.test.extend({
                 nome: faker.name.findName(),
                 email: faker.internet.email(),
                 password: faker.random.alphaNumeric(16),
-                administrador: administrador ? String(administrador) : String(faker.datatype.boolean()),
+                administrador: String(administrador),
             }
             const response = await request.post(`${baseURL}${userPath}`, {
                 data: data,
@@ -40,9 +40,10 @@ module.exports = base.test.extend({
     cadastrarProduto: async ({ baseURL, request, productsPath }, use) => {
         await use(async (authorization) => {
             let data = {
-                nome: faker.commerce.productName(),
-                preco: faker.commerce.price(undefined, undefined, 0),
-                descricao: faker.commerce.productDescription(),
+                // alphaNumeric to reduce the chances of existing name when running the test suite multiple times
+                nome: faker.commerce.productName() + faker.random.alphaNumeric(),
+                preco: Number(faker.commerce.price(undefined, undefined, 0)),
+                descricao: faker.commerce.productAdjective(),
                 quantidade: faker.datatype.number(1000),
             }
             const response = await request.post(`${baseURL}${productsPath}`, {
