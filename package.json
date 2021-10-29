@@ -4,6 +4,7 @@
     "version": "1.0.0",
     "devDependencies": {
         "@playwright/test": "^1.16.2",
+        "ajv": "^8.6.3",
         "faker": "^5.5.3",
         "serverest": "^2.24.4"
     },
