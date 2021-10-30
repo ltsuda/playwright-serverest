@@ -11,7 +11,7 @@
         "line": 15,
         "column": 5
       },
-      "duration": 19,
+      "duration": 17,
       "outcome": "expected",
       "path": [
         "schemas/produtos.spec.js:15",
@@ -19,19 +19,19 @@
       ],
       "results": [
         {
-          "duration": 19,
-          "startTime": "2021-10-30T23:01:46.826Z",
+          "duration": 17,
+          "startTime": "2021-10-30T23:05:54.078Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:01:46.826Z",
-              "duration": 1,
+              "startTime": "2021-10-30T23:05:54.078Z",
+              "duration": 0,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:01:46.833Z",
+              "startTime": "2021-10-30T23:05:54.088Z",
               "duration": 0,
               "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
               "steps": [],
@@ -43,7 +43,7 @@
             },
             {
               "title": "expect.toBeTruthy",
-              "startTime": "2021-10-30T23:01:46.837Z",
+              "startTime": "2021-10-30T23:05:54.092Z",
               "duration": 0,
               "snippet": "  18 |\n  19 |         expect(response.ok()).toBeTruthy()\n     |                               ^\n  20 |         Joi.assert(await response.json(), produtos.get)",
               "steps": [],
@@ -55,8 +55,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:01:46.845Z",
-              "duration": 0,
+              "startTime": "2021-10-30T23:05:54.094Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -76,7 +76,7 @@
         "line": 23,
         "column": 5
       },
-      "duration": 14,
+      "duration": 8,
       "outcome": "expected",
       "path": [
         "schemas/produtos.spec.js:23",
@@ -84,20 +84,20 @@
       ],
       "results": [
         {
-          "duration": 14,
-          "startTime": "2021-10-30T23:01:46.833Z",
+          "duration": 8,
+          "startTime": "2021-10-30T23:05:54.309Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:01:46.833Z",
-              "duration": 1,
+              "startTime": "2021-10-30T23:05:54.310Z",
+              "duration": 0,
               "steps": []
             },
             {
               "title": "expect.not.toBeTruthy",
-              "startTime": "2021-10-30T23:01:46.845Z",
-              "duration": 1,
+              "startTime": "2021-10-30T23:05:54.316Z",
+              "duration": 0,
               "snippet": "  25 |\n  26 |         expect(response.ok()).not.toBeTruthy()\n     |                                   ^\n  27 |         Joi.assert(await response.json(), produtos.post)",
               "steps": [],
               "location": {
@@ -108,8 +108,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:01:46.846Z",
-              "duration": 0,
+              "startTime": "2021-10-30T23:05:54.316Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -138,18 +138,18 @@
       "results": [
         {
           "duration": 11,
-          "startTime": "2021-10-30T23:01:46.860Z",
+          "startTime": "2021-10-30T23:05:54.329Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:01:46.860Z",
+              "startTime": "2021-10-30T23:05:54.329Z",
               "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:01:46.866Z",
+              "startTime": "2021-10-30T23:05:54.334Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -161,7 +161,7 @@
             },
             {
               "title": "expect.not.toBeTruthy",
-              "startTime": "2021-10-30T23:01:46.870Z",
+              "startTime": "2021-10-30T23:05:54.339Z",
               "duration": 0,
               "snippet": "  35 |\n  36 |         expect(response.ok()).not.toBeTruthy()\n     |                                   ^\n  37 |         Joi.assert(await response.json(), produtos.put)",
               "steps": [],
@@ -173,8 +173,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:01:46.870Z",
-              "duration": 1,
+              "startTime": "2021-10-30T23:05:54.340Z",
+              "duration": 0,
               "steps": []
             }
           ],

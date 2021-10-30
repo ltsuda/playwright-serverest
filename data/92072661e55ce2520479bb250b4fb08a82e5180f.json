@@ -11,37 +11,59 @@
         "line": 6,
         "column": 5
       },
-      "duration": 14,
-      "outcome": "expected",
+      "duration": 38,
+      "outcome": "unexpected",
       "path": [
         "schemas/login.spec.js:6",
         "Login endpoint @schema-login"
       ],
       "results": [
         {
-          "duration": 14,
-          "startTime": "2021-10-30T23:01:46.806Z",
+          "duration": 5,
+          "startTime": "2021-10-30T23:05:54.053Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:01:46.807Z",
-              "duration": 1,
+              "startTime": "2021-10-30T23:05:54.053Z",
+              "duration": 0,
               "steps": []
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:01:46.820Z",
-              "duration": 0,
+              "startTime": "2021-10-30T23:05:54.057Z",
+              "duration": 1,
               "steps": []
             }
           ],
-          "error": "",
-          "status": "passed",
+          "error": "ReferenceError: expect is not defined\n\n   7 |         const response = await request.post(`${baseURL}${loginPath}`, {})\n   8 |\n>  9 |         expect(response.ok()).toBeTruthy()\n     |         ^\n  10 |         Joi.assert(await response.json(), login.get)\n  11 |     })\n  12 | })\n\n    at /home/runner/work/playwright-serverest/playwright-serverest/tests/api/schemas/login.spec.js:9:9\n    at WorkerRunner._runTestWithBeforeHooks (/home/runner/work/playwright-serverest/playwright-serverest/node_modules/@playwright/test/lib/workerRunner.js:478:7)",
+          "status": "failed",
+          "attachments": []
+        },
+        {
+          "duration": 33,
+          "startTime": "2021-10-30T23:05:54.992Z",
+          "retry": 1,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-30T23:05:54.993Z",
+              "duration": 13,
+              "steps": []
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-30T23:05:55.023Z",
+              "duration": 2,
+              "steps": []
+            }
+          ],
+          "error": "ReferenceError: expect is not defined\n\n   7 |         const response = await request.post(`${baseURL}${loginPath}`, {})\n   8 |\n>  9 |         expect(response.ok()).toBeTruthy()\n     |         ^\n  10 |         Joi.assert(await response.json(), login.get)\n  11 |     })\n  12 | })\n\n    at /home/runner/work/playwright-serverest/playwright-serverest/tests/api/schemas/login.spec.js:9:9\n    at WorkerRunner._runTestWithBeforeHooks (/home/runner/work/playwright-serverest/playwright-serverest/node_modules/@playwright/test/lib/workerRunner.js:478:7)",
+          "status": "failed",
           "attachments": []
         }
       ],
-      "ok": true
+      "ok": false
     }
   ]
 }

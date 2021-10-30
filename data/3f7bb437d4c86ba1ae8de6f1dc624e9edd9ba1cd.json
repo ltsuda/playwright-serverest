@@ -11,7 +11,7 @@
         "line": 5,
         "column": 5
       },
-      "duration": 10,
+      "duration": 13,
       "outcome": "expected",
       "path": [
         "login.spec.js:5",
@@ -19,19 +19,19 @@
       ],
       "results": [
         {
-          "duration": 10,
-          "startTime": "2021-10-30T23:01:46.253Z",
+          "duration": 13,
+          "startTime": "2021-10-30T23:05:53.463Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:01:46.253Z",
-              "duration": 2,
+              "startTime": "2021-10-30T23:05:53.463Z",
+              "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:01:46.259Z",
+              "startTime": "2021-10-30T23:05:53.467Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -43,7 +43,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:01:46.262Z",
+              "startTime": "2021-10-30T23:05:53.471Z",
               "duration": 0,
               "snippet": "  10 |\n  11 |         expect(response.status()).toBe(200)\n     |                                   ^\n  12 |",
               "steps": [],
@@ -55,7 +55,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:01:46.262Z",
+              "startTime": "2021-10-30T23:05:53.475Z",
               "duration": 0,
               "snippet": "  13 |         const responseData = await response.json()\n  14 |         expect(responseData).toHaveProperty(\"message\", \"Login realizado com sucesso\")\n     |                              ^\n  15 |         expect(responseData).toHaveProperty(\"authorization\", responseData.authorization)",
               "steps": [],
@@ -67,8 +67,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:01:46.262Z",
-              "duration": 1,
+              "startTime": "2021-10-30T23:05:53.475Z",
+              "duration": 0,
               "snippet": "  14 |         expect(responseData).toHaveProperty(\"message\", \"Login realizado com sucesso\")\n  15 |         expect(responseData).toHaveProperty(\"authorization\", responseData.authorization)\n     |                              ^\n  16 |     })",
               "steps": [],
               "location": {
@@ -79,8 +79,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:01:46.263Z",
-              "duration": 0,
+              "startTime": "2021-10-30T23:05:53.475Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -109,18 +109,18 @@
       "results": [
         {
           "duration": 6,
-          "startTime": "2021-10-30T23:01:46.264Z",
+          "startTime": "2021-10-30T23:05:53.476Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:01:46.264Z",
+              "startTime": "2021-10-30T23:05:53.476Z",
               "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:01:46.268Z",
+              "startTime": "2021-10-30T23:05:53.480Z",
               "duration": 0,
               "snippet": "  21 |         })\n  22 |         expect(response.status()).toBe(401)\n     |                                   ^\n  23 |",
               "steps": [],
@@ -132,7 +132,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:01:46.269Z",
+              "startTime": "2021-10-30T23:05:53.481Z",
               "duration": 0,
               "snippet": "  24 |         const responseData = await response.json()\n  25 |         expect(responseData).toHaveProperty(\"message\", \"Email e/ou senha inválidos\")\n     |                              ^\n  26 |     })",
               "steps": [],
@@ -144,7 +144,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:01:46.269Z",
+              "startTime": "2021-10-30T23:05:53.481Z",
               "duration": 0,
               "steps": []
             }
