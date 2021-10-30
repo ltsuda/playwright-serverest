@@ -5,6 +5,8 @@ const login = require("../../../api/schemas/login")
 test.describe("Login endpoint @schema-login", () => {
     test("Login com body vazio", async ({ baseURL, loginPath, request }) => {
         const response = await request.post(`${baseURL}${loginPath}`, {})
+
+        expect(response.ok()).toBeTruthy()
         Joi.assert(await response.json(), login.get)
     })
 })
