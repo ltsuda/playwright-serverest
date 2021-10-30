@@ -9,8 +9,10 @@
         "serverest": "^2.24.4"
     },
     "scripts": {
-        "test": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test ||:",
+        "test:api": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep-invert '@schema'",
         "test:match": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep $MATCH",
+        "test:schema": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep '@schema'",
+        "test:all": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test ||:",
         "reporter:html": "npx playwright show-report test-results"
     },
     "repository": {
