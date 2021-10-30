@@ -23,7 +23,7 @@ test.describe.parallel("@schema-produtos", () => {
     test("Cadastrar produto com body vazio", async ({ baseURL, productsPath, request }) => {
         const response = await request.post(`${baseURL}${productsPath}`, { headers: { Authorization: authorization } })
 
-        expect(response.ok()).not.toBeTruthy()
+        expect(response.ok()).toBeFalsy()
         Joi.assert(await response.json(), produtos.post)
     })
 
@@ -33,7 +33,7 @@ test.describe.parallel("@schema-produtos", () => {
             headers: { Authorization: authorization },
         })
 
-        expect(response.ok()).not.toBeTruthy()
+        expect(response.ok()).toBeFalsy()
         Joi.assert(await response.json(), produtos.put)
     })
 })

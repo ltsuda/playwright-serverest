@@ -30,7 +30,7 @@ test.describe.parallel("@schema-carrinhos", () => {
     test("Cadastrar carrinho com body vazio", async ({ baseURL, cartPath, request }) => {
         const response = await request.post(`${baseURL}${cartPath}`, { headers: { Authorization: authorization } })
 
-        expect(response.ok()).not.toBeTruthy()
+        expect(response.ok()).toBeFalsy()
         Joi.assert(await response.json(), carrinhos.post)
     })
 
@@ -42,7 +42,7 @@ test.describe.parallel("@schema-carrinhos", () => {
             headers: { Authorization: authorization },
         })
 
-        expect(response.ok()).not.toBeTruthy()
+        expect(response.ok()).toBeFalsy()
         Joi.assert(await response.json(), carrinhos.postSemProduto)
     })
 })

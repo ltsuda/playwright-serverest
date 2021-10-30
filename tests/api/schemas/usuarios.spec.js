@@ -15,7 +15,7 @@ test.describe.parallel("@schema-usuarios", () => {
     test("Cadastrar usuário body vazio", async ({ baseURL, userPath, request }) => {
         const response = await request.post(`${baseURL}${userPath}`, {})
 
-        expect(response.ok()).not.toBeTruthy()
+        expect(response.ok()).toBeFalsy()
         Joi.assert(await response.json(), usuarios.post)
     })
 
@@ -23,7 +23,7 @@ test.describe.parallel("@schema-usuarios", () => {
         const { _id } = await cadastrarUsuario()
         const response = await request.put(`${baseURL}${userPath}/${_id}`, {})
 
-        expect(response.ok()).not.toBeTruthy()
+        expect(response.ok()).toBeFalsy()
         Joi.assert(await response.json(), usuarios.put)
     })
 })
