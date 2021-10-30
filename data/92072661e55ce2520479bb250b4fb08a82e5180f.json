@@ -8,62 +8,52 @@
       "projectName": "",
       "location": {
         "file": "schemas/login.spec.js",
-        "line": 6,
+        "line": 7,
         "column": 5
       },
-      "duration": 38,
-      "outcome": "unexpected",
+      "duration": 9,
+      "outcome": "expected",
       "path": [
-        "schemas/login.spec.js:6",
+        "schemas/login.spec.js:7",
         "Login endpoint @schema-login"
       ],
       "results": [
         {
-          "duration": 5,
-          "startTime": "2021-10-30T23:05:54.053Z",
+          "duration": 9,
+          "startTime": "2021-10-30T23:09:49.968Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:05:54.053Z",
+              "startTime": "2021-10-30T23:09:49.968Z",
+              "duration": 3,
+              "steps": []
+            },
+            {
+              "title": "expect.toBeFalsy",
+              "startTime": "2021-10-30T23:09:49.976Z",
+              "duration": 0,
+              "snippet": "   9 |\n  10 |         expect(response.ok()).toBeFalsy()\n     |                               ^\n  11 |         Joi.assert(await response.json(), login.get)",
+              "steps": [],
+              "location": {
+                "file": "schemas/login.spec.js",
+                "line": 10,
+                "column": 31
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-30T23:09:49.977Z",
               "duration": 0,
               "steps": []
-            },
-            {
-              "title": "After Hooks",
-              "startTime": "2021-10-30T23:05:54.057Z",
-              "duration": 1,
-              "steps": []
             }
           ],
-          "error": "ReferenceError: expect is not defined\n\n   7 |         const response = await request.post(`${baseURL}${loginPath}`, {})\n   8 |\n>  9 |         expect(response.ok()).toBeTruthy()\n     |         ^\n  10 |         Joi.assert(await response.json(), login.get)\n  11 |     })\n  12 | })\n\n    at /home/runner/work/playwright-serverest/playwright-serverest/tests/api/schemas/login.spec.js:9:9\n    at WorkerRunner._runTestWithBeforeHooks (/home/runner/work/playwright-serverest/playwright-serverest/node_modules/@playwright/test/lib/workerRunner.js:478:7)",
-          "status": "failed",
-          "attachments": []
-        },
-        {
-          "duration": 33,
-          "startTime": "2021-10-30T23:05:54.992Z",
-          "retry": 1,
-          "steps": [
-            {
-              "title": "Before Hooks",
-              "startTime": "2021-10-30T23:05:54.993Z",
-              "duration": 13,
-              "steps": []
-            },
-            {
-              "title": "After Hooks",
-              "startTime": "2021-10-30T23:05:55.023Z",
-              "duration": 2,
-              "steps": []
-            }
-          ],
-          "error": "ReferenceError: expect is not defined\n\n   7 |         const response = await request.post(`${baseURL}${loginPath}`, {})\n   8 |\n>  9 |         expect(response.ok()).toBeTruthy()\n     |         ^\n  10 |         Joi.assert(await response.json(), login.get)\n  11 |     })\n  12 | })\n\n    at /home/runner/work/playwright-serverest/playwright-serverest/tests/api/schemas/login.spec.js:9:9\n    at WorkerRunner._runTestWithBeforeHooks (/home/runner/work/playwright-serverest/playwright-serverest/node_modules/@playwright/test/lib/workerRunner.js:478:7)",
-          "status": "failed",
+          "error": "",
+          "status": "passed",
           "attachments": []
         }
       ],
-      "ok": false
+      "ok": true
     }
   ]
 }
