@@ -1,0 +1,189 @@
+{
+  "fileId": "8b58b7344e6334a3787c6dd9fbf239865cdc3ba2",
+  "fileName": "schemas/produtos.spec.js",
+  "tests": [
+    {
+      "testId": "8b58b7344e6334a3787c6dd9fbf239865cdc3ba2-3b2ead4fcd16ef0c556aadef797df56debec367f",
+      "title": "Listar produtos cadastrados",
+      "projectName": "",
+      "location": {
+        "file": "schemas/produtos.spec.js",
+        "line": 15,
+        "column": 5
+      },
+      "duration": 19,
+      "outcome": "expected",
+      "path": [
+        "schemas/produtos.spec.js:15",
+        "@schema-produtos"
+      ],
+      "results": [
+        {
+          "duration": 19,
+          "startTime": "2021-10-30T23:01:46.826Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-30T23:01:46.826Z",
+              "duration": 1,
+              "steps": []
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-10-30T23:01:46.833Z",
+              "duration": 0,
+              "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+              "steps": [],
+              "location": {
+                "file": "../../api/fixtures.js",
+                "line": 53,
+                "column": 39
+              }
+            },
+            {
+              "title": "expect.toBeTruthy",
+              "startTime": "2021-10-30T23:01:46.837Z",
+              "duration": 0,
+              "snippet": "  18 |\n  19 |         expect(response.ok()).toBeTruthy()\n     |                               ^\n  20 |         Joi.assert(await response.json(), produtos.get)",
+              "steps": [],
+              "location": {
+                "file": "schemas/produtos.spec.js",
+                "line": 19,
+                "column": 31
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-30T23:01:46.845Z",
+              "duration": 0,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "8b58b7344e6334a3787c6dd9fbf239865cdc3ba2-c8a52b459da468834c9416841206560a47e89273",
+      "title": "Cadastrar produto com body vazio",
+      "projectName": "",
+      "location": {
+        "file": "schemas/produtos.spec.js",
+        "line": 23,
+        "column": 5
+      },
+      "duration": 14,
+      "outcome": "expected",
+      "path": [
+        "schemas/produtos.spec.js:23",
+        "@schema-produtos"
+      ],
+      "results": [
+        {
+          "duration": 14,
+          "startTime": "2021-10-30T23:01:46.833Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-30T23:01:46.833Z",
+              "duration": 1,
+              "steps": []
+            },
+            {
+              "title": "expect.not.toBeTruthy",
+              "startTime": "2021-10-30T23:01:46.845Z",
+              "duration": 1,
+              "snippet": "  25 |\n  26 |         expect(response.ok()).not.toBeTruthy()\n     |                                   ^\n  27 |         Joi.assert(await response.json(), produtos.post)",
+              "steps": [],
+              "location": {
+                "file": "schemas/produtos.spec.js",
+                "line": 26,
+                "column": 35
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-30T23:01:46.846Z",
+              "duration": 0,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "8b58b7344e6334a3787c6dd9fbf239865cdc3ba2-4b66ac4676a7cfe5d3aa1ea0e5f55798d2b09cb0",
+      "title": "Editar usuário produto com vazio",
+      "projectName": "",
+      "location": {
+        "file": "schemas/produtos.spec.js",
+        "line": 30,
+        "column": 5
+      },
+      "duration": 11,
+      "outcome": "expected",
+      "path": [
+        "schemas/produtos.spec.js:30",
+        "@schema-produtos"
+      ],
+      "results": [
+        {
+          "duration": 11,
+          "startTime": "2021-10-30T23:01:46.860Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-30T23:01:46.860Z",
+              "duration": 1,
+              "steps": []
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-10-30T23:01:46.866Z",
+              "duration": 0,
+              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+              "steps": [],
+              "location": {
+                "file": "../../api/fixtures.js",
+                "line": 34,
+                "column": 39
+              }
+            },
+            {
+              "title": "expect.not.toBeTruthy",
+              "startTime": "2021-10-30T23:01:46.870Z",
+              "duration": 0,
+              "snippet": "  35 |\n  36 |         expect(response.ok()).not.toBeTruthy()\n     |                                   ^\n  37 |         Joi.assert(await response.json(), produtos.put)",
+              "steps": [],
+              "location": {
+                "file": "schemas/produtos.spec.js",
+                "line": 36,
+                "column": 35
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-30T23:01:46.870Z",
+              "duration": 1,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    }
+  ]
+}

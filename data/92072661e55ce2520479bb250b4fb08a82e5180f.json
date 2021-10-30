@@ -1,0 +1,47 @@
+{
+  "fileId": "92072661e55ce2520479bb250b4fb08a82e5180f",
+  "fileName": "schemas/login.spec.js",
+  "tests": [
+    {
+      "testId": "92072661e55ce2520479bb250b4fb08a82e5180f-3e8fab94aad6a22ec33b0aeb96d9d7527acab3e2",
+      "title": "Login com body vazio",
+      "projectName": "",
+      "location": {
+        "file": "schemas/login.spec.js",
+        "line": 6,
+        "column": 5
+      },
+      "duration": 14,
+      "outcome": "expected",
+      "path": [
+        "schemas/login.spec.js:6",
+        "Login endpoint @schema-login"
+      ],
+      "results": [
+        {
+          "duration": 14,
+          "startTime": "2021-10-30T23:01:46.806Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-30T23:01:46.807Z",
+              "duration": 1,
+              "steps": []
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-30T23:01:46.820Z",
+              "duration": 0,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    }
+  ]
+}
