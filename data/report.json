@@ -13,7 +13,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 196,
+          "duration": 149,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:31",
@@ -30,7 +30,7 @@
             "line": 40,
             "column": 5
           },
-          "duration": 111,
+          "duration": 74,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:40",
@@ -47,7 +47,7 @@
             "line": 49,
             "column": 5
           },
-          "duration": 71,
+          "duration": 43,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:49",
@@ -64,7 +64,7 @@
             "line": 58,
             "column": 5
           },
-          "duration": 40,
+          "duration": 30,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:58",
@@ -81,10 +81,78 @@
             "line": 67,
             "column": 5
           },
-          "duration": 47,
+          "duration": 34,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:67",
+            "Carrinhos endpoint @carrinhos"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "a4f306a4c494dd748f9f69f67282751dd629d012-e6f3ceb3e5dd4135fccb71e394329723f92cf019",
+          "title": "Listar carrinho inexistente",
+          "projectName": "",
+          "location": {
+            "file": "carrinhos.spec.js",
+            "line": 76,
+            "column": 5
+          },
+          "duration": 26,
+          "outcome": "expected",
+          "path": [
+            "carrinhos.spec.js:76",
+            "Carrinhos endpoint @carrinhos"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "a4f306a4c494dd748f9f69f67282751dd629d012-b06d14fb977ba9b2abea58ff8dad2520008669ed",
+          "title": "Listar carrinho com preco e quantidade como texto",
+          "projectName": "",
+          "location": {
+            "file": "carrinhos.spec.js",
+            "line": 85,
+            "column": 5
+          },
+          "duration": 36,
+          "outcome": "expected",
+          "path": [
+            "carrinhos.spec.js:85",
+            "Carrinhos endpoint @carrinhos"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "a4f306a4c494dd748f9f69f67282751dd629d012-07ed649b30bda4ecb4bba7235178ab1dd7945652",
+          "title": "Listar carrinho com preco e quantidade negativos",
+          "projectName": "",
+          "location": {
+            "file": "carrinhos.spec.js",
+            "line": 94,
+            "column": 5
+          },
+          "duration": 35,
+          "outcome": "expected",
+          "path": [
+            "carrinhos.spec.js:94",
+            "Carrinhos endpoint @carrinhos"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "a4f306a4c494dd748f9f69f67282751dd629d012-89c3bfc603ee2f941afd8c189b4a70e2ae76faf9",
+          "title": "Listar carrinho com preco e quantidade decimais",
+          "projectName": "",
+          "location": {
+            "file": "carrinhos.spec.js",
+            "line": 103,
+            "column": 5
+          },
+          "duration": 46,
+          "outcome": "expected",
+          "path": [
+            "carrinhos.spec.js:103",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
@@ -95,13 +163,13 @@
           "projectName": "",
           "location": {
             "file": "carrinhos.spec.js",
-            "line": 76,
+            "line": 112,
             "column": 5
           },
-          "duration": 60,
+          "duration": 59,
           "outcome": "expected",
           "path": [
-            "carrinhos.spec.js:76",
+            "carrinhos.spec.js:112",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
@@ -112,13 +180,13 @@
           "projectName": "",
           "location": {
             "file": "carrinhos.spec.js",
-            "line": 97,
+            "line": 133,
             "column": 5
           },
           "duration": 56,
           "outcome": "expected",
           "path": [
-            "carrinhos.spec.js:97",
+            "carrinhos.spec.js:133",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
@@ -129,13 +197,13 @@
           "projectName": "",
           "location": {
             "file": "carrinhos.spec.js",
-            "line": 128,
+            "line": 164,
             "column": 5
           },
-          "duration": 41,
+          "duration": 31,
           "outcome": "expected",
           "path": [
-            "carrinhos.spec.js:128",
+            "carrinhos.spec.js:164",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
@@ -146,13 +214,13 @@
           "projectName": "",
           "location": {
             "file": "carrinhos.spec.js",
-            "line": 151,
+            "line": 187,
             "column": 5
           },
-          "duration": 54,
+          "duration": 49,
           "outcome": "expected",
           "path": [
-            "carrinhos.spec.js:151",
+            "carrinhos.spec.js:187",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
@@ -163,13 +231,13 @@
           "projectName": "",
           "location": {
             "file": "carrinhos.spec.js",
-            "line": 178,
+            "line": 214,
             "column": 5
           },
-          "duration": 94,
+          "duration": 54,
           "outcome": "expected",
           "path": [
-            "carrinhos.spec.js:178",
+            "carrinhos.spec.js:214",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
@@ -180,13 +248,30 @@
           "projectName": "",
           "location": {
             "file": "carrinhos.spec.js",
-            "line": 215,
+            "line": 251,
             "column": 5
           },
-          "duration": 31,
+          "duration": 40,
           "outcome": "expected",
           "path": [
-            "carrinhos.spec.js:215",
+            "carrinhos.spec.js:251",
+            "Carrinhos endpoint @carrinhos"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "a4f306a4c494dd748f9f69f67282751dd629d012-36d20f048ccdbfef3b5f680d1ac6f5687feaea76",
+          "title": "Cadastrar carrinho com valor inexistente @x",
+          "projectName": "",
+          "location": {
+            "file": "carrinhos.spec.js",
+            "line": 272,
+            "column": 5
+          },
+          "duration": 33,
+          "outcome": "expected",
+          "path": [
+            "carrinhos.spec.js:272",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
@@ -197,13 +282,13 @@
           "projectName": "",
           "location": {
             "file": "carrinhos.spec.js",
-            "line": 236,
+            "line": 286,
             "column": 5
           },
-          "duration": 43,
+          "duration": 49,
           "outcome": "expected",
           "path": [
-            "carrinhos.spec.js:236",
+            "carrinhos.spec.js:286",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
@@ -214,13 +299,13 @@
           "projectName": "",
           "location": {
             "file": "carrinhos.spec.js",
-            "line": 244,
+            "line": 294,
             "column": 5
           },
-          "duration": 51,
+          "duration": 36,
           "outcome": "expected",
           "path": [
-            "carrinhos.spec.js:244",
+            "carrinhos.spec.js:294",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
@@ -231,13 +316,13 @@
           "projectName": "",
           "location": {
             "file": "carrinhos.spec.js",
-            "line": 252,
+            "line": 302,
             "column": 5
           },
-          "duration": 96,
+          "duration": 40,
           "outcome": "expected",
           "path": [
-            "carrinhos.spec.js:252",
+            "carrinhos.spec.js:302",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
@@ -248,13 +333,13 @@
           "projectName": "",
           "location": {
             "file": "carrinhos.spec.js",
-            "line": 262,
+            "line": 312,
             "column": 5
           },
-          "duration": 50,
+          "duration": 61,
           "outcome": "expected",
           "path": [
-            "carrinhos.spec.js:262",
+            "carrinhos.spec.js:312",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
@@ -265,13 +350,13 @@
           "projectName": "",
           "location": {
             "file": "carrinhos.spec.js",
-            "line": 280,
+            "line": 330,
             "column": 5
           },
-          "duration": 66,
+          "duration": 33,
           "outcome": "expected",
           "path": [
-            "carrinhos.spec.js:280",
+            "carrinhos.spec.js:330",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
@@ -282,13 +367,13 @@
           "projectName": "",
           "location": {
             "file": "carrinhos.spec.js",
-            "line": 293,
+            "line": 343,
             "column": 5
           },
-          "duration": 37,
+          "duration": 28,
           "outcome": "expected",
           "path": [
-            "carrinhos.spec.js:293",
+            "carrinhos.spec.js:343",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
@@ -299,13 +384,13 @@
           "projectName": "",
           "location": {
             "file": "carrinhos.spec.js",
-            "line": 306,
+            "line": 356,
             "column": 5
           },
-          "duration": 56,
+          "duration": 49,
           "outcome": "expected",
           "path": [
-            "carrinhos.spec.js:306",
+            "carrinhos.spec.js:356",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
@@ -316,26 +401,26 @@
           "projectName": "",
           "location": {
             "file": "carrinhos.spec.js",
-            "line": 324,
+            "line": 374,
             "column": 5
           },
-          "duration": 53,
+          "duration": 36,
           "outcome": "expected",
           "path": [
-            "carrinhos.spec.js:324",
+            "carrinhos.spec.js:374",
             "Carrinhos endpoint @carrinhos"
           ],
           "ok": true
         }
       ],
       "stats": {
-        "total": 19,
-        "expected": 19,
+        "total": 24,
+        "expected": 24,
         "unexpected": 0,
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 1253
+        "duration": 1127
       }
     },
     {
@@ -351,7 +436,7 @@
             "line": 5,
             "column": 5
           },
-          "duration": 17,
+          "duration": 14,
           "outcome": "expected",
           "path": [
             "login.spec.js:5",
@@ -368,23 +453,74 @@
             "line": 18,
             "column": 5
           },
-          "duration": 7,
+          "duration": 6,
           "outcome": "expected",
           "path": [
             "login.spec.js:18",
             "Login endpoint @login"
           ],
           "ok": true
+        },
+        {
+          "testId": "3f7bb437d4c86ba1ae8de6f1dc624e9edd9ba1cd-951c9c3d1acdac647745a4f6fa20397e6605f497",
+          "title": "Login com campo inválido",
+          "projectName": "",
+          "location": {
+            "file": "login.spec.js",
+            "line": 28,
+            "column": 5
+          },
+          "duration": 9,
+          "outcome": "expected",
+          "path": [
+            "login.spec.js:28",
+            "Login endpoint @login"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "3f7bb437d4c86ba1ae8de6f1dc624e9edd9ba1cd-49ff8ecbb5b18a7c12d53146211c25f10fff2d25",
+          "title": "Login com email inválido",
+          "projectName": "",
+          "location": {
+            "file": "login.spec.js",
+            "line": 39,
+            "column": 5
+          },
+          "duration": 23,
+          "outcome": "expected",
+          "path": [
+            "login.spec.js:39",
+            "Login endpoint @login"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "3f7bb437d4c86ba1ae8de6f1dc624e9edd9ba1cd-f67e6287b68f825ec4507585faa2a3409d743d9f",
+          "title": "Login com email em branco",
+          "projectName": "",
+          "location": {
+            "file": "login.spec.js",
+            "line": 50,
+            "column": 5
+          },
+          "duration": 30,
+          "outcome": "expected",
+          "path": [
+            "login.spec.js:50",
+            "Login endpoint @login"
+          ],
+          "ok": true
         }
       ],
       "stats": {
-        "total": 2,
-        "expected": 2,
+        "total": 5,
+        "expected": 5,
         "unexpected": 0,
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 24
+        "duration": 82
       }
     },
     {
@@ -397,13 +533,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 14,
+            "line": 16,
             "column": 5
           },
-          "duration": 33,
+          "duration": 30,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:14",
+            "produtos.spec.js:16",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -414,13 +550,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 23,
+            "line": 25,
             "column": 5
           },
-          "duration": 39,
+          "duration": 27,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:23",
+            "produtos.spec.js:25",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -431,13 +567,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 32,
+            "line": 34,
             "column": 5
           },
-          "duration": 29,
+          "duration": 61,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:32",
+            "produtos.spec.js:34",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -448,13 +584,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 41,
+            "line": 43,
             "column": 5
           },
-          "duration": 28,
+          "duration": 36,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:41",
+            "produtos.spec.js:43",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -465,13 +601,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 50,
+            "line": 52,
             "column": 5
           },
-          "duration": 39,
+          "duration": 16,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:50",
+            "produtos.spec.js:52",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -482,13 +618,98 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 59,
+            "line": 61,
             "column": 5
           },
-          "duration": 48,
+          "duration": 32,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:59",
+            "produtos.spec.js:61",
+            "Produtos endpoint @produtos"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-1de05c2de94a6dc8cd21178d9a31df64b9ae82a9",
+          "title": "Listar produtos inexistentes",
+          "projectName": "",
+          "location": {
+            "file": "produtos.spec.js",
+            "line": 70,
+            "column": 5
+          },
+          "duration": 26,
+          "outcome": "expected",
+          "path": [
+            "produtos.spec.js:70",
+            "Produtos endpoint @produtos"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-2aa4656b1f161325260019351351be01cd2620a5",
+          "title": "Listar produtos por campo invalido",
+          "projectName": "",
+          "location": {
+            "file": "produtos.spec.js",
+            "line": 79,
+            "column": 5
+          },
+          "duration": 33,
+          "outcome": "expected",
+          "path": [
+            "produtos.spec.js:79",
+            "Produtos endpoint @produtos"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-ff8690058037bde729bd94cd070a8e634b4f25be",
+          "title": "Listar produtos por preco e quantidade como texto",
+          "projectName": "",
+          "location": {
+            "file": "produtos.spec.js",
+            "line": 87,
+            "column": 5
+          },
+          "duration": 30,
+          "outcome": "expected",
+          "path": [
+            "produtos.spec.js:87",
+            "Produtos endpoint @produtos"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-a7b9056f5e7c6373fb33ae0158c93ebdccfc4e84",
+          "title": "Listar produtos por preco e quantidade decimais",
+          "projectName": "",
+          "location": {
+            "file": "produtos.spec.js",
+            "line": 96,
+            "column": 5
+          },
+          "duration": 34,
+          "outcome": "expected",
+          "path": [
+            "produtos.spec.js:96",
+            "Produtos endpoint @produtos"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-9be82b7259553177eb515b7a926a39e5f8535417",
+          "title": "Listar produtos por preco e quantidade negativos",
+          "projectName": "",
+          "location": {
+            "file": "produtos.spec.js",
+            "line": 105,
+            "column": 5
+          },
+          "duration": 36,
+          "outcome": "expected",
+          "path": [
+            "produtos.spec.js:105",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -499,13 +720,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 68,
+            "line": 114,
             "column": 5
           },
-          "duration": 59,
+          "duration": 23,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:68",
+            "produtos.spec.js:114",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -516,13 +737,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 88,
+            "line": 132,
             "column": 5
           },
-          "duration": 55,
+          "duration": 27,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:88",
+            "produtos.spec.js:132",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -533,13 +754,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 113,
+            "line": 149,
             "column": 5
           },
-          "duration": 51,
+          "duration": 34,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:113",
+            "produtos.spec.js:149",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -550,13 +771,64 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 132,
+            "line": 168,
             "column": 5
           },
-          "duration": 83,
+          "duration": 98,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:132",
+            "produtos.spec.js:168",
+            "Produtos endpoint @produtos"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-12b5932d46b3af07d51f69398aa7dfe46148f446",
+          "title": "Cadastrar produto sem campos obrigatórios",
+          "projectName": "",
+          "location": {
+            "file": "produtos.spec.js",
+            "line": 193,
+            "column": 5
+          },
+          "duration": 72,
+          "outcome": "expected",
+          "path": [
+            "produtos.spec.js:193",
+            "Produtos endpoint @produtos"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-308be2a1d3bd02ab2cb3404cbbb881a6445c067e",
+          "title": "Cadastrar produto com campo inexistente",
+          "projectName": "",
+          "location": {
+            "file": "produtos.spec.js",
+            "line": 208,
+            "column": 5
+          },
+          "duration": 26,
+          "outcome": "expected",
+          "path": [
+            "produtos.spec.js:208",
+            "Produtos endpoint @produtos"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-c3981172188920deebc20f02091a7c2a5a825b27",
+          "title": "Cadastrar produto com preco e quantidade negativos",
+          "projectName": "",
+          "location": {
+            "file": "produtos.spec.js",
+            "line": 226,
+            "column": 5
+          },
+          "duration": 34,
+          "outcome": "expected",
+          "path": [
+            "produtos.spec.js:226",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -567,13 +839,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 157,
+            "line": 244,
             "column": 5
           },
-          "duration": 65,
+          "duration": 31,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:157",
+            "produtos.spec.js:244",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -584,13 +856,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 165,
+            "line": 252,
             "column": 5
           },
-          "duration": 25,
+          "duration": 21,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:165",
+            "produtos.spec.js:252",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -601,13 +873,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 173,
+            "line": 260,
             "column": 5
           },
-          "duration": 51,
+          "duration": 38,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:173",
+            "produtos.spec.js:260",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -618,13 +890,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 185,
+            "line": 270,
             "column": 5
           },
-          "duration": 43,
+          "duration": 27,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:185",
+            "produtos.spec.js:270",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -635,13 +907,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 197,
+            "line": 280,
             "column": 5
           },
-          "duration": 68,
+          "duration": 29,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:197",
+            "produtos.spec.js:280",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -652,13 +924,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 218,
+            "line": 297,
             "column": 5
           },
-          "duration": 45,
+          "duration": 24,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:218",
+            "produtos.spec.js:297",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -669,13 +941,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 231,
+            "line": 310,
             "column": 5
           },
-          "duration": 59,
+          "duration": 28,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:231",
+            "produtos.spec.js:310",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -686,13 +958,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 249,
+            "line": 328,
             "column": 5
           },
-          "duration": 50,
+          "duration": 28,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:249",
+            "produtos.spec.js:328",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -703,13 +975,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 267,
+            "line": 344,
             "column": 5
           },
-          "duration": 69,
+          "duration": 26,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:267",
+            "produtos.spec.js:344",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -720,13 +992,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 286,
+            "line": 361,
             "column": 5
           },
-          "duration": 48,
+          "duration": 39,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:286",
+            "produtos.spec.js:361",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -737,13 +1009,13 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 310,
+            "line": 385,
             "column": 5
           },
-          "duration": 25,
+          "duration": 39,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:310",
+            "produtos.spec.js:385",
             "Produtos endpoint @produtos"
           ],
           "ok": true
@@ -754,26 +1026,43 @@
           "projectName": "",
           "location": {
             "file": "produtos.spec.js",
-            "line": 329,
+            "line": 404,
             "column": 5
           },
-          "duration": 52,
+          "duration": 46,
           "outcome": "expected",
           "path": [
-            "produtos.spec.js:329",
+            "produtos.spec.js:404",
+            "Produtos endpoint @produtos"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-7920a40844ced0ac17b5d7f288f6535e2ec9b928",
+          "title": "Editar produto sem campos obrigatórios",
+          "projectName": "",
+          "location": {
+            "file": "produtos.spec.js",
+            "line": 428,
+            "column": 5
+          },
+          "duration": 22,
+          "outcome": "expected",
+          "path": [
+            "produtos.spec.js:428",
             "Produtos endpoint @produtos"
           ],
           "ok": true
         }
       ],
       "stats": {
-        "total": 22,
-        "expected": 22,
+        "total": 31,
+        "expected": 31,
         "unexpected": 0,
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 1064
+        "duration": 1073
       }
     },
     {
@@ -789,7 +1078,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 28,
+          "duration": 27,
           "outcome": "expected",
           "path": [
             "schemas/carrinhos.spec.js:15",
@@ -806,7 +1095,7 @@
             "line": 30,
             "column": 5
           },
-          "duration": 8,
+          "duration": 7,
           "outcome": "expected",
           "path": [
             "schemas/carrinhos.spec.js:30",
@@ -823,7 +1112,7 @@
             "line": 37,
             "column": 5
           },
-          "duration": 9,
+          "duration": 6,
           "outcome": "expected",
           "path": [
             "schemas/carrinhos.spec.js:37",
@@ -839,7 +1128,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 45
+        "duration": 40
       }
     },
     {
@@ -855,7 +1144,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 9,
+          "duration": 13,
           "outcome": "expected",
           "path": [
             "schemas/login.spec.js:7",
@@ -871,7 +1160,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 9
+        "duration": 13
       }
     },
     {
@@ -887,7 +1176,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 19,
+          "duration": 22,
           "outcome": "expected",
           "path": [
             "schemas/produtos.spec.js:15",
@@ -904,7 +1193,7 @@
             "line": 23,
             "column": 5
           },
-          "duration": 17,
+          "duration": 8,
           "outcome": "expected",
           "path": [
             "schemas/produtos.spec.js:23",
@@ -921,7 +1210,7 @@
             "line": 30,
             "column": 5
           },
-          "duration": 11,
+          "duration": 13,
           "outcome": "expected",
           "path": [
             "schemas/produtos.spec.js:30",
@@ -937,7 +1226,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 47
+        "duration": 43
       }
     },
     {
@@ -953,7 +1242,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 18,
+          "duration": 14,
           "outcome": "expected",
           "path": [
             "schemas/usuarios.spec.js:7",
@@ -970,7 +1259,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 14,
+          "duration": 6,
           "outcome": "expected",
           "path": [
             "schemas/usuarios.spec.js:15",
@@ -987,7 +1276,7 @@
             "line": 22,
             "column": 5
           },
-          "duration": 18,
+          "duration": 15,
           "outcome": "expected",
           "path": [
             "schemas/usuarios.spec.js:22",
@@ -1003,7 +1292,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 50
+        "duration": 35
       }
     },
     {
@@ -1019,7 +1308,7 @@
             "line": 6,
             "column": 5
           },
-          "duration": 18,
+          "duration": 16,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:6",
@@ -1036,7 +1325,7 @@
             "line": 17,
             "column": 5
           },
-          "duration": 27,
+          "duration": 9,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:17",
@@ -1053,7 +1342,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 18,
+          "duration": 17,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:28",
@@ -1087,7 +1376,7 @@
             "line": 50,
             "column": 5
           },
-          "duration": 31,
+          "duration": 12,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:50",
@@ -1104,10 +1393,44 @@
             "line": 61,
             "column": 5
           },
-          "duration": 16,
+          "duration": 23,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:61",
+            "Usuários endpoint @usuarios"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "d1dd7037d1128a55d720d0c4e0d687e8a69328cc-9b84959025528156b822405729700f4052e794b3",
+          "title": "Listar usuários inexistente",
+          "projectName": "",
+          "location": {
+            "file": "usuarios.spec.js",
+            "line": 79,
+            "column": 5
+          },
+          "duration": 9,
+          "outcome": "expected",
+          "path": [
+            "usuarios.spec.js:79",
+            "Usuários endpoint @usuarios"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "d1dd7037d1128a55d720d0c4e0d687e8a69328cc-c04780bb1e30a46dd9cec7886f2982e4e036fbb3",
+          "title": "Listar usuários por campo invalido",
+          "projectName": "",
+          "location": {
+            "file": "usuarios.spec.js",
+            "line": 88,
+            "column": 5
+          },
+          "duration": 6,
+          "outcome": "expected",
+          "path": [
+            "usuarios.spec.js:88",
             "Usuários endpoint @usuarios"
           ],
           "ok": true
@@ -1118,13 +1441,13 @@
           "projectName": "",
           "location": {
             "file": "usuarios.spec.js",
-            "line": 79,
+            "line": 96,
             "column": 5
           },
-          "duration": 12,
+          "duration": 6,
           "outcome": "expected",
           "path": [
-            "usuarios.spec.js:79",
+            "usuarios.spec.js:96",
             "Usuários endpoint @usuarios"
           ],
           "ok": true
@@ -1135,13 +1458,64 @@
           "projectName": "",
           "location": {
             "file": "usuarios.spec.js",
-            "line": 96,
+            "line": 113,
+            "column": 5
+          },
+          "duration": 15,
+          "outcome": "expected",
+          "path": [
+            "usuarios.spec.js:113",
+            "Usuários endpoint @usuarios"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "d1dd7037d1128a55d720d0c4e0d687e8a69328cc-440472afbecaa68c9554f4d2c740686381626767",
+          "title": "Cadastrar usuário sem campos obrigatórios",
+          "projectName": "",
+          "location": {
+            "file": "usuarios.spec.js",
+            "line": 130,
+            "column": 5
+          },
+          "duration": 6,
+          "outcome": "expected",
+          "path": [
+            "usuarios.spec.js:130",
+            "Usuários endpoint @usuarios"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "d1dd7037d1128a55d720d0c4e0d687e8a69328cc-1af3a9749627ed34fbd25feb5ff6625a5e9d0f6f",
+          "title": "Cadastrar usuário com campo administrador numérico",
+          "projectName": "",
+          "location": {
+            "file": "usuarios.spec.js",
+            "line": 144,
             "column": 5
           },
           "duration": 12,
           "outcome": "expected",
           "path": [
-            "usuarios.spec.js:96",
+            "usuarios.spec.js:144",
+            "Usuários endpoint @usuarios"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "d1dd7037d1128a55d720d0c4e0d687e8a69328cc-58c959fa9487003b8640f89e843d4cba672c1a6f",
+          "title": "Cadastrar usuário com campo administrador booleano",
+          "projectName": "",
+          "location": {
+            "file": "usuarios.spec.js",
+            "line": 166,
+            "column": 5
+          },
+          "duration": 13,
+          "outcome": "expected",
+          "path": [
+            "usuarios.spec.js:166",
             "Usuários endpoint @usuarios"
           ],
           "ok": true
@@ -1152,13 +1526,13 @@
           "projectName": "",
           "location": {
             "file": "usuarios.spec.js",
-            "line": 113,
+            "line": 188,
             "column": 5
           },
-          "duration": 35,
+          "duration": 12,
           "outcome": "expected",
           "path": [
-            "usuarios.spec.js:113",
+            "usuarios.spec.js:188",
             "Usuários endpoint @usuarios"
           ],
           "ok": true
@@ -1169,13 +1543,13 @@
           "projectName": "",
           "location": {
             "file": "usuarios.spec.js",
-            "line": 123,
+            "line": 198,
             "column": 5
           },
-          "duration": 7,
+          "duration": 16,
           "outcome": "expected",
           "path": [
-            "usuarios.spec.js:123",
+            "usuarios.spec.js:198",
             "Usuários endpoint @usuarios"
           ],
           "ok": true
@@ -1186,13 +1560,13 @@
           "projectName": "",
           "location": {
             "file": "usuarios.spec.js",
-            "line": 132,
+            "line": 207,
             "column": 5
           },
           "duration": 20,
           "outcome": "expected",
           "path": [
-            "usuarios.spec.js:132",
+            "usuarios.spec.js:207",
             "Usuários endpoint @usuarios"
           ],
           "ok": true
@@ -1203,13 +1577,13 @@
           "projectName": "",
           "location": {
             "file": "usuarios.spec.js",
-            "line": 142,
+            "line": 217,
             "column": 5
           },
-          "duration": 6,
+          "duration": 8,
           "outcome": "expected",
           "path": [
-            "usuarios.spec.js:142",
+            "usuarios.spec.js:217",
             "Usuários endpoint @usuarios"
           ],
           "ok": true
@@ -1220,13 +1594,13 @@
           "projectName": "",
           "location": {
             "file": "usuarios.spec.js",
-            "line": 151,
+            "line": 226,
             "column": 5
           },
-          "duration": 41,
+          "duration": 44,
           "outcome": "expected",
           "path": [
-            "usuarios.spec.js:151",
+            "usuarios.spec.js:226",
             "Usuários endpoint @usuarios"
           ],
           "ok": true
@@ -1237,13 +1611,13 @@
           "projectName": "",
           "location": {
             "file": "usuarios.spec.js",
-            "line": 173,
+            "line": 248,
             "column": 5
           },
-          "duration": 13,
+          "duration": 23,
           "outcome": "expected",
           "path": [
-            "usuarios.spec.js:173",
+            "usuarios.spec.js:248",
             "Usuários endpoint @usuarios"
           ],
           "ok": true
@@ -1254,13 +1628,13 @@
           "projectName": "",
           "location": {
             "file": "usuarios.spec.js",
-            "line": 190,
+            "line": 265,
             "column": 5
           },
-          "duration": 14,
+          "duration": 11,
           "outcome": "expected",
           "path": [
-            "usuarios.spec.js:190",
+            "usuarios.spec.js:265",
             "Usuários endpoint @usuarios"
           ],
           "ok": true
@@ -1271,26 +1645,43 @@
           "projectName": "",
           "location": {
             "file": "usuarios.spec.js",
-            "line": 207,
+            "line": 282,
             "column": 5
           },
-          "duration": 16,
+          "duration": 20,
           "outcome": "expected",
           "path": [
-            "usuarios.spec.js:207",
+            "usuarios.spec.js:282",
+            "Usuários endpoint @usuarios"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "d1dd7037d1128a55d720d0c4e0d687e8a69328cc-374e8f0d82646072cf8adfe0e1f3147b434c7d39",
+          "title": "Editar usuário com campo invalido",
+          "projectName": "",
+          "location": {
+            "file": "usuarios.spec.js",
+            "line": 300,
+            "column": 5
+          },
+          "duration": 9,
+          "outcome": "expected",
+          "path": [
+            "usuarios.spec.js:300",
             "Usuários endpoint @usuarios"
           ],
           "ok": true
         }
       ],
       "stats": {
-        "total": 16,
-        "expected": 16,
+        "total": 22,
+        "expected": 22,
         "unexpected": 0,
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 302
+        "duration": 323
       }
     }
   ],
@@ -1298,12 +1689,12 @@
     ""
   ],
   "stats": {
-    "total": 69,
-    "expected": 69,
+    "total": 92,
+    "expected": 92,
     "unexpected": 0,
     "flaky": 0,
     "skipped": 0,
     "ok": true,
-    "duration": 2794
+    "duration": 2736
   }
 }

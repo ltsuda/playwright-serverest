@@ -8,29 +8,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 14,
+        "line": 16,
         "column": 5
       },
-      "duration": 33,
+      "duration": 30,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:14",
+        "produtos.spec.js:16",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 33,
-          "startTime": "2021-10-30T23:09:49.297Z",
+          "duration": 30,
+          "startTime": "2021-10-31T01:18:17.821Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.297Z",
-              "duration": 25,
+              "startTime": "2021-10-31T01:18:17.821Z",
+              "duration": 21,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.308Z",
+                  "startTime": "2021-10-31T01:18:17.831Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -42,7 +42,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.315Z",
+                  "startTime": "2021-10-31T01:18:17.835Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -54,7 +54,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.321Z",
+                  "startTime": "2021-10-31T01:18:17.841Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -68,44 +68,44 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.327Z",
+              "startTime": "2021-10-31T01:18:17.849Z",
               "duration": 0,
-              "snippet": "   15 |         const response = await request.get(`${baseURL}${productsPath}`)\n   16 |         expect(response.status()).toBe(200)\n      |                                   ^\n   17 |",
+              "snippet": "   17 |         const response = await request.get(`${baseURL}${productsPath}`)\n   18 |         expect(response.status()).toBe(200)\n      |                                   ^\n   19 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 16,
+                "line": 18,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.328Z",
-              "duration": 0,
-              "snippet": "   18 |         const responseData = await response.json()\n   19 |         expect(responseData).toHaveProperty(\"quantidade\")\n      |                              ^\n   20 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))",
+              "startTime": "2021-10-31T01:18:17.849Z",
+              "duration": 1,
+              "snippet": "   20 |         const responseData = await response.json()\n   21 |         expect(responseData).toHaveProperty(\"quantidade\")\n      |                              ^\n   22 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 19,
+                "line": 21,
                 "column": 30
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.328Z",
+              "startTime": "2021-10-31T01:18:17.850Z",
               "duration": 0,
-              "snippet": "   19 |         expect(responseData).toHaveProperty(\"quantidade\")\n   20 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))\n      |                              ^\n   21 |     })",
+              "snippet": "   21 |         expect(responseData).toHaveProperty(\"quantidade\")\n   22 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))\n      |                              ^\n   23 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 20,
+                "line": 22,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.329Z",
-              "duration": 0,
+              "startTime": "2021-10-31T01:18:17.850Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -122,29 +122,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 23,
+        "line": 25,
         "column": 5
       },
-      "duration": 39,
+      "duration": 27,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:23",
+        "produtos.spec.js:25",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 39,
-          "startTime": "2021-10-30T23:09:49.296Z",
+          "duration": 27,
+          "startTime": "2021-10-31T01:18:17.839Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.296Z",
-              "duration": 26,
+              "startTime": "2021-10-31T01:18:17.839Z",
+              "duration": 21,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.307Z",
+                  "startTime": "2021-10-31T01:18:17.845Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -156,7 +156,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.313Z",
+                  "startTime": "2021-10-31T01:18:17.856Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -168,7 +168,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.321Z",
+                  "startTime": "2021-10-31T01:18:17.860Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -182,44 +182,44 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.330Z",
+              "startTime": "2021-10-31T01:18:17.863Z",
               "duration": 0,
-              "snippet": "   24 |         const response = await request.get(`${baseURL}${productsPath}?_id=${produto._id}`)\n   25 |         expect(response.status()).toBe(200)\n      |                                   ^\n   26 |",
+              "snippet": "   26 |         const response = await request.get(`${baseURL}${productsPath}?_id=${produto._id}`)\n   27 |         expect(response.status()).toBe(200)\n      |                                   ^\n   28 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 25,
+                "line": 27,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.331Z",
+              "startTime": "2021-10-31T01:18:17.864Z",
               "duration": 0,
-              "snippet": "   27 |         const responseData = await response.json()\n   28 |         expect(responseData).toHaveProperty(\"quantidade\", 1)\n      |                              ^\n   29 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))",
+              "snippet": "   29 |         const responseData = await response.json()\n   30 |         expect(responseData).toHaveProperty(\"quantidade\", 1)\n      |                              ^\n   31 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 28,
+                "line": 30,
                 "column": 30
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.331Z",
-              "duration": 1,
-              "snippet": "   28 |         expect(responseData).toHaveProperty(\"quantidade\", 1)\n   29 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))\n      |                              ^\n   30 |     })",
+              "startTime": "2021-10-31T01:18:17.864Z",
+              "duration": 0,
+              "snippet": "   30 |         expect(responseData).toHaveProperty(\"quantidade\", 1)\n   31 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))\n      |                              ^\n   32 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 29,
+                "line": 31,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.332Z",
-              "duration": 3,
+              "startTime": "2021-10-31T01:18:17.864Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -236,30 +236,30 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 32,
+        "line": 34,
         "column": 5
       },
-      "duration": 29,
+      "duration": 61,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:32",
+        "produtos.spec.js:34",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 29,
-          "startTime": "2021-10-30T23:09:49.332Z",
+          "duration": 61,
+          "startTime": "2021-10-31T01:18:17.851Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.332Z",
-              "duration": 20,
+              "startTime": "2021-10-31T01:18:17.851Z",
+              "duration": 47,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.339Z",
-                  "duration": 0,
+                  "startTime": "2021-10-31T01:18:17.872Z",
+                  "duration": 5,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
@@ -270,7 +270,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.342Z",
+                  "startTime": "2021-10-31T01:18:17.880Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -282,7 +282,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.349Z",
+                  "startTime": "2021-10-31T01:18:17.896Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -296,44 +296,44 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.359Z",
+              "startTime": "2021-10-31T01:18:17.910Z",
               "duration": 0,
-              "snippet": "   33 |         const response = await request.get(`${baseURL}${productsPath}?nome=${produto.nome}`)\n   34 |         expect(response.status()).toBe(200)\n      |                                   ^\n   35 |",
+              "snippet": "   35 |         const response = await request.get(`${baseURL}${productsPath}?nome=${produto.nome}`)\n   36 |         expect(response.status()).toBe(200)\n      |                                   ^\n   37 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 34,
+                "line": 36,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.360Z",
+              "startTime": "2021-10-31T01:18:17.910Z",
               "duration": 0,
-              "snippet": "   36 |         const responseData = await response.json()\n   37 |         expect(responseData).toHaveProperty(\"quantidade\", 1)\n      |                              ^\n   38 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))",
+              "snippet": "   38 |         const responseData = await response.json()\n   39 |         expect(responseData).toHaveProperty(\"quantidade\", 1)\n      |                              ^\n   40 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 37,
+                "line": 39,
                 "column": 30
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.360Z",
-              "duration": 0,
-              "snippet": "   37 |         expect(responseData).toHaveProperty(\"quantidade\", 1)\n   38 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))\n      |                              ^\n   39 |     })",
+              "startTime": "2021-10-31T01:18:17.912Z",
+              "duration": 1,
+              "snippet": "   39 |         expect(responseData).toHaveProperty(\"quantidade\", 1)\n   40 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))\n      |                              ^\n   41 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 38,
+                "line": 40,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.360Z",
-              "duration": 1,
+              "startTime": "2021-10-31T01:18:17.913Z",
+              "duration": 0,
               "steps": []
             }
           ],
@@ -350,29 +350,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 41,
+        "line": 43,
         "column": 5
       },
-      "duration": 28,
+      "duration": 36,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:41",
+        "produtos.spec.js:43",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 28,
-          "startTime": "2021-10-30T23:09:49.335Z",
+          "duration": 36,
+          "startTime": "2021-10-31T01:18:17.870Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.335Z",
-              "duration": 22,
+              "startTime": "2021-10-31T01:18:17.871Z",
+              "duration": 25,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.346Z",
+                  "startTime": "2021-10-31T01:18:17.877Z",
                   "duration": 1,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -384,7 +384,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.351Z",
+                  "startTime": "2021-10-31T01:18:17.882Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -396,7 +396,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.356Z",
+                  "startTime": "2021-10-31T01:18:17.896Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -410,43 +410,43 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.362Z",
+              "startTime": "2021-10-31T01:18:17.906Z",
               "duration": 0,
-              "snippet": "   42 |         const response = await request.get(`${baseURL}${productsPath}?preco=${produto.preco}`)\n   43 |         expect(response.status()).toBe(200)\n      |                                   ^\n   44 |",
+              "snippet": "   44 |         const response = await request.get(`${baseURL}${productsPath}?preco=${produto.preco}`)\n   45 |         expect(response.status()).toBe(200)\n      |                                   ^\n   46 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 43,
+                "line": 45,
                 "column": 35
               }
             },
             {
               "title": "expect.toBeGreaterThanOrEqual",
-              "startTime": "2021-10-30T23:09:49.362Z",
+              "startTime": "2021-10-31T01:18:17.906Z",
               "duration": 0,
-              "snippet": "   45 |         const responseData = await response.json()\n   46 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n      |                                         ^\n   47 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))",
+              "snippet": "   47 |         const responseData = await response.json()\n   48 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n      |                                         ^\n   49 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 46,
+                "line": 48,
                 "column": 41
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.363Z",
+              "startTime": "2021-10-31T01:18:17.907Z",
               "duration": 0,
-              "snippet": "   46 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n   47 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))\n      |                              ^\n   48 |     })",
+              "snippet": "   48 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n   49 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))\n      |                              ^\n   50 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 47,
+                "line": 49,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.363Z",
+              "startTime": "2021-10-31T01:18:17.907Z",
               "duration": 0,
               "steps": []
             }
@@ -464,29 +464,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 50,
+        "line": 52,
         "column": 5
       },
-      "duration": 39,
+      "duration": 16,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:50",
+        "produtos.spec.js:52",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 39,
-          "startTime": "2021-10-30T23:09:49.364Z",
+          "duration": 16,
+          "startTime": "2021-10-31T01:18:17.908Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.364Z",
-              "duration": 29,
+              "startTime": "2021-10-31T01:18:17.908Z",
+              "duration": 11,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.372Z",
+                  "startTime": "2021-10-31T01:18:17.911Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -498,7 +498,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.377Z",
+                  "startTime": "2021-10-31T01:18:17.915Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -510,7 +510,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.393Z",
+                  "startTime": "2021-10-31T01:18:17.918Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -524,44 +524,44 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.397Z",
+              "startTime": "2021-10-31T01:18:17.922Z",
               "duration": 0,
-              "snippet": "   51 |         const response = await request.get(`${baseURL}${productsPath}?descricao=${produto.descricao}`)\n   52 |         expect(response.status()).toBe(200)\n      |                                   ^\n   53 |",
+              "snippet": "   53 |         const response = await request.get(`${baseURL}${productsPath}?descricao=${produto.descricao}`)\n   54 |         expect(response.status()).toBe(200)\n      |                                   ^\n   55 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 52,
+                "line": 54,
                 "column": 35
               }
             },
             {
               "title": "expect.toBeGreaterThanOrEqual",
-              "startTime": "2021-10-30T23:09:49.398Z",
-              "duration": 1,
-              "snippet": "   54 |         const responseData = await response.json()\n   55 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n      |                                         ^\n   56 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))",
+              "startTime": "2021-10-31T01:18:17.923Z",
+              "duration": 0,
+              "snippet": "   56 |         const responseData = await response.json()\n   57 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n      |                                         ^\n   58 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 55,
+                "line": 57,
                 "column": 41
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.401Z",
-              "duration": 1,
-              "snippet": "   55 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n   56 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))\n      |                              ^\n   57 |     })",
+              "startTime": "2021-10-31T01:18:17.923Z",
+              "duration": 0,
+              "snippet": "   57 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n   58 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))\n      |                              ^\n   59 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 56,
+                "line": 58,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.402Z",
-              "duration": 0,
+              "startTime": "2021-10-31T01:18:17.923Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -578,29 +578,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 59,
+        "line": 61,
         "column": 5
       },
-      "duration": 48,
+      "duration": 32,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:59",
+        "produtos.spec.js:61",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 48,
-          "startTime": "2021-10-30T23:09:49.365Z",
+          "duration": 32,
+          "startTime": "2021-10-31T01:18:17.913Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.366Z",
-              "duration": 34,
+              "startTime": "2021-10-31T01:18:17.914Z",
+              "duration": 22,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.374Z",
+                  "startTime": "2021-10-31T01:18:17.924Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -612,7 +612,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.380Z",
+                  "startTime": "2021-10-31T01:18:17.928Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -624,7 +624,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.400Z",
+                  "startTime": "2021-10-31T01:18:17.936Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -638,43 +638,601 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.412Z",
+              "startTime": "2021-10-31T01:18:17.943Z",
               "duration": 0,
-              "snippet": "   60 |         const response = await request.get(`${baseURL}${productsPath}?quantidade=${produto.quantidade}`)\n   61 |         expect(response.status()).toBe(200)\n      |                                   ^\n   62 |",
+              "snippet": "   62 |         const response = await request.get(`${baseURL}${productsPath}?quantidade=${produto.quantidade}`)\n   63 |         expect(response.status()).toBe(200)\n      |                                   ^\n   64 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 61,
+                "line": 63,
                 "column": 35
               }
             },
             {
               "title": "expect.toBeGreaterThanOrEqual",
-              "startTime": "2021-10-30T23:09:49.413Z",
-              "duration": 0,
-              "snippet": "   63 |         const responseData = await response.json()\n   64 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n      |                                         ^\n   65 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))",
+              "startTime": "2021-10-31T01:18:17.943Z",
+              "duration": 1,
+              "snippet": "   65 |         const responseData = await response.json()\n   66 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n      |                                         ^\n   67 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 64,
+                "line": 66,
                 "column": 41
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.413Z",
+              "startTime": "2021-10-31T01:18:17.944Z",
               "duration": 0,
-              "snippet": "   64 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n   65 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))\n      |                              ^\n   66 |     })",
+              "snippet": "   66 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n   67 |         expect(responseData).toHaveProperty(\"produtos\", expect.arrayContaining([produto]))\n      |                              ^\n   68 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 65,
+                "line": 67,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.413Z",
+              "startTime": "2021-10-31T01:18:17.944Z",
+              "duration": 2,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-1de05c2de94a6dc8cd21178d9a31df64b9ae82a9",
+      "title": "Listar produtos inexistentes",
+      "projectName": "",
+      "location": {
+        "file": "produtos.spec.js",
+        "line": 70,
+        "column": 5
+      },
+      "duration": 26,
+      "outcome": "expected",
+      "path": [
+        "produtos.spec.js:70",
+        "Produtos endpoint @produtos"
+      ],
+      "results": [
+        {
+          "duration": 26,
+          "startTime": "2021-10-31T01:18:17.926Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-31T01:18:17.926Z",
+              "duration": 21,
+              "steps": [
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:17.933Z",
+                  "duration": 0,
+                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 34,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:17.941Z",
+                  "duration": 0,
+                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 19,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:17.945Z",
+                  "duration": 0,
+                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 53,
+                    "column": 39
+                  }
+                }
+              ]
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-10-31T01:18:17.950Z",
+              "duration": 0,
+              "snippet": "   71 |         const response = await request.get(`${baseURL}${productsPath}?_id=inexistente`)\n   72 |         expect(response.status()).toBe(200)\n      |                                   ^\n   73 |",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 72,
+                "column": 35
+              }
+            },
+            {
+              "title": "expect.toEqual",
+              "startTime": "2021-10-31T01:18:17.951Z",
+              "duration": 0,
+              "snippet": "   74 |         const responseData = await response.json()\n   75 |         expect(responseData.quantidade).toEqual(0)\n      |                                         ^\n   76 |         expect(responseData).toHaveProperty(\"produtos\", [])",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 75,
+                "column": 41
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:17.951Z",
+              "duration": 0,
+              "snippet": "   75 |         expect(responseData.quantidade).toEqual(0)\n   76 |         expect(responseData).toHaveProperty(\"produtos\", [])\n      |                              ^\n   77 |     })",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 76,
+                "column": 30
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-31T01:18:17.951Z",
+              "duration": 1,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-2aa4656b1f161325260019351351be01cd2620a5",
+      "title": "Listar produtos por campo invalido",
+      "projectName": "",
+      "location": {
+        "file": "produtos.spec.js",
+        "line": 79,
+        "column": 5
+      },
+      "duration": 33,
+      "outcome": "expected",
+      "path": [
+        "produtos.spec.js:79",
+        "Produtos endpoint @produtos"
+      ],
+      "results": [
+        {
+          "duration": 33,
+          "startTime": "2021-10-31T01:18:17.948Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-31T01:18:17.948Z",
+              "duration": 28,
+              "steps": [
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:17.955Z",
+                  "duration": 0,
+                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 34,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:17.970Z",
+                  "duration": 1,
+                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 19,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:17.976Z",
+                  "duration": 0,
+                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 53,
+                    "column": 39
+                  }
+                }
+              ]
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-10-31T01:18:17.980Z",
+              "duration": 0,
+              "snippet": "   80 |         const response = await request.get(`${baseURL}${productsPath}?invalido=invalido`)\n   81 |         expect(response.status()).toBe(400)\n      |                                   ^\n   82 |",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 81,
+                "column": 35
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:17.981Z",
+              "duration": 0,
+              "snippet": "   83 |         const responseData = await response.json()\n   84 |         expect(responseData).toHaveProperty(\"invalido\", \"invalido não é permitido\")\n      |                              ^\n   85 |     })",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 84,
+                "column": 30
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-31T01:18:17.981Z",
+              "duration": 0,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-ff8690058037bde729bd94cd070a8e634b4f25be",
+      "title": "Listar produtos por preco e quantidade como texto",
+      "projectName": "",
+      "location": {
+        "file": "produtos.spec.js",
+        "line": 87,
+        "column": 5
+      },
+      "duration": 30,
+      "outcome": "expected",
+      "path": [
+        "produtos.spec.js:87",
+        "Produtos endpoint @produtos"
+      ],
+      "results": [
+        {
+          "duration": 30,
+          "startTime": "2021-10-31T01:18:17.952Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-31T01:18:17.952Z",
+              "duration": 26,
+              "steps": [
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:17.957Z",
+                  "duration": 0,
+                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 34,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:17.971Z",
+                  "duration": 0,
+                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 19,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:17.978Z",
+                  "duration": 0,
+                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 53,
+                    "column": 39
+                  }
+                }
+              ]
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-10-31T01:18:17.982Z",
+              "duration": 0,
+              "snippet": "   88 |         const response = await request.get(`${baseURL}${productsPath}?preco=a&quantidade=b`)\n   89 |         expect(response.status()).toBe(400)\n      |                                   ^\n   90 |",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 89,
+                "column": 35
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:17.982Z",
+              "duration": 0,
+              "snippet": "   91 |         const responseData = await response.json()\n   92 |         expect(responseData).toHaveProperty(\"preco\", \"preco deve ser um número\")\n      |                              ^\n   93 |         expect(responseData).toHaveProperty(\"quantidade\", \"quantidade deve ser um número\")",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 92,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:17.983Z",
+              "duration": 0,
+              "snippet": "   92 |         expect(responseData).toHaveProperty(\"preco\", \"preco deve ser um número\")\n   93 |         expect(responseData).toHaveProperty(\"quantidade\", \"quantidade deve ser um número\")\n      |                              ^\n   94 |     })",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 93,
+                "column": 30
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-31T01:18:17.983Z",
+              "duration": 0,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-a7b9056f5e7c6373fb33ae0158c93ebdccfc4e84",
+      "title": "Listar produtos por preco e quantidade decimais",
+      "projectName": "",
+      "location": {
+        "file": "produtos.spec.js",
+        "line": 96,
+        "column": 5
+      },
+      "duration": 34,
+      "outcome": "expected",
+      "path": [
+        "produtos.spec.js:96",
+        "Produtos endpoint @produtos"
+      ],
+      "results": [
+        {
+          "duration": 34,
+          "startTime": "2021-10-31T01:18:17.983Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-31T01:18:17.983Z",
+              "duration": 29,
+              "steps": [
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:17.991Z",
+                  "duration": 0,
+                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 34,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.002Z",
+                  "duration": 0,
+                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 19,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.011Z",
+                  "duration": 0,
+                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 53,
+                    "column": 39
+                  }
+                }
+              ]
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-10-31T01:18:18.015Z",
+              "duration": 0,
+              "snippet": "   97 |         const response = await request.get(`${baseURL}${productsPath}?preco=0.1&quantidade=0.2`)\n   98 |         expect(response.status()).toBe(400)\n      |                                   ^\n   99 |",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 98,
+                "column": 35
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.016Z",
+              "duration": 0,
+              "snippet": "  100 |         const responseData = await response.json()\n  101 |         expect(responseData).toHaveProperty(\"preco\", \"preco deve ser um inteiro\")\n      |                              ^\n  102 |         expect(responseData).toHaveProperty(\"quantidade\", \"quantidade deve ser um inteiro\")",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 101,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.016Z",
+              "duration": 0,
+              "snippet": "  101 |         expect(responseData).toHaveProperty(\"preco\", \"preco deve ser um inteiro\")\n  102 |         expect(responseData).toHaveProperty(\"quantidade\", \"quantidade deve ser um inteiro\")\n      |                              ^\n  103 |     })",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 102,
+                "column": 30
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-31T01:18:18.016Z",
+              "duration": 0,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-9be82b7259553177eb515b7a926a39e5f8535417",
+      "title": "Listar produtos por preco e quantidade negativos",
+      "projectName": "",
+      "location": {
+        "file": "produtos.spec.js",
+        "line": 105,
+        "column": 5
+      },
+      "duration": 36,
+      "outcome": "expected",
+      "path": [
+        "produtos.spec.js:105",
+        "Produtos endpoint @produtos"
+      ],
+      "results": [
+        {
+          "duration": 36,
+          "startTime": "2021-10-31T01:18:17.983Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-31T01:18:17.983Z",
+              "duration": 28,
+              "steps": [
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:17.990Z",
+                  "duration": 0,
+                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 34,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:17.998Z",
+                  "duration": 0,
+                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 19,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.010Z",
+                  "duration": 1,
+                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 53,
+                    "column": 39
+                  }
+                }
+              ]
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-10-31T01:18:18.018Z",
+              "duration": 0,
+              "snippet": "  106 |         const response = await request.get(`${baseURL}${productsPath}?preco=-1&quantidade=-2`)\n  107 |         expect(response.status()).toBe(400)\n      |                                   ^\n  108 |",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 107,
+                "column": 35
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.018Z",
+              "duration": 1,
+              "snippet": "  109 |         const responseData = await response.json()\n  110 |         expect(responseData).toHaveProperty(\"preco\", \"preco deve ser um número positivo\")\n      |                              ^\n  111 |         expect(responseData).toHaveProperty(\"quantidade\", \"quantidade deve ser maior ou igual a 0\")",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 110,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.019Z",
+              "duration": 0,
+              "snippet": "  110 |         expect(responseData).toHaveProperty(\"preco\", \"preco deve ser um número positivo\")\n  111 |         expect(responseData).toHaveProperty(\"quantidade\", \"quantidade deve ser maior ou igual a 0\")\n      |                              ^\n  112 |     })",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 111,
+                "column": 30
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-31T01:18:18.019Z",
               "duration": 1,
               "steps": []
             }
@@ -692,29 +1250,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 68,
+        "line": 114,
         "column": 5
       },
-      "duration": 59,
+      "duration": 23,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:68",
+        "produtos.spec.js:114",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 59,
-          "startTime": "2021-10-30T23:09:49.403Z",
+          "duration": 23,
+          "startTime": "2021-10-31T01:18:18.017Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.403Z",
-              "duration": 33,
+              "startTime": "2021-10-31T01:18:18.017Z",
+              "duration": 14,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.416Z",
+                  "startTime": "2021-10-31T01:18:18.021Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -726,7 +1284,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.427Z",
+                  "startTime": "2021-10-31T01:18:18.025Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -738,7 +1296,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.435Z",
+                  "startTime": "2021-10-31T01:18:18.029Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -752,68 +1310,44 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.442Z",
-              "duration": 1,
-              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 34,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.448Z",
+              "startTime": "2021-10-31T01:18:18.038Z",
               "duration": 0,
-              "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 19,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.455Z",
-              "duration": 0,
-              "snippet": "   80 |\n   81 |         expect(response.status()).toBe(201)\n      |                                   ^\n   82 |",
+              "snippet": "  124 |\n  125 |         expect(response.status()).toBe(201)\n      |                                   ^\n  126 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 81,
+                "line": 125,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.456Z",
+              "startTime": "2021-10-31T01:18:18.039Z",
               "duration": 0,
-              "snippet": "   83 |         const responseData = await response.json()\n   84 |         expect(responseData).toHaveProperty(\"message\", \"Cadastro realizado com sucesso\")\n      |                              ^\n   85 |         expect(responseData).toHaveProperty(\"_id\", responseData._id)",
+              "snippet": "  127 |         const responseData = await response.json()\n  128 |         expect(responseData).toHaveProperty(\"message\", \"Cadastro realizado com sucesso\")\n      |                              ^\n  129 |         expect(responseData).toHaveProperty(\"_id\", responseData._id)",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 84,
+                "line": 128,
                 "column": 30
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.457Z",
+              "startTime": "2021-10-31T01:18:18.039Z",
               "duration": 0,
-              "snippet": "   84 |         expect(responseData).toHaveProperty(\"message\", \"Cadastro realizado com sucesso\")\n   85 |         expect(responseData).toHaveProperty(\"_id\", responseData._id)\n      |                              ^\n   86 |     })",
+              "snippet": "  128 |         expect(responseData).toHaveProperty(\"message\", \"Cadastro realizado com sucesso\")\n  129 |         expect(responseData).toHaveProperty(\"_id\", responseData._id)\n      |                              ^\n  130 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 85,
+                "line": 129,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.457Z",
-              "duration": 4,
+              "startTime": "2021-10-31T01:18:18.039Z",
+              "duration": 0,
               "steps": []
             }
           ],
@@ -830,29 +1364,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 88,
+        "line": 132,
         "column": 5
       },
-      "duration": 55,
+      "duration": 27,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:88",
+        "produtos.spec.js:132",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 55,
-          "startTime": "2021-10-30T23:09:49.418Z",
+          "duration": 27,
+          "startTime": "2021-10-31T01:18:18.020Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.418Z",
-              "duration": 35,
+              "startTime": "2021-10-31T01:18:18.020Z",
+              "duration": 23,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.433Z",
+                  "startTime": "2021-10-31T01:18:18.027Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -864,7 +1398,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.440Z",
+                  "startTime": "2021-10-31T01:18:18.033Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -876,7 +1410,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.452Z",
+                  "startTime": "2021-10-31T01:18:18.042Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -890,55 +1424,31 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.459Z",
+              "startTime": "2021-10-31T01:18:18.047Z",
               "duration": 0,
-              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 34,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.465Z",
-              "duration": 0,
-              "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 19,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.471Z",
-              "duration": 0,
-              "snippet": "  106 |\n  107 |         expect(response.status()).toBe(400)\n      |                                   ^\n  108 |",
+              "snippet": "  142 |\n  143 |         expect(response.status()).toBe(400)\n      |                                   ^\n  144 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 107,
+                "line": 143,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.473Z",
+              "startTime": "2021-10-31T01:18:18.047Z",
               "duration": 0,
-              "snippet": "  109 |         const responseData = await response.json()\n  110 |         expect(responseData).toHaveProperty(\"message\", \"Já existe produto com esse nome\")\n      |                              ^\n  111 |     })",
+              "snippet": "  145 |         const responseData = await response.json()\n  146 |         expect(responseData).toHaveProperty(\"message\", \"Já existe produto com esse nome\")\n      |                              ^\n  147 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 110,
+                "line": 146,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.473Z",
+              "startTime": "2021-10-31T01:18:18.047Z",
               "duration": 1,
               "steps": []
             }
@@ -956,29 +1466,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 113,
+        "line": 149,
         "column": 5
       },
-      "duration": 51,
+      "duration": 34,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:113",
+        "produtos.spec.js:149",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 51,
-          "startTime": "2021-10-30T23:09:49.462Z",
+          "duration": 34,
+          "startTime": "2021-10-31T01:18:18.040Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.462Z",
-              "duration": 44,
+              "startTime": "2021-10-31T01:18:18.040Z",
+              "duration": 18,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.472Z",
+                  "startTime": "2021-10-31T01:18:18.048Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -990,7 +1500,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.500Z",
+                  "startTime": "2021-10-31T01:18:18.051Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -1002,8 +1512,8 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.505Z",
-                  "duration": 1,
+                  "startTime": "2021-10-31T01:18:18.057Z",
+                  "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
@@ -1016,31 +1526,31 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.511Z",
+              "startTime": "2021-10-31T01:18:18.072Z",
               "duration": 0,
-              "snippet": "  122 |\n  123 |         expect(response.status()).toBe(401)\n      |                                   ^\n  124 |",
+              "snippet": "  158 |\n  159 |         expect(response.status()).toBe(401)\n      |                                   ^\n  160 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 123,
+                "line": 159,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.512Z",
+              "startTime": "2021-10-31T01:18:18.073Z",
               "duration": 0,
-              "snippet": "  125 |         const responseData = await response.json()\n  126 |         expect(responseData).toHaveProperty(\n      |                              ^\n  127 |             \"message\",",
+              "snippet": "  161 |         const responseData = await response.json()\n  162 |         expect(responseData).toHaveProperty(\n      |                              ^\n  163 |             \"message\",",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 126,
+                "line": 162,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.512Z",
+              "startTime": "2021-10-31T01:18:18.073Z",
               "duration": 1,
               "steps": []
             }
@@ -1058,29 +1568,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 132,
+        "line": 168,
         "column": 5
       },
-      "duration": 83,
+      "duration": 98,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:132",
+        "produtos.spec.js:168",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 83,
-          "startTime": "2021-10-30T23:09:49.474Z",
+          "duration": 98,
+          "startTime": "2021-10-31T01:18:18.050Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.475Z",
-              "duration": 44,
+              "startTime": "2021-10-31T01:18:18.050Z",
+              "duration": 60,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.503Z",
+                  "startTime": "2021-10-31T01:18:18.056Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -1092,7 +1602,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.507Z",
+                  "startTime": "2021-10-31T01:18:18.071Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -1104,7 +1614,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.518Z",
+                  "startTime": "2021-10-31T01:18:18.109Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -1118,7 +1628,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.529Z",
+              "startTime": "2021-10-31T01:18:18.134Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -1130,7 +1640,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.545Z",
+              "startTime": "2021-10-31T01:18:18.143Z",
               "duration": 0,
               "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
               "steps": [],
@@ -1142,32 +1652,386 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.556Z",
+              "startTime": "2021-10-31T01:18:18.147Z",
               "duration": 0,
-              "snippet": "  150 |\n  151 |         expect(response.status()).toBe(403)\n      |                                   ^\n  152 |",
+              "snippet": "  186 |\n  187 |         expect(response.status()).toBe(403)\n      |                                   ^\n  188 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 151,
+                "line": 187,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.557Z",
+              "startTime": "2021-10-31T01:18:18.147Z",
               "duration": 0,
-              "snippet": "  153 |         const responseData = await response.json()\n  154 |         expect(responseData).toHaveProperty(\"message\", \"Rota exclusiva para administradores\")\n      |                              ^\n  155 |     })",
+              "snippet": "  189 |         const responseData = await response.json()\n  190 |         expect(responseData).toHaveProperty(\"message\", \"Rota exclusiva para administradores\")\n      |                              ^\n  191 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 154,
+                "line": 190,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.557Z",
+              "startTime": "2021-10-31T01:18:18.147Z",
+              "duration": 1,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-12b5932d46b3af07d51f69398aa7dfe46148f446",
+      "title": "Cadastrar produto sem campos obrigatórios",
+      "projectName": "",
+      "location": {
+        "file": "produtos.spec.js",
+        "line": 193,
+        "column": 5
+      },
+      "duration": 72,
+      "outcome": "expected",
+      "path": [
+        "produtos.spec.js:193",
+        "Produtos endpoint @produtos"
+      ],
+      "results": [
+        {
+          "duration": 72,
+          "startTime": "2021-10-31T01:18:18.074Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-31T01:18:18.074Z",
+              "duration": 62,
+              "steps": [
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.100Z",
+                  "duration": 0,
+                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 34,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.111Z",
+                  "duration": 0,
+                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 19,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.136Z",
+                  "duration": 0,
+                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 53,
+                    "column": 39
+                  }
+                }
+              ]
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-10-31T01:18:18.144Z",
               "duration": 0,
+              "snippet": "  198 |\n  199 |         expect(response.status()).toBe(400)\n      |                                   ^\n  200 |",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 199,
+                "column": 35
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.145Z",
+              "duration": 0,
+              "snippet": "  201 |         const responseData = await response.json()\n  202 |         expect(responseData).toHaveProperty(\"nome\", \"nome é obrigatório\")\n      |                              ^\n  203 |         expect(responseData).toHaveProperty(\"preco\", \"preco é obrigatório\")",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 202,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.145Z",
+              "duration": 0,
+              "snippet": "  202 |         expect(responseData).toHaveProperty(\"nome\", \"nome é obrigatório\")\n  203 |         expect(responseData).toHaveProperty(\"preco\", \"preco é obrigatório\")\n      |                              ^\n  204 |         expect(responseData).toHaveProperty(\"descricao\", \"descricao é obrigatório\")",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 203,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.146Z",
+              "duration": 0,
+              "snippet": "  203 |         expect(responseData).toHaveProperty(\"preco\", \"preco é obrigatório\")\n  204 |         expect(responseData).toHaveProperty(\"descricao\", \"descricao é obrigatório\")\n      |                              ^\n  205 |         expect(responseData).toHaveProperty(\"quantidade\", \"quantidade é obrigatório\")",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 204,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.146Z",
+              "duration": 0,
+              "snippet": "  204 |         expect(responseData).toHaveProperty(\"descricao\", \"descricao é obrigatório\")\n  205 |         expect(responseData).toHaveProperty(\"quantidade\", \"quantidade é obrigatório\")\n      |                              ^\n  206 |     })",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 205,
+                "column": 30
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-31T01:18:18.146Z",
+              "duration": 1,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-308be2a1d3bd02ab2cb3404cbbb881a6445c067e",
+      "title": "Cadastrar produto com campo inexistente",
+      "projectName": "",
+      "location": {
+        "file": "produtos.spec.js",
+        "line": 208,
+        "column": 5
+      },
+      "duration": 26,
+      "outcome": "expected",
+      "path": [
+        "produtos.spec.js:208",
+        "Produtos endpoint @produtos"
+      ],
+      "results": [
+        {
+          "duration": 26,
+          "startTime": "2021-10-31T01:18:18.148Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-31T01:18:18.148Z",
+              "duration": 20,
+              "steps": [
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.153Z",
+                  "duration": 0,
+                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 34,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.160Z",
+                  "duration": 0,
+                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 19,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.167Z",
+                  "duration": 0,
+                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 53,
+                    "column": 39
+                  }
+                }
+              ]
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-10-31T01:18:18.172Z",
+              "duration": 0,
+              "snippet": "  219 |\n  220 |         expect(response.status()).toBe(400)\n      |                                   ^\n  221 |",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 220,
+                "column": 35
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.172Z",
+              "duration": 0,
+              "snippet": "  222 |         const responseData = await response.json()\n  223 |         expect(responseData).toHaveProperty(\"inexistente\", \"inexistente não é permitido\")\n      |                              ^\n  224 |     })",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 223,
+                "column": 30
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-31T01:18:18.172Z",
+              "duration": 1,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-c3981172188920deebc20f02091a7c2a5a825b27",
+      "title": "Cadastrar produto com preco e quantidade negativos",
+      "projectName": "",
+      "location": {
+        "file": "produtos.spec.js",
+        "line": 226,
+        "column": 5
+      },
+      "duration": 34,
+      "outcome": "expected",
+      "path": [
+        "produtos.spec.js:226",
+        "Produtos endpoint @produtos"
+      ],
+      "results": [
+        {
+          "duration": 34,
+          "startTime": "2021-10-31T01:18:18.148Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-31T01:18:18.148Z",
+              "duration": 22,
+              "steps": [
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.154Z",
+                  "duration": 1,
+                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 34,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.159Z",
+                  "duration": 0,
+                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 19,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.169Z",
+                  "duration": 0,
+                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 53,
+                    "column": 39
+                  }
+                }
+              ]
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-10-31T01:18:18.179Z",
+              "duration": 0,
+              "snippet": "  236 |\n  237 |         expect(response.status()).toBe(400)\n      |                                   ^\n  238 |",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 237,
+                "column": 35
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.180Z",
+              "duration": 0,
+              "snippet": "  239 |         const responseData = await response.json()\n  240 |         expect(responseData).toHaveProperty(\"preco\", \"preco deve ser um número positivo\")\n      |                              ^\n  241 |         expect(responseData).toHaveProperty(\"quantidade\", \"quantidade deve ser maior ou igual a 0\")",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 240,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.180Z",
+              "duration": 0,
+              "snippet": "  240 |         expect(responseData).toHaveProperty(\"preco\", \"preco deve ser um número positivo\")\n  241 |         expect(responseData).toHaveProperty(\"quantidade\", \"quantidade deve ser maior ou igual a 0\")\n      |                              ^\n  242 |     })",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 241,
+                "column": 30
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-31T01:18:18.180Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -1184,29 +2048,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 157,
+        "line": 244,
         "column": 5
       },
-      "duration": 65,
+      "duration": 31,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:157",
+        "produtos.spec.js:244",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 65,
-          "startTime": "2021-10-30T23:09:49.513Z",
+          "duration": 31,
+          "startTime": "2021-10-31T01:18:18.174Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.513Z",
-              "duration": 58,
+              "startTime": "2021-10-31T01:18:18.174Z",
+              "duration": 27,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.554Z",
+                  "startTime": "2021-10-31T01:18:18.186Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -1218,8 +2082,8 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.562Z",
-                  "duration": 1,
+                  "startTime": "2021-10-31T01:18:18.191Z",
+                  "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
                   "location": {
@@ -1230,7 +2094,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.571Z",
+                  "startTime": "2021-10-31T01:18:18.200Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -1244,32 +2108,32 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.576Z",
-              "duration": 1,
-              "snippet": "  158 |         const response = await request.get(`${baseURL}${productsPath}/${produto._id}`)\n  159 |         expect(response.status()).toBe(200)\n      |                                   ^\n  160 |",
+              "startTime": "2021-10-31T01:18:18.205Z",
+              "duration": 0,
+              "snippet": "  245 |         const response = await request.get(`${baseURL}${productsPath}/${produto._id}`)\n  246 |         expect(response.status()).toBe(200)\n      |                                   ^\n  247 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 159,
+                "line": 246,
                 "column": 35
               }
             },
             {
               "title": "expect.toEqual",
-              "startTime": "2021-10-30T23:09:49.578Z",
+              "startTime": "2021-10-31T01:18:18.206Z",
               "duration": 0,
-              "snippet": "  161 |         const responseData = await response.json()\n  162 |         expect(responseData).toEqual(produto)\n      |                              ^\n  163 |     })",
+              "snippet": "  248 |         const responseData = await response.json()\n  249 |         expect(responseData).toEqual(produto)\n      |                              ^\n  250 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 162,
+                "line": 249,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.578Z",
-              "duration": 1,
+              "startTime": "2021-10-31T01:18:18.206Z",
+              "duration": 0,
               "steps": []
             }
           ],
@@ -1286,29 +2150,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 165,
+        "line": 252,
         "column": 5
       },
-      "duration": 25,
+      "duration": 21,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:165",
+        "produtos.spec.js:252",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 25,
-          "startTime": "2021-10-30T23:09:49.558Z",
+          "duration": 21,
+          "startTime": "2021-10-31T01:18:18.182Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.558Z",
-              "duration": 20,
+              "startTime": "2021-10-31T01:18:18.182Z",
+              "duration": 16,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.563Z",
+                  "startTime": "2021-10-31T01:18:18.187Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -1320,7 +2184,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.569Z",
+                  "startTime": "2021-10-31T01:18:18.192Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -1332,7 +2196,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.578Z",
+                  "startTime": "2021-10-31T01:18:18.197Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -1346,32 +2210,32 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.581Z",
+              "startTime": "2021-10-31T01:18:18.201Z",
               "duration": 0,
-              "snippet": "  166 |         const response = await request.get(`${baseURL}${productsPath}/1`)\n  167 |         expect(response.status()).toBe(400)\n      |                                   ^\n  168 |",
+              "snippet": "  253 |         const response = await request.get(`${baseURL}${productsPath}/1`)\n  254 |         expect(response.status()).toBe(400)\n      |                                   ^\n  255 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 167,
+                "line": 254,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.582Z",
+              "startTime": "2021-10-31T01:18:18.202Z",
               "duration": 0,
-              "snippet": "  169 |         const responseData = await response.json()\n  170 |         expect(responseData).toHaveProperty(\"message\", \"Produto não encontrado\")\n      |                              ^\n  171 |     })",
+              "snippet": "  256 |         const responseData = await response.json()\n  257 |         expect(responseData).toHaveProperty(\"message\", \"Produto não encontrado\")\n      |                              ^\n  258 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 170,
+                "line": 257,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.582Z",
-              "duration": 1,
+              "startTime": "2021-10-31T01:18:18.202Z",
+              "duration": 0,
               "steps": []
             }
           ],
@@ -1388,29 +2252,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 173,
+        "line": 260,
         "column": 5
       },
-      "duration": 51,
+      "duration": 38,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:173",
+        "produtos.spec.js:260",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 51,
-          "startTime": "2021-10-30T23:09:49.580Z",
+          "duration": 38,
+          "startTime": "2021-10-31T01:18:18.203Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.580Z",
-              "duration": 30,
+              "startTime": "2021-10-31T01:18:18.203Z",
+              "duration": 24,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.588Z",
+                  "startTime": "2021-10-31T01:18:18.211Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -1422,7 +2286,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.594Z",
+                  "startTime": "2021-10-31T01:18:18.216Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -1434,7 +2298,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.609Z",
+                  "startTime": "2021-10-31T01:18:18.227Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -1448,56 +2312,32 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.614Z",
-              "duration": 1,
-              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 34,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.623Z",
+              "startTime": "2021-10-31T01:18:18.233Z",
               "duration": 0,
-              "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 19,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.629Z",
-              "duration": 0,
-              "snippet": "  178 |         })\n  179 |         expect(response.status()).toBe(200)\n      |                                   ^\n  180 |",
+              "snippet": "  263 |         })\n  264 |         expect(response.status()).toBe(200)\n      |                                   ^\n  265 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 179,
+                "line": 264,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.629Z",
-              "duration": 0,
-              "snippet": "  181 |         const responseData = await response.json()\n  182 |         expect(responseData).toHaveProperty(\"message\", \"Registro excluído com sucesso\")\n      |                              ^\n  183 |     })",
+              "startTime": "2021-10-31T01:18:18.234Z",
+              "duration": 4,
+              "snippet": "  266 |         const responseData = await response.json()\n  267 |         expect(responseData).toHaveProperty(\"message\", \"Registro excluído com sucesso\")\n      |                              ^\n  268 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 182,
+                "line": 267,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.630Z",
-              "duration": 0,
+              "startTime": "2021-10-31T01:18:18.238Z",
+              "duration": 3,
               "steps": []
             }
           ],
@@ -1514,29 +2354,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 185,
+        "line": 270,
         "column": 5
       },
-      "duration": 43,
+      "duration": 27,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:185",
+        "produtos.spec.js:270",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 43,
-          "startTime": "2021-10-30T23:09:49.583Z",
+          "duration": 27,
+          "startTime": "2021-10-31T01:18:18.207Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.583Z",
-              "duration": 29,
+              "startTime": "2021-10-31T01:18:18.208Z",
+              "duration": 20,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.589Z",
+                  "startTime": "2021-10-31T01:18:18.212Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -1548,8 +2388,8 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.599Z",
-                  "duration": 0,
+                  "startTime": "2021-10-31T01:18:18.218Z",
+                  "duration": 1,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
                   "location": {
@@ -1560,7 +2400,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.611Z",
+                  "startTime": "2021-10-31T01:18:18.228Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -1574,56 +2414,32 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.617Z",
+              "startTime": "2021-10-31T01:18:18.234Z",
               "duration": 0,
-              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 34,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.621Z",
-              "duration": 0,
-              "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 19,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.625Z",
-              "duration": 0,
-              "snippet": "  190 |         })\n  191 |         expect(response.status()).toBe(200)\n      |                                   ^\n  192 |",
+              "snippet": "  273 |         })\n  274 |         expect(response.status()).toBe(200)\n      |                                   ^\n  275 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 191,
+                "line": 274,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.626Z",
+              "startTime": "2021-10-31T01:18:18.234Z",
               "duration": 0,
-              "snippet": "  193 |         const responseData = await response.json()\n  194 |         expect(responseData).toHaveProperty(\"message\", \"Nenhum registro excluído\")\n      |                              ^\n  195 |     })",
+              "snippet": "  276 |         const responseData = await response.json()\n  277 |         expect(responseData).toHaveProperty(\"message\", \"Nenhum registro excluído\")\n      |                              ^\n  278 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 194,
+                "line": 277,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.626Z",
-              "duration": 0,
+              "startTime": "2021-10-31T01:18:18.234Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -1640,29 +2456,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 197,
+        "line": 280,
         "column": 5
       },
-      "duration": 68,
+      "duration": 29,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:197",
+        "produtos.spec.js:280",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 68,
-          "startTime": "2021-10-30T23:09:49.627Z",
+          "duration": 29,
+          "startTime": "2021-10-31T01:18:18.238Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.627Z",
-              "duration": 26,
+              "startTime": "2021-10-31T01:18:18.238Z",
+              "duration": 16,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.642Z",
+                  "startTime": "2021-10-31T01:18:18.244Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -1674,7 +2490,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.645Z",
+                  "startTime": "2021-10-31T01:18:18.247Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -1686,7 +2502,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.653Z",
+                  "startTime": "2021-10-31T01:18:18.254Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -1700,31 +2516,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.660Z",
-              "duration": 0,
-              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 34,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.678Z",
-              "duration": 0,
-              "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 19,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.686Z",
+              "startTime": "2021-10-31T01:18:18.261Z",
               "duration": 0,
               "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
               "steps": [],
@@ -1736,43 +2528,43 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.692Z",
+              "startTime": "2021-10-31T01:18:18.266Z",
               "duration": 0,
-              "snippet": "  210 |         })\n  211 |         expect(response.status()).toBe(400)\n      |                                   ^\n  212 |",
+              "snippet": "  289 |         })\n  290 |         expect(response.status()).toBe(400)\n      |                                   ^\n  291 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 211,
+                "line": 290,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.693Z",
+              "startTime": "2021-10-31T01:18:18.267Z",
               "duration": 0,
-              "snippet": "  213 |         const responseData = await response.json()\n  214 |         expect(responseData).toHaveProperty(\"message\", \"Não é permitido excluir produto que faz parte de carrinho\")\n      |                              ^\n  215 |         expect(responseData).toHaveProperty(\"idCarrinhos\", expect.arrayContaining([carrinho._id]))",
+              "snippet": "  292 |         const responseData = await response.json()\n  293 |         expect(responseData).toHaveProperty(\"message\", \"Não é permitido excluir produto que faz parte de carrinho\")\n      |                              ^\n  294 |         expect(responseData).toHaveProperty(\"idCarrinhos\", expect.arrayContaining([carrinho._id]))",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 214,
+                "line": 293,
                 "column": 30
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.694Z",
+              "startTime": "2021-10-31T01:18:18.267Z",
               "duration": 0,
-              "snippet": "  214 |         expect(responseData).toHaveProperty(\"message\", \"Não é permitido excluir produto que faz parte de carrinho\")\n  215 |         expect(responseData).toHaveProperty(\"idCarrinhos\", expect.arrayContaining([carrinho._id]))\n      |                              ^\n  216 |     })",
+              "snippet": "  293 |         expect(responseData).toHaveProperty(\"message\", \"Não é permitido excluir produto que faz parte de carrinho\")\n  294 |         expect(responseData).toHaveProperty(\"idCarrinhos\", expect.arrayContaining([carrinho._id]))\n      |                              ^\n  295 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 215,
+                "line": 294,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.694Z",
+              "startTime": "2021-10-31T01:18:18.267Z",
               "duration": 1,
               "steps": []
             }
@@ -1790,29 +2582,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 218,
+        "line": 297,
         "column": 5
       },
-      "duration": 45,
+      "duration": 24,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:218",
+        "produtos.spec.js:297",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 45,
-          "startTime": "2021-10-30T23:09:49.631Z",
+          "duration": 24,
+          "startTime": "2021-10-31T01:18:18.241Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.631Z",
-              "duration": 32,
+              "startTime": "2021-10-31T01:18:18.241Z",
+              "duration": 19,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.644Z",
+                  "startTime": "2021-10-31T01:18:18.246Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -1824,7 +2616,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.651Z",
+                  "startTime": "2021-10-31T01:18:18.252Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -1836,7 +2628,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.662Z",
+                  "startTime": "2021-10-31T01:18:18.259Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -1850,31 +2642,31 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.668Z",
+              "startTime": "2021-10-31T01:18:18.264Z",
               "duration": 0,
-              "snippet": "  221 |         })\n  222 |         expect(response.status()).toBe(401)\n      |                                   ^\n  223 |",
+              "snippet": "  300 |         })\n  301 |         expect(response.status()).toBe(401)\n      |                                   ^\n  302 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 222,
+                "line": 301,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.675Z",
+              "startTime": "2021-10-31T01:18:18.265Z",
               "duration": 0,
-              "snippet": "  224 |         const responseData = await response.json()\n  225 |         expect(responseData).toHaveProperty(\n      |                              ^\n  226 |             \"message\",",
+              "snippet": "  303 |         const responseData = await response.json()\n  304 |         expect(responseData).toHaveProperty(\n      |                              ^\n  305 |             \"message\",",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 225,
+                "line": 304,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.675Z",
+              "startTime": "2021-10-31T01:18:18.265Z",
               "duration": 1,
               "steps": []
             }
@@ -1892,29 +2684,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 231,
+        "line": 310,
         "column": 5
       },
-      "duration": 59,
+      "duration": 28,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:231",
+        "produtos.spec.js:310",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 59,
-          "startTime": "2021-10-30T23:09:49.676Z",
+          "duration": 28,
+          "startTime": "2021-10-31T01:18:18.268Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.677Z",
-              "duration": 29,
+              "startTime": "2021-10-31T01:18:18.268Z",
+              "duration": 14,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.684Z",
+                  "startTime": "2021-10-31T01:18:18.272Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -1926,8 +2718,8 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.691Z",
-                  "duration": 4,
+                  "startTime": "2021-10-31T01:18:18.278Z",
+                  "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
                   "location": {
@@ -1938,7 +2730,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.705Z",
+                  "startTime": "2021-10-31T01:18:18.282Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -1952,7 +2744,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.712Z",
+              "startTime": "2021-10-31T01:18:18.286Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -1964,7 +2756,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.718Z",
+              "startTime": "2021-10-31T01:18:18.289Z",
               "duration": 0,
               "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
               "steps": [],
@@ -1976,31 +2768,31 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.733Z",
+              "startTime": "2021-10-31T01:18:18.294Z",
               "duration": 0,
-              "snippet": "  242 |         })\n  243 |         expect(response.status()).toBe(403)\n      |                                   ^\n  244 |",
+              "snippet": "  321 |         })\n  322 |         expect(response.status()).toBe(403)\n      |                                   ^\n  323 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 243,
+                "line": 322,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.735Z",
+              "startTime": "2021-10-31T01:18:18.295Z",
               "duration": 0,
-              "snippet": "  245 |         const responseData = await response.json()\n  246 |         expect(responseData).toHaveProperty(\"message\", \"Rota exclusiva para administradores\")\n      |                              ^\n  247 |     })",
+              "snippet": "  324 |         const responseData = await response.json()\n  325 |         expect(responseData).toHaveProperty(\"message\", \"Rota exclusiva para administradores\")\n      |                              ^\n  326 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 246,
+                "line": 325,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.735Z",
+              "startTime": "2021-10-31T01:18:18.295Z",
               "duration": 1,
               "steps": []
             }
@@ -2018,29 +2810,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 249,
+        "line": 328,
         "column": 5
       },
-      "duration": 50,
+      "duration": 28,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:249",
+        "produtos.spec.js:328",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 50,
-          "startTime": "2021-10-30T23:09:49.697Z",
+          "duration": 28,
+          "startTime": "2021-10-31T01:18:18.270Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.697Z",
-              "duration": 23,
+              "startTime": "2021-10-31T01:18:18.270Z",
+              "duration": 21,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.702Z",
+                  "startTime": "2021-10-31T01:18:18.280Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -2052,7 +2844,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.710Z",
+                  "startTime": "2021-10-31T01:18:18.284Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -2064,8 +2856,8 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.719Z",
-                  "duration": 1,
+                  "startTime": "2021-10-31T01:18:18.290Z",
+                  "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
@@ -2078,55 +2870,31 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.731Z",
+              "startTime": "2021-10-31T01:18:18.296Z",
               "duration": 0,
-              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 34,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.739Z",
-              "duration": 0,
-              "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 19,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.746Z",
-              "duration": 0,
-              "snippet": "  260 |         })\n  261 |         expect(response.status()).toBe(200)\n      |                                   ^\n  262 |",
+              "snippet": "  337 |         })\n  338 |         expect(response.status()).toBe(200)\n      |                                   ^\n  339 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 261,
+                "line": 338,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.747Z",
+              "startTime": "2021-10-31T01:18:18.297Z",
               "duration": 0,
-              "snippet": "  263 |         const responseData = await response.json()\n  264 |         expect(responseData).toHaveProperty(\"message\", \"Registro alterado com sucesso\")\n      |                              ^\n  265 |     })",
+              "snippet": "  340 |         const responseData = await response.json()\n  341 |         expect(responseData).toHaveProperty(\"message\", \"Registro alterado com sucesso\")\n      |                              ^\n  342 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 264,
+                "line": 341,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.747Z",
+              "startTime": "2021-10-31T01:18:18.297Z",
               "duration": 0,
               "steps": []
             }
@@ -2144,29 +2912,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 267,
+        "line": 344,
         "column": 5
       },
-      "duration": 69,
+      "duration": 26,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:267",
+        "produtos.spec.js:344",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 69,
-          "startTime": "2021-10-30T23:09:49.736Z",
+          "duration": 26,
+          "startTime": "2021-10-31T01:18:18.298Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.736Z",
-              "duration": 42,
+              "startTime": "2021-10-31T01:18:18.298Z",
+              "duration": 15,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.744Z",
+                  "startTime": "2021-10-31T01:18:18.302Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -2178,7 +2946,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.753Z",
+                  "startTime": "2021-10-31T01:18:18.308Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -2190,7 +2958,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.777Z",
+                  "startTime": "2021-10-31T01:18:18.312Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -2204,68 +2972,44 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.784Z",
+              "startTime": "2021-10-31T01:18:18.322Z",
               "duration": 0,
-              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 34,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.792Z",
-              "duration": 0,
-              "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 19,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.804Z",
-              "duration": 0,
-              "snippet": "  278 |         })\n  279 |         expect(response.status()).toBe(201)\n      |                                   ^\n  280 |",
+              "snippet": "  353 |         })\n  354 |         expect(response.status()).toBe(201)\n      |                                   ^\n  355 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 279,
+                "line": 354,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.805Z",
+              "startTime": "2021-10-31T01:18:18.323Z",
               "duration": 0,
-              "snippet": "  281 |         const responseData = await response.json()\n  282 |         expect(responseData).toHaveProperty(\"message\", \"Cadastro realizado com sucesso\")\n      |                              ^\n  283 |         expect(responseData).toHaveProperty(\"_id\", responseData._id)",
+              "snippet": "  356 |         const responseData = await response.json()\n  357 |         expect(responseData).toHaveProperty(\"message\", \"Cadastro realizado com sucesso\")\n      |                              ^\n  358 |         expect(responseData).toHaveProperty(\"_id\", responseData._id)",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 282,
+                "line": 357,
                 "column": 30
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.805Z",
+              "startTime": "2021-10-31T01:18:18.323Z",
               "duration": 0,
-              "snippet": "  282 |         expect(responseData).toHaveProperty(\"message\", \"Cadastro realizado com sucesso\")\n  283 |         expect(responseData).toHaveProperty(\"_id\", responseData._id)\n      |                              ^\n  284 |     })",
+              "snippet": "  357 |         expect(responseData).toHaveProperty(\"message\", \"Cadastro realizado com sucesso\")\n  358 |         expect(responseData).toHaveProperty(\"_id\", responseData._id)\n      |                              ^\n  359 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 283,
+                "line": 358,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.805Z",
-              "duration": 1,
+              "startTime": "2021-10-31T01:18:18.323Z",
+              "duration": 0,
               "steps": []
             }
           ],
@@ -2282,30 +3026,30 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 286,
+        "line": 361,
         "column": 5
       },
-      "duration": 48,
+      "duration": 39,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:286",
+        "produtos.spec.js:361",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 48,
-          "startTime": "2021-10-30T23:09:49.748Z",
+          "duration": 39,
+          "startTime": "2021-10-31T01:18:18.298Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.748Z",
-              "duration": 31,
+              "startTime": "2021-10-31T01:18:18.298Z",
+              "duration": 27,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.753Z",
-                  "duration": 0,
+                  "startTime": "2021-10-31T01:18:18.304Z",
+                  "duration": 1,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
@@ -2316,7 +3060,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.771Z",
+                  "startTime": "2021-10-31T01:18:18.310Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -2328,7 +3072,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.778Z",
+                  "startTime": "2021-10-31T01:18:18.324Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -2342,7 +3086,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.785Z",
+              "startTime": "2021-10-31T01:18:18.328Z",
               "duration": 0,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
@@ -2354,7 +3098,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.789Z",
+              "startTime": "2021-10-31T01:18:18.331Z",
               "duration": 0,
               "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
               "steps": [],
@@ -2366,32 +3110,32 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.793Z",
+              "startTime": "2021-10-31T01:18:18.336Z",
               "duration": 0,
-              "snippet": "  303 |         })\n  304 |         expect(response.status()).toBe(400)\n      |                                   ^\n  305 |",
+              "snippet": "  378 |         })\n  379 |         expect(response.status()).toBe(400)\n      |                                   ^\n  380 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 304,
+                "line": 379,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.795Z",
+              "startTime": "2021-10-31T01:18:18.336Z",
               "duration": 0,
-              "snippet": "  306 |         const responseData = await response.json()\n  307 |         expect(responseData).toHaveProperty(\"message\", \"Já existe produto com esse nome\")\n      |                              ^\n  308 |     })",
+              "snippet": "  381 |         const responseData = await response.json()\n  382 |         expect(responseData).toHaveProperty(\"message\", \"Já existe produto com esse nome\")\n      |                              ^\n  383 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 307,
+                "line": 382,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.795Z",
-              "duration": 0,
+              "startTime": "2021-10-31T01:18:18.336Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -2408,29 +3152,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 310,
+        "line": 385,
         "column": 5
       },
-      "duration": 25,
+      "duration": 39,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:310",
+        "produtos.spec.js:385",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 25,
-          "startTime": "2021-10-30T23:09:49.796Z",
+          "duration": 39,
+          "startTime": "2021-10-31T01:18:18.326Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.796Z",
-              "duration": 21,
+              "startTime": "2021-10-31T01:18:18.326Z",
+              "duration": 34,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.802Z",
+                  "startTime": "2021-10-31T01:18:18.333Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -2442,7 +3186,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.808Z",
+                  "startTime": "2021-10-31T01:18:18.339Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -2454,7 +3198,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.816Z",
+                  "startTime": "2021-10-31T01:18:18.359Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -2468,31 +3212,31 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.821Z",
+              "startTime": "2021-10-31T01:18:18.363Z",
               "duration": 0,
-              "snippet": "  319 |         })\n  320 |         expect(response.status()).toBe(401)\n      |                                   ^\n  321 |",
+              "snippet": "  394 |         })\n  395 |         expect(response.status()).toBe(401)\n      |                                   ^\n  396 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 320,
+                "line": 395,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.821Z",
+              "startTime": "2021-10-31T01:18:18.364Z",
               "duration": 0,
-              "snippet": "  322 |         const responseData = await response.json()\n  323 |         expect(responseData).toHaveProperty(\n      |                              ^\n  324 |             \"message\",",
+              "snippet": "  397 |         const responseData = await response.json()\n  398 |         expect(responseData).toHaveProperty(\n      |                              ^\n  399 |             \"message\",",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 323,
+                "line": 398,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.821Z",
+              "startTime": "2021-10-31T01:18:18.364Z",
               "duration": 1,
               "steps": []
             }
@@ -2510,29 +3254,29 @@
       "projectName": "",
       "location": {
         "file": "produtos.spec.js",
-        "line": 329,
+        "line": 404,
         "column": 5
       },
-      "duration": 52,
+      "duration": 46,
       "outcome": "expected",
       "path": [
-        "produtos.spec.js:329",
+        "produtos.spec.js:404",
         "Produtos endpoint @produtos"
       ],
       "results": [
         {
-          "duration": 52,
-          "startTime": "2021-10-30T23:09:49.806Z",
+          "duration": 46,
+          "startTime": "2021-10-31T01:18:18.338Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-30T23:09:49.806Z",
-              "duration": 33,
+              "startTime": "2021-10-31T01:18:18.338Z",
+              "duration": 28,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.815Z",
+                  "startTime": "2021-10-31T01:18:18.344Z",
                   "duration": 0,
                   "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
                   "steps": [],
@@ -2544,7 +3288,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.824Z",
+                  "startTime": "2021-10-31T01:18:18.358Z",
                   "duration": 0,
                   "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
                   "steps": [],
@@ -2556,7 +3300,7 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-30T23:09:49.838Z",
+                  "startTime": "2021-10-31T01:18:18.365Z",
                   "duration": 0,
                   "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
                   "steps": [],
@@ -2570,8 +3314,8 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.845Z",
-              "duration": 0,
+              "startTime": "2021-10-31T01:18:18.370Z",
+              "duration": 1,
               "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
               "steps": [],
               "location": {
@@ -2582,7 +3326,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.850Z",
+              "startTime": "2021-10-31T01:18:18.376Z",
               "duration": 0,
               "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
               "steps": [],
@@ -2594,31 +3338,169 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-30T23:09:49.857Z",
-              "duration": 0,
-              "snippet": "  346 |         })\n  347 |         expect(response.status()).toBe(403)\n      |                                   ^\n  348 |",
+              "startTime": "2021-10-31T01:18:18.381Z",
+              "duration": 1,
+              "snippet": "  421 |         })\n  422 |         expect(response.status()).toBe(403)\n      |                                   ^\n  423 |",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 347,
+                "line": 422,
                 "column": 35
               }
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-30T23:09:49.857Z",
-              "duration": 1,
-              "snippet": "  349 |         const responseData = await response.json()\n  350 |         expect(responseData).toHaveProperty(\"message\", \"Rota exclusiva para administradores\")\n      |                              ^\n  351 |     })",
+              "startTime": "2021-10-31T01:18:18.383Z",
+              "duration": 0,
+              "snippet": "  424 |         const responseData = await response.json()\n  425 |         expect(responseData).toHaveProperty(\"message\", \"Rota exclusiva para administradores\")\n      |                              ^\n  426 |     })",
               "steps": [],
               "location": {
                 "file": "produtos.spec.js",
-                "line": 350,
+                "line": 425,
                 "column": 30
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-30T23:09:49.858Z",
+              "startTime": "2021-10-31T01:18:18.383Z",
+              "duration": 0,
+              "steps": []
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "aeaef2377201368692ab104935d687c0ef8b9b71-7920a40844ced0ac17b5d7f288f6535e2ec9b928",
+      "title": "Editar produto sem campos obrigatórios",
+      "projectName": "",
+      "location": {
+        "file": "produtos.spec.js",
+        "line": 428,
+        "column": 5
+      },
+      "duration": 22,
+      "outcome": "expected",
+      "path": [
+        "produtos.spec.js:428",
+        "Produtos endpoint @produtos"
+      ],
+      "results": [
+        {
+          "duration": 22,
+          "startTime": "2021-10-31T01:18:18.366Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-31T01:18:18.366Z",
+              "duration": 16,
+              "steps": [
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.372Z",
+                  "duration": 0,
+                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 34,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.377Z",
+                  "duration": 0,
+                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 19,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-10-31T01:18:18.382Z",
+                  "duration": 0,
+                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 53,
+                    "column": 39
+                  }
+                }
+              ]
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-10-31T01:18:18.386Z",
+              "duration": 0,
+              "snippet": "  436 |\n  437 |         expect(response.status()).toBe(400)\n      |                                   ^\n  438 |",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 437,
+                "column": 35
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.386Z",
+              "duration": 0,
+              "snippet": "  439 |         const responseData = await response.json()\n  440 |         expect(responseData).toHaveProperty(\"preco\", \"preco é obrigatório\")\n      |                              ^\n  441 |         expect(responseData).toHaveProperty(\"descricao\", \"descricao é obrigatório\")",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 440,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.386Z",
+              "duration": 1,
+              "snippet": "  440 |         expect(responseData).toHaveProperty(\"preco\", \"preco é obrigatório\")\n  441 |         expect(responseData).toHaveProperty(\"descricao\", \"descricao é obrigatório\")\n      |                              ^\n  442 |         expect(responseData).toHaveProperty(\"quantidade\", \"quantidade é obrigatório\")",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 441,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.387Z",
+              "duration": 0,
+              "snippet": "  441 |         expect(responseData).toHaveProperty(\"descricao\", \"descricao é obrigatório\")\n  442 |         expect(responseData).toHaveProperty(\"quantidade\", \"quantidade é obrigatório\")\n      |                              ^\n  443 |         expect(responseData).toHaveProperty(\"inexistente\", \"inexistente não é permitido\")",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 442,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveProperty",
+              "startTime": "2021-10-31T01:18:18.387Z",
+              "duration": 0,
+              "snippet": "  442 |         expect(responseData).toHaveProperty(\"quantidade\", \"quantidade é obrigatório\")\n  443 |         expect(responseData).toHaveProperty(\"inexistente\", \"inexistente não é permitido\")\n      |                              ^\n  444 |     })",
+              "steps": [],
+              "location": {
+                "file": "produtos.spec.js",
+                "line": 443,
+                "column": 30
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-31T01:18:18.387Z",
               "duration": 0,
               "steps": []
             }
