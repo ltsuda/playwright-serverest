@@ -13,7 +13,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 142,
+          "duration": 164,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:31",
@@ -30,7 +30,7 @@
             "line": 40,
             "column": 5
           },
-          "duration": 102,
+          "duration": 121,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:40",
@@ -47,7 +47,7 @@
             "line": 49,
             "column": 5
           },
-          "duration": 50,
+          "duration": 64,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:49",
@@ -64,7 +64,7 @@
             "line": 58,
             "column": 5
           },
-          "duration": 35,
+          "duration": 48,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:58",
@@ -81,7 +81,7 @@
             "line": 67,
             "column": 5
           },
-          "duration": 29,
+          "duration": 64,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:67",
@@ -98,7 +98,7 @@
             "line": 76,
             "column": 5
           },
-          "duration": 31,
+          "duration": 56,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:76",
@@ -115,7 +115,7 @@
             "line": 85,
             "column": 5
           },
-          "duration": 44,
+          "duration": 48,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:85",
@@ -132,7 +132,7 @@
             "line": 94,
             "column": 5
           },
-          "duration": 30,
+          "duration": 40,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:94",
@@ -149,7 +149,7 @@
             "line": 103,
             "column": 5
           },
-          "duration": 55,
+          "duration": 61,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:103",
@@ -166,7 +166,7 @@
             "line": 112,
             "column": 5
           },
-          "duration": 59,
+          "duration": 72,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:112",
@@ -183,7 +183,7 @@
             "line": 133,
             "column": 5
           },
-          "duration": 56,
+          "duration": 71,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:133",
@@ -200,7 +200,7 @@
             "line": 164,
             "column": 5
           },
-          "duration": 32,
+          "duration": 38,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:164",
@@ -217,7 +217,7 @@
             "line": 187,
             "column": 5
           },
-          "duration": 65,
+          "duration": 50,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:187",
@@ -234,7 +234,7 @@
             "line": 214,
             "column": 5
           },
-          "duration": 67,
+          "duration": 53,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:214",
@@ -251,7 +251,7 @@
             "line": 251,
             "column": 5
           },
-          "duration": 31,
+          "duration": 34,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:251",
@@ -268,7 +268,7 @@
             "line": 272,
             "column": 5
           },
-          "duration": 43,
+          "duration": 41,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:272",
@@ -285,7 +285,7 @@
             "line": 286,
             "column": 5
           },
-          "duration": 50,
+          "duration": 39,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:286",
@@ -302,7 +302,7 @@
             "line": 294,
             "column": 5
           },
-          "duration": 37,
+          "duration": 40,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:294",
@@ -319,7 +319,7 @@
             "line": 302,
             "column": 5
           },
-          "duration": 50,
+          "duration": 51,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:302",
@@ -336,7 +336,7 @@
             "line": 312,
             "column": 5
           },
-          "duration": 67,
+          "duration": 97,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:312",
@@ -353,7 +353,7 @@
             "line": 330,
             "column": 5
           },
-          "duration": 37,
+          "duration": 53,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:330",
@@ -370,7 +370,7 @@
             "line": 343,
             "column": 5
           },
-          "duration": 36,
+          "duration": 31,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:343",
@@ -387,7 +387,7 @@
             "line": 356,
             "column": 5
           },
-          "duration": 45,
+          "duration": 63,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:356",
@@ -404,7 +404,7 @@
             "line": 374,
             "column": 5
           },
-          "duration": 29,
+          "duration": 47,
           "outcome": "expected",
           "path": [
             "carrinhos.spec.js:374",
@@ -420,7 +420,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 1222
+        "duration": 1446
       }
     },
     {
@@ -436,7 +436,7 @@
             "line": 5,
             "column": 5
           },
-          "duration": 16,
+          "duration": 22,
           "outcome": "expected",
           "path": [
             "login.spec.js:5",
@@ -453,7 +453,7 @@
             "line": 18,
             "column": 5
           },
-          "duration": 8,
+          "duration": 9,
           "outcome": "expected",
           "path": [
             "login.spec.js:18",
@@ -470,7 +470,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 19,
+          "duration": 27,
           "outcome": "expected",
           "path": [
             "login.spec.js:28",
@@ -487,7 +487,7 @@
             "line": 39,
             "column": 5
           },
-          "duration": 28,
+          "duration": 18,
           "outcome": "expected",
           "path": [
             "login.spec.js:39",
@@ -504,7 +504,7 @@
             "line": 50,
             "column": 5
           },
-          "duration": 33,
+          "duration": 17,
           "outcome": "expected",
           "path": [
             "login.spec.js:50",
@@ -520,7 +520,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 104
+        "duration": 93
       }
     },
     {
@@ -536,7 +536,7 @@
             "line": 16,
             "column": 5
           },
-          "duration": 39,
+          "duration": 31,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:16",
@@ -553,7 +553,7 @@
             "line": 25,
             "column": 5
           },
-          "duration": 46,
+          "duration": 42,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:25",
@@ -570,7 +570,7 @@
             "line": 34,
             "column": 5
           },
-          "duration": 32,
+          "duration": 44,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:34",
@@ -587,7 +587,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 43,
+          "duration": 48,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:43",
@@ -604,7 +604,7 @@
             "line": 52,
             "column": 5
           },
-          "duration": 32,
+          "duration": 34,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:52",
@@ -621,7 +621,7 @@
             "line": 61,
             "column": 5
           },
-          "duration": 48,
+          "duration": 38,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:61",
@@ -638,7 +638,7 @@
             "line": 70,
             "column": 5
           },
-          "duration": 24,
+          "duration": 42,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:70",
@@ -655,7 +655,7 @@
             "line": 79,
             "column": 5
           },
-          "duration": 38,
+          "duration": 62,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:79",
@@ -672,7 +672,7 @@
             "line": 87,
             "column": 5
           },
-          "duration": 38,
+          "duration": 57,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:87",
@@ -689,7 +689,7 @@
             "line": 96,
             "column": 5
           },
-          "duration": 29,
+          "duration": 49,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:96",
@@ -706,7 +706,7 @@
             "line": 105,
             "column": 5
           },
-          "duration": 35,
+          "duration": 41,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:105",
@@ -740,7 +740,7 @@
             "line": 132,
             "column": 5
           },
-          "duration": 44,
+          "duration": 50,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:132",
@@ -757,7 +757,7 @@
             "line": 149,
             "column": 5
           },
-          "duration": 38,
+          "duration": 46,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:149",
@@ -774,7 +774,7 @@
             "line": 168,
             "column": 5
           },
-          "duration": 103,
+          "duration": 61,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:168",
@@ -791,7 +791,7 @@
             "line": 193,
             "column": 5
           },
-          "duration": 48,
+          "duration": 33,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:193",
@@ -808,7 +808,7 @@
             "line": 208,
             "column": 5
           },
-          "duration": 33,
+          "duration": 30,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:208",
@@ -825,7 +825,7 @@
             "line": 226,
             "column": 5
           },
-          "duration": 24,
+          "duration": 25,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:226",
@@ -842,7 +842,7 @@
             "line": 244,
             "column": 5
           },
-          "duration": 52,
+          "duration": 37,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:244",
@@ -859,7 +859,7 @@
             "line": 252,
             "column": 5
           },
-          "duration": 27,
+          "duration": 29,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:252",
@@ -876,7 +876,7 @@
             "line": 260,
             "column": 5
           },
-          "duration": 39,
+          "duration": 37,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:260",
@@ -893,7 +893,7 @@
             "line": 270,
             "column": 5
           },
-          "duration": 37,
+          "duration": 34,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:270",
@@ -910,7 +910,7 @@
             "line": 280,
             "column": 5
           },
-          "duration": 35,
+          "duration": 47,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:280",
@@ -927,7 +927,7 @@
             "line": 297,
             "column": 5
           },
-          "duration": 24,
+          "duration": 27,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:297",
@@ -944,7 +944,7 @@
             "line": 310,
             "column": 5
           },
-          "duration": 42,
+          "duration": 41,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:310",
@@ -961,7 +961,7 @@
             "line": 328,
             "column": 5
           },
-          "duration": 48,
+          "duration": 26,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:328",
@@ -978,7 +978,7 @@
             "line": 344,
             "column": 5
           },
-          "duration": 39,
+          "duration": 46,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:344",
@@ -995,7 +995,7 @@
             "line": 361,
             "column": 5
           },
-          "duration": 38,
+          "duration": 49,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:361",
@@ -1012,7 +1012,7 @@
             "line": 385,
             "column": 5
           },
-          "duration": 24,
+          "duration": 27,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:385",
@@ -1029,7 +1029,7 @@
             "line": 404,
             "column": 5
           },
-          "duration": 36,
+          "duration": 54,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:404",
@@ -1046,7 +1046,7 @@
             "line": 428,
             "column": 5
           },
-          "duration": 35,
+          "duration": 45,
           "outcome": "expected",
           "path": [
             "produtos.spec.js:428",
@@ -1062,7 +1062,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 1203
+        "duration": 1265
       }
     },
     {
@@ -1078,7 +1078,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 30,
+          "duration": 32,
           "outcome": "expected",
           "path": [
             "schemas/carrinhos.spec.js:15",
@@ -1095,7 +1095,7 @@
             "line": 30,
             "column": 5
           },
-          "duration": 7,
+          "duration": 12,
           "outcome": "expected",
           "path": [
             "schemas/carrinhos.spec.js:30",
@@ -1112,7 +1112,7 @@
             "line": 37,
             "column": 5
           },
-          "duration": 6,
+          "duration": 10,
           "outcome": "expected",
           "path": [
             "schemas/carrinhos.spec.js:37",
@@ -1128,7 +1128,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 43
+        "duration": 54
       }
     },
     {
@@ -1144,7 +1144,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 6,
+          "duration": 9,
           "outcome": "expected",
           "path": [
             "schemas/login.spec.js:7",
@@ -1160,7 +1160,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 6
+        "duration": 9
       }
     },
     {
@@ -1176,7 +1176,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 33,
+          "duration": 35,
           "outcome": "expected",
           "path": [
             "schemas/produtos.spec.js:15",
@@ -1193,7 +1193,7 @@
             "line": 23,
             "column": 5
           },
-          "duration": 26,
+          "duration": 13,
           "outcome": "expected",
           "path": [
             "schemas/produtos.spec.js:23",
@@ -1210,7 +1210,7 @@
             "line": 30,
             "column": 5
           },
-          "duration": 10,
+          "duration": 22,
           "outcome": "expected",
           "path": [
             "schemas/produtos.spec.js:30",
@@ -1226,7 +1226,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 69
+        "duration": 70
       }
     },
     {
@@ -1242,7 +1242,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 12,
+          "duration": 31,
           "outcome": "expected",
           "path": [
             "schemas/usuarios.spec.js:7",
@@ -1259,7 +1259,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 7,
+          "duration": 19,
           "outcome": "expected",
           "path": [
             "schemas/usuarios.spec.js:15",
@@ -1276,7 +1276,7 @@
             "line": 22,
             "column": 5
           },
-          "duration": 22,
+          "duration": 44,
           "outcome": "expected",
           "path": [
             "schemas/usuarios.spec.js:22",
@@ -1292,7 +1292,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 41
+        "duration": 94
       }
     },
     {
@@ -1308,7 +1308,7 @@
             "line": 6,
             "column": 5
           },
-          "duration": 20,
+          "duration": 41,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:6",
@@ -1325,7 +1325,7 @@
             "line": 17,
             "column": 5
           },
-          "duration": 21,
+          "duration": 18,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:17",
@@ -1342,7 +1342,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 12,
+          "duration": 14,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:28",
@@ -1359,7 +1359,7 @@
             "line": 39,
             "column": 5
           },
-          "duration": 17,
+          "duration": 18,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:39",
@@ -1393,7 +1393,7 @@
             "line": 61,
             "column": 5
           },
-          "duration": 18,
+          "duration": 17,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:61",
@@ -1410,7 +1410,7 @@
             "line": 79,
             "column": 5
           },
-          "duration": 6,
+          "duration": 9,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:79",
@@ -1444,7 +1444,7 @@
             "line": 96,
             "column": 5
           },
-          "duration": 8,
+          "duration": 9,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:96",
@@ -1461,7 +1461,7 @@
             "line": 113,
             "column": 5
           },
-          "duration": 12,
+          "duration": 14,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:113",
@@ -1478,7 +1478,7 @@
             "line": 130,
             "column": 5
           },
-          "duration": 6,
+          "duration": 9,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:130",
@@ -1512,7 +1512,7 @@
             "line": 166,
             "column": 5
           },
-          "duration": 16,
+          "duration": 14,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:166",
@@ -1529,7 +1529,7 @@
             "line": 188,
             "column": 5
           },
-          "duration": 24,
+          "duration": 28,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:188",
@@ -1546,7 +1546,7 @@
             "line": 198,
             "column": 5
           },
-          "duration": 6,
+          "duration": 10,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:198",
@@ -1563,7 +1563,7 @@
             "line": 207,
             "column": 5
           },
-          "duration": 14,
+          "duration": 36,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:207",
@@ -1580,7 +1580,7 @@
             "line": 217,
             "column": 5
           },
-          "duration": 5,
+          "duration": 10,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:217",
@@ -1597,7 +1597,7 @@
             "line": 226,
             "column": 5
           },
-          "duration": 42,
+          "duration": 37,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:226",
@@ -1614,7 +1614,7 @@
             "line": 248,
             "column": 5
           },
-          "duration": 18,
+          "duration": 21,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:248",
@@ -1631,7 +1631,7 @@
             "line": 265,
             "column": 5
           },
-          "duration": 7,
+          "duration": 9,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:265",
@@ -1648,7 +1648,7 @@
             "line": 282,
             "column": 5
           },
-          "duration": 20,
+          "duration": 25,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:282",
@@ -1665,7 +1665,7 @@
             "line": 300,
             "column": 5
           },
-          "duration": 15,
+          "duration": 16,
           "outcome": "expected",
           "path": [
             "usuarios.spec.js:300",
@@ -1681,7 +1681,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 324
+        "duration": 392
       }
     }
   ],
@@ -1695,6 +1695,6 @@
     "flaky": 0,
     "skipped": 0,
     "ok": true,
-    "duration": 3012
+    "duration": 3423
   }
 }

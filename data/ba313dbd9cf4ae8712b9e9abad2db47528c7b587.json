@@ -11,7 +11,7 @@
         "line": 15,
         "column": 5
       },
-      "duration": 30,
+      "duration": 32,
       "outcome": "expected",
       "path": [
         "schemas/carrinhos.spec.js:15",
@@ -19,19 +19,19 @@
       ],
       "results": [
         {
-          "duration": 30,
-          "startTime": "2021-10-31T02:06:14.733Z",
+          "duration": 32,
+          "startTime": "2021-10-31T02:59:40.576Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:06:14.734Z",
+              "startTime": "2021-10-31T02:59:40.576Z",
               "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:06:14.740Z",
+              "startTime": "2021-10-31T02:59:40.586Z",
               "duration": 0,
               "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
               "steps": [],
@@ -43,7 +43,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:06:14.747Z",
+              "startTime": "2021-10-31T02:59:40.594Z",
               "duration": 0,
               "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
               "steps": [],
@@ -55,7 +55,7 @@
             },
             {
               "title": "expect.toBeTruthy",
-              "startTime": "2021-10-31T02:06:14.752Z",
+              "startTime": "2021-10-31T02:59:40.599Z",
               "duration": 0,
               "snippet": "  25 |\n  26 |         expect(response.ok()).toBeTruthy()\n     |                               ^\n  27 |         Joi.assert(await response.json(), carrinhos.get)",
               "steps": [],
@@ -67,8 +67,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:06:14.763Z",
-              "duration": 0,
+              "startTime": "2021-10-31T02:59:40.605Z",
+              "duration": 4,
               "steps": []
             }
           ],
@@ -88,7 +88,7 @@
         "line": 30,
         "column": 5
       },
-      "duration": 7,
+      "duration": 12,
       "outcome": "expected",
       "path": [
         "schemas/carrinhos.spec.js:30",
@@ -96,19 +96,19 @@
       ],
       "results": [
         {
-          "duration": 7,
-          "startTime": "2021-10-31T02:06:14.760Z",
+          "duration": 12,
+          "startTime": "2021-10-31T02:59:40.584Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:06:14.760Z",
-              "duration": 1,
+              "startTime": "2021-10-31T02:59:40.585Z",
+              "duration": 0,
               "steps": []
             },
             {
               "title": "expect.toBeFalsy",
-              "startTime": "2021-10-31T02:06:14.765Z",
+              "startTime": "2021-10-31T02:59:40.592Z",
               "duration": 0,
               "snippet": "  32 |\n  33 |         expect(response.ok()).toBeFalsy()\n     |                               ^\n  34 |         Joi.assert(await response.json(), carrinhos.post)",
               "steps": [],
@@ -120,7 +120,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:06:14.767Z",
+              "startTime": "2021-10-31T02:59:40.595Z",
               "duration": 1,
               "steps": []
             }
@@ -141,7 +141,7 @@
         "line": 37,
         "column": 5
       },
-      "duration": 6,
+      "duration": 10,
       "outcome": "expected",
       "path": [
         "schemas/carrinhos.spec.js:37",
@@ -149,19 +149,19 @@
       ],
       "results": [
         {
-          "duration": 6,
-          "startTime": "2021-10-31T02:06:14.781Z",
+          "duration": 10,
+          "startTime": "2021-10-31T02:59:40.614Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:06:14.781Z",
+              "startTime": "2021-10-31T02:59:40.614Z",
               "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBeFalsy",
-              "startTime": "2021-10-31T02:06:14.786Z",
+              "startTime": "2021-10-31T02:59:40.619Z",
               "duration": 0,
               "snippet": "  44 |\n  45 |         expect(response.ok()).toBeFalsy()\n     |                               ^\n  46 |         Joi.assert(await response.json(), carrinhos.postSemProduto)",
               "steps": [],
@@ -173,8 +173,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:06:14.787Z",
-              "duration": 0,
+              "startTime": "2021-10-31T02:59:40.620Z",
+              "duration": 4,
               "steps": []
             }
           ],
