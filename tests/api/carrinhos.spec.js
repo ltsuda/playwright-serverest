@@ -269,7 +269,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
         )
     })
 
-    test("Cadastrar carrinho com valor inexistente @x", async ({ baseURL, cartPath, request }) => {
+    test("Cadastrar carrinho com valor inexistente", async ({ baseURL, cartPath, request }) => {
         const response = await request.post(`${baseURL}${cartPath}`, {
             data: {
                 inexistente: "inexistente",
