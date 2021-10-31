@@ -73,6 +73,42 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
         expect(responseData).toHaveProperty("carrinhos", expect.arrayContaining([carrinho]))
     })
 
+    test("Listar carrinho inexistente", async ({ baseURL, cartPath, request }) => {
+        const response = await request.get(`${baseURL}${cartPath}?idUsuario=abc`)
+        expect(response.status()).toBe(200)
+
+        const responseData = await response.json()
+        expect(responseData.quantidade).toEqual(0)
+        expect(responseData).toHaveProperty("carrinhos", [])
+    })
+
+    test("Listar carrinho com preco e quantidade como texto", async ({ baseURL, cartPath, request }) => {
+        const response = await request.get(`${baseURL}${cartPath}?precoTotal=a&quantidadeTotal=b`)
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("precoTotal", "precoTotal deve ser um número")
+        expect(responseData).toHaveProperty("quantidadeTotal", "quantidadeTotal deve ser um número")
+    })
+
+    test("Listar carrinho com preco e quantidade negativos", async ({ baseURL, cartPath, request }) => {
+        const response = await request.get(`${baseURL}${cartPath}?precoTotal=-1&quantidadeTotal=-2`)
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("precoTotal", "precoTotal deve ser um número positivo")
+        expect(responseData).toHaveProperty("quantidadeTotal", "quantidadeTotal deve ser um número positivo")
+    })
+
+    test("Listar carrinho com preco e quantidade decimais", async ({ baseURL, cartPath, request }) => {
+        const response = await request.get(`${baseURL}${cartPath}?precoTotal=0.1&quantidadeTotal=0.2`)
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("precoTotal", "precoTotal deve ser um inteiro")
+        expect(responseData).toHaveProperty("quantidadeTotal", "quantidadeTotal deve ser um inteiro")
+    })
+
     test("Cadastrar carrinho com sucesso", async ({ baseURL, cartPath, request, login, cadastrarUsuario }) => {
         const { email, password } = await cadastrarUsuario({ administrador: false })
         const { authorization } = await login(email, password)
@@ -231,6 +267,20 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
             "message",
             "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"
         )
+    })
+
+    test("Cadastrar carrinho com valor inexistente @x", async ({ baseURL, cartPath, request }) => {
+        const response = await request.post(`${baseURL}${cartPath}`, {
+            data: {
+                inexistente: "inexistente",
+            },
+            headers: { Authorization: authorization },
+        })
+
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("inexistente", "inexistente não é permitido")
     })
 
     test("Buscar carrinho por ID", async ({ baseURL, cartPath, request }) => {

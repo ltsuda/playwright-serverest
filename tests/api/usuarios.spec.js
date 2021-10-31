@@ -76,6 +76,23 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
         )
     })
 
+    test("Listar usuários inexistente", async ({ baseURL, userPath, request }) => {
+        const response = await request.get(`${baseURL}${userPath}?_id=a`)
+        expect(response.status()).toBe(200)
+
+        const responseData = await response.json()
+        expect(responseData.quantidade).toEqual(0)
+        expect(responseData).toHaveProperty("usuarios", [])
+    })
+
+    test("Listar usuários por campo invalido", async ({ baseURL, userPath, request }) => {
+        const response = await request.get(`${baseURL}${userPath}?invalido=a`)
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("invalido", "invalido não é permitido")
+    })
+
     test("Cadastrar usuário com sucesso", async ({ baseURL, userPath, request }) => {
         const response = await request.post(`${baseURL}${userPath}`, {
             data: {
@@ -108,6 +125,64 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
 
         const responseData = await response.json()
         expect(responseData).toHaveProperty("message", "Este email já está sendo usado")
+    })
+
+    test("Cadastrar usuário sem campos obrigatórios", async ({ baseURL, userPath, request }) => {
+        const response = await request.post(`${baseURL}${userPath}`, {
+            data: {},
+        })
+
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("nome", "nome é obrigatório")
+        expect(responseData).toHaveProperty("email", "email é obrigatório")
+        expect(responseData).toHaveProperty("password", "password é obrigatório")
+        expect(responseData).toHaveProperty("administrador", "administrador é obrigatório")
+    })
+
+    test("Cadastrar usuário com campo administrador numérico", async ({
+        baseURL,
+        userPath,
+        request,
+        cadastrarUsuario,
+    }) => {
+        const { email } = await cadastrarUsuario()
+        const response = await request.post(`${baseURL}${userPath}`, {
+            data: {
+                nome: faker.name.findName(),
+                email: email,
+                password: faker.random.alphaNumeric(16),
+                administrador: 1,
+            },
+        })
+
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("administrador", "administrador deve ser 'true' ou 'false'")
+    })
+
+    test("Cadastrar usuário com campo administrador booleano", async ({
+        baseURL,
+        userPath,
+        cadastrarUsuario,
+        request,
+    }) => {
+        const { email } = await cadastrarUsuario()
+        const response = await request.post(`${baseURL}${userPath}`, {
+            data: {
+                nome: faker.name.findName(),
+                email: email,
+                password: faker.random.alphaNumeric(16),
+                administrador: false,
+            },
+        })
+
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("administrador", "administrador deve ser 'true' ou 'false'")
     })
 
     test("Buscar usuário por ID", async ({ baseURL, userPath, request, cadastrarUsuario }) => {
@@ -187,7 +262,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
         expect(responseData).toHaveProperty("message", "Registro alterado com sucesso")
     })
 
-    test("Editar usuário com ID não encontrado", async ({ baseURL, userPath, cadastrarUsuario, request }) => {
+    test("Editar usuário com ID não encontrado", async ({ baseURL, userPath, request }) => {
         const response = await request.put(`${baseURL}${userPath}/${faker.random.alphaNumeric()}`, {
             data: {
                 nome: faker.name.findName(),
@@ -220,5 +295,23 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
 
         const responseData = await response.json()
         expect(responseData).toHaveProperty("message", "Este email já está sendo usado")
+    })
+
+    test("Editar usuário com campo invalido", async ({ baseURL, userPath, cadastrarUsuario, request }) => {
+        const usuario = await cadastrarUsuario()
+        const response = await request.put(`${baseURL}${userPath}/${usuario._id}`, {
+            data: {
+                nome: usuario.nome,
+                email: usuario.email,
+                password: usuario.password,
+                administrador: usuario.administrador,
+                invalido: "invalido",
+            },
+        })
+
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("invalido", "invalido não é permitido")
     })
 })

@@ -3,11 +3,13 @@ const test = require("../../api/fixtures")
 const faker = require("faker")
 
 test.describe.parallel("Produtos endpoint @produtos", () => {
-    let produto = {}
+    let produto
+    let authorization
 
     test.beforeEach(async ({ login, cadastrarProduto, cadastrarUsuario }) => {
         const { email, password } = await cadastrarUsuario({ administrador: true })
-        const { authorization } = await login(email, password)
+        const admin = await login(email, password)
+        authorization = admin.authorization
         produto = await cadastrarProduto(authorization)
     })
 
@@ -65,9 +67,51 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
         expect(responseData).toHaveProperty("produtos", expect.arrayContaining([produto]))
     })
 
-    test("Cadastrar produto com sucesso", async ({ baseURL, productsPath, request, login, cadastrarUsuario }) => {
-        const { email, password } = await cadastrarUsuario({ administrador: true })
-        const { authorization } = await login(email, password)
+    test("Listar produtos inexistentes", async ({ baseURL, productsPath, request }) => {
+        const response = await request.get(`${baseURL}${productsPath}?_id=inexistente`)
+        expect(response.status()).toBe(200)
+
+        const responseData = await response.json()
+        expect(responseData.quantidade).toEqual(0)
+        expect(responseData).toHaveProperty("produtos", [])
+    })
+
+    test("Listar produtos por campo invalido", async ({ baseURL, productsPath, request }) => {
+        const response = await request.get(`${baseURL}${productsPath}?invalido=invalido`)
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("invalido", "invalido não é permitido")
+    })
+
+    test("Listar produtos por preco e quantidade como texto", async ({ baseURL, productsPath, request }) => {
+        const response = await request.get(`${baseURL}${productsPath}?preco=a&quantidade=b`)
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("preco", "preco deve ser um número")
+        expect(responseData).toHaveProperty("quantidade", "quantidade deve ser um número")
+    })
+
+    test("Listar produtos por preco e quantidade decimais", async ({ baseURL, productsPath, request }) => {
+        const response = await request.get(`${baseURL}${productsPath}?preco=0.1&quantidade=0.2`)
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("preco", "preco deve ser um inteiro")
+        expect(responseData).toHaveProperty("quantidade", "quantidade deve ser um inteiro")
+    })
+
+    test("Listar produtos por preco e quantidade negativos", async ({ baseURL, productsPath, request }) => {
+        const response = await request.get(`${baseURL}${productsPath}?preco=-1&quantidade=-2`)
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("preco", "preco deve ser um número positivo")
+        expect(responseData).toHaveProperty("quantidade", "quantidade deve ser maior ou igual a 0")
+    })
+
+    test("Cadastrar produto com sucesso", async ({ baseURL, productsPath, request }) => {
         const response = await request.post(`${baseURL}${productsPath}`, {
             data: {
                 nome: faker.commerce.productName(),
@@ -85,15 +129,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
         expect(responseData).toHaveProperty("_id", responseData._id)
     })
 
-    test("Cadastrar produto com nome já existente", async ({
-        baseURL,
-        productsPath,
-        request,
-        login,
-        cadastrarUsuario,
-    }) => {
-        const { email, password } = await cadastrarUsuario({ administrador: true })
-        const { authorization } = await login(email, password)
+    test("Cadastrar produto com nome já existente", async ({ baseURL, productsPath, request }) => {
         const response = await request.post(`${baseURL}${productsPath}`, {
             data: {
                 nome: produto.nome,
@@ -154,6 +190,57 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
         expect(responseData).toHaveProperty("message", "Rota exclusiva para administradores")
     })
 
+    test("Cadastrar produto sem campos obrigatórios", async ({ baseURL, productsPath, request }) => {
+        const response = await request.post(`${baseURL}${productsPath}`, {
+            data: {},
+            headers: { Authorization: authorization },
+        })
+
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("nome", "nome é obrigatório")
+        expect(responseData).toHaveProperty("preco", "preco é obrigatório")
+        expect(responseData).toHaveProperty("descricao", "descricao é obrigatório")
+        expect(responseData).toHaveProperty("quantidade", "quantidade é obrigatório")
+    })
+
+    test("Cadastrar produto com campo inexistente", async ({ baseURL, productsPath, request }) => {
+        const response = await request.post(`${baseURL}${productsPath}`, {
+            data: {
+                nome: faker.commerce.productName(),
+                preco: Number(faker.commerce.price(undefined, undefined, 0)),
+                descricao: faker.commerce.productDescription(),
+                quantidade: faker.datatype.number(1000),
+                inexistente: "inexistente",
+            },
+            headers: { Authorization: authorization },
+        })
+
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("inexistente", "inexistente não é permitido")
+    })
+
+    test("Cadastrar produto com preco e quantidade negativos", async ({ baseURL, productsPath, request }) => {
+        const response = await request.post(`${baseURL}${productsPath}`, {
+            data: {
+                nome: faker.commerce.productName() + faker.random.alphaNumeric(),
+                preco: -100,
+                descricao: faker.commerce.productAdjective(),
+                quantidade: -100,
+            },
+            headers: { Authorization: authorization },
+        })
+
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("preco", "preco deve ser um número positivo")
+        expect(responseData).toHaveProperty("quantidade", "quantidade deve ser maior ou igual a 0")
+    })
+
     test("Buscar produto por ID", async ({ baseURL, productsPath, request }) => {
         const response = await request.get(`${baseURL}${productsPath}/${produto._id}`)
         expect(response.status()).toBe(200)
@@ -170,9 +257,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
         expect(responseData).toHaveProperty("message", "Produto não encontrado")
     })
 
-    test("Excluir produto", async ({ baseURL, productsPath, request, login, cadastrarUsuario }) => {
-        const { email, password } = await cadastrarUsuario({ administrador: true })
-        const { authorization } = await login(email, password)
+    test("Excluir produto", async ({ baseURL, productsPath, request }) => {
         const response = await request.delete(`${baseURL}${productsPath}/${produto._id}`, {
             headers: { Authorization: authorization },
         })
@@ -182,9 +267,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
         expect(responseData).toHaveProperty("message", "Registro excluído com sucesso")
     })
 
-    test("Excluir produto inexistente", async ({ baseURL, productsPath, request, login, cadastrarUsuario }) => {
-        const { email, password } = await cadastrarUsuario({ administrador: true })
-        const { authorization } = await login(email, password)
+    test("Excluir produto inexistente", async ({ baseURL, productsPath, request }) => {
         const response = await request.delete(`${baseURL}${productsPath}/1`, {
             headers: { Authorization: authorization },
         })
@@ -198,12 +281,8 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
         baseURL,
         productsPath,
         request,
-        login,
-        cadastrarUsuario,
         cadastrarCarrinho,
     }) => {
-        const { email, password } = await cadastrarUsuario({ administrador: true })
-        const { authorization } = await login(email, password)
         const carrinho = await cadastrarCarrinho(authorization, produto)
         const response = await request.delete(`${baseURL}${productsPath}/${produto._id}`, {
             headers: { Authorization: authorization },
@@ -246,9 +325,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
         expect(responseData).toHaveProperty("message", "Rota exclusiva para administradores")
     })
 
-    test("Editar produto", async ({ baseURL, productsPath, request, login, cadastrarUsuario }) => {
-        const { email, password } = await cadastrarUsuario({ administrador: true })
-        const { authorization } = await login(email, password)
+    test("Editar produto", async ({ baseURL, productsPath, request }) => {
         const response = await request.put(`${baseURL}${productsPath}/${produto._id}`, {
             data: {
                 nome: produto.nome,
@@ -264,9 +341,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
         expect(responseData).toHaveProperty("message", "Registro alterado com sucesso")
     })
 
-    test("Editar produto inexistente", async ({ baseURL, productsPath, request, login, cadastrarUsuario }) => {
-        const { email, password } = await cadastrarUsuario({ administrador: true })
-        const { authorization } = await login(email, password)
+    test("Editar produto inexistente", async ({ baseURL, productsPath, request }) => {
         const response = await request.put(`${baseURL}${productsPath}/1`, {
             data: {
                 nome: faker.commerce.productName(),
@@ -348,5 +423,23 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
 
         const responseData = await response.json()
         expect(responseData).toHaveProperty("message", "Rota exclusiva para administradores")
+    })
+
+    test("Editar produto sem campos obrigatórios", async ({ baseURL, productsPath, request }) => {
+        const response = await request.put(`${baseURL}${productsPath}/${produto._id}`, {
+            data: {
+                nome: faker.commerce.productName(),
+                inexistente: "inexistente",
+            },
+            headers: { Authorization: authorization },
+        })
+
+        expect(response.status()).toBe(400)
+
+        const responseData = await response.json()
+        expect(responseData).toHaveProperty("preco", "preco é obrigatório")
+        expect(responseData).toHaveProperty("descricao", "descricao é obrigatório")
+        expect(responseData).toHaveProperty("quantidade", "quantidade é obrigatório")
+        expect(responseData).toHaveProperty("inexistente", "inexistente não é permitido")
     })
 })
