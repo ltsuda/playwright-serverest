@@ -1,4 +1,4 @@
-name: test-docker
+name: Docker API Tests
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
           load: true
           push: false
 
-      - name: Run API tests on docker
+      - name: Run API tests on container
         uses: addnab/docker-run-action@v3
         with:
           image: ltsuda/playwright-serverest:api
@@ -44,7 +44,7 @@ jobs:
           load: true
           push: false
 
-      - name: Run @visual on docker
+      - name: Run @schema on container
         uses: addnab/docker-run-action@v3
         with:
           image: ltsuda/playwright-serverest:schema
@@ -65,7 +65,7 @@ jobs:
           load: true
           push: false
 
-      - name: Run @visual on docker
+      - name: Run all tests on container
         uses: addnab/docker-run-action@v3
         with:
           image: ltsuda/playwright-serverest:all
