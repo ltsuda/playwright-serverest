@@ -11,7 +11,7 @@
         "line": 7,
         "column": 5
       },
-      "duration": 5,
+      "duration": 6,
       "outcome": "expected",
       "path": [
         "schemas/login.spec.js:7",
@@ -19,20 +19,20 @@
       ],
       "results": [
         {
-          "duration": 5,
-          "startTime": "2021-10-31T01:25:42.606Z",
+          "duration": 6,
+          "startTime": "2021-10-31T02:06:14.769Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T01:25:42.607Z",
-              "duration": 0,
+              "startTime": "2021-10-31T02:06:14.769Z",
+              "duration": 1,
               "steps": []
             },
             {
               "title": "expect.toBeFalsy",
-              "startTime": "2021-10-31T01:25:42.610Z",
-              "duration": 0,
+              "startTime": "2021-10-31T02:06:14.773Z",
+              "duration": 1,
               "snippet": "   9 |\n  10 |         expect(response.ok()).toBeFalsy()\n     |                               ^\n  11 |         Joi.assert(await response.json(), login.get)",
               "steps": [],
               "location": {
@@ -43,7 +43,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T01:25:42.611Z",
+              "startTime": "2021-10-31T02:06:14.774Z",
               "duration": 1,
               "steps": []
             }
