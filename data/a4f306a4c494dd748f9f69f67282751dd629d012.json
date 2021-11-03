@@ -11,7 +11,7 @@
         "line": 31,
         "column": 5
       },
-      "duration": 164,
+      "duration": 126,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:31",
@@ -19,44 +19,20 @@
       ],
       "results": [
         {
-          "duration": 164,
-          "startTime": "2021-10-31T02:59:38.938Z",
+          "duration": 126,
+          "startTime": "2021-11-03T02:03:01.915Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:38.938Z",
-              "duration": 151,
+              "startTime": "2021-11-03T02:03:01.915Z",
+              "duration": 105,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.018Z",
-                  "duration": 1,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.039Z",
+                  "startTime": "2021-11-03T02:03:01.976Z",
                   "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.067Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -66,13 +42,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.087Z",
+                  "startTime": "2021-11-03T02:03:01.992Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.005Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.019Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -80,7 +80,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.097Z",
+              "startTime": "2021-11-03T02:03:02.037Z",
               "duration": 0,
               "snippet": "   32 |         const response = await request.get(`${baseURL}${cartPath}`)\n   33 |         expect(response.status()).toBe(200)\n      |                                   ^\n   34 |",
               "steps": [],
@@ -92,7 +92,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.098Z",
+              "startTime": "2021-11-03T02:03:02.038Z",
               "duration": 0,
               "snippet": "   35 |         const responseData = await response.json()\n   36 |         expect(responseData).toHaveProperty(\"quantidade\")\n      |                              ^\n   37 |         expect(responseData).toHaveProperty(\"carrinhos\", expect.arrayContaining([carrinho]))",
               "steps": [],
@@ -104,8 +104,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.099Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.039Z",
+              "duration": 0,
               "snippet": "   36 |         expect(responseData).toHaveProperty(\"quantidade\")\n   37 |         expect(responseData).toHaveProperty(\"carrinhos\", expect.arrayContaining([carrinho]))\n      |                              ^\n   38 |     })",
               "steps": [],
               "location": {
@@ -116,7 +116,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.100Z",
+              "startTime": "2021-11-03T02:03:02.040Z",
               "duration": 1,
               "steps": []
             }
@@ -137,7 +137,7 @@
         "line": 40,
         "column": 5
       },
-      "duration": 121,
+      "duration": 59,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:40",
@@ -145,44 +145,20 @@
       ],
       "results": [
         {
-          "duration": 121,
-          "startTime": "2021-10-31T02:59:39.080Z",
+          "duration": 59,
+          "startTime": "2021-11-03T02:03:02.057Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.081Z",
-              "duration": 101,
+              "startTime": "2021-11-03T02:03:02.058Z",
+              "duration": 49,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.133Z",
+                  "startTime": "2021-11-03T02:03:02.082Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.147Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.157Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -192,13 +168,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.180Z",
+                  "startTime": "2021-11-03T02:03:02.091Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.098Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.107Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -206,8 +206,8 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.194Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.112Z",
+              "duration": 0,
               "snippet": "   41 |         const response = await request.get(`${baseURL}${cartPath}?_id=${carrinho._id}`)\n   42 |         expect(response.status()).toBe(200)\n      |                                   ^\n   43 |",
               "steps": [],
               "location": {
@@ -218,7 +218,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.196Z",
+              "startTime": "2021-11-03T02:03:02.113Z",
               "duration": 1,
               "snippet": "   44 |         const responseData = await response.json()\n   45 |         expect(responseData).toHaveProperty(\"quantidade\", 1)\n      |                              ^\n   46 |         expect(responseData).toHaveProperty(\"carrinhos\", expect.arrayContaining([carrinho]))",
               "steps": [],
@@ -230,8 +230,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.198Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.114Z",
+              "duration": 0,
               "snippet": "   45 |         expect(responseData).toHaveProperty(\"quantidade\", 1)\n   46 |         expect(responseData).toHaveProperty(\"carrinhos\", expect.arrayContaining([carrinho]))\n      |                              ^\n   47 |     })",
               "steps": [],
               "location": {
@@ -242,8 +242,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.199Z",
-              "duration": 2,
+              "startTime": "2021-11-03T02:03:02.115Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -263,7 +263,7 @@
         "line": 49,
         "column": 5
       },
-      "duration": 64,
+      "duration": 44,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:49",
@@ -271,44 +271,20 @@
       ],
       "results": [
         {
-          "duration": 64,
-          "startTime": "2021-10-31T02:59:39.106Z",
+          "duration": 44,
+          "startTime": "2021-11-03T02:03:02.044Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.106Z",
-              "duration": 55,
+              "startTime": "2021-11-03T02:03:02.044Z",
+              "duration": 37,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.114Z",
+                  "startTime": "2021-11-03T02:03:02.051Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.125Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.139Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -318,13 +294,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.160Z",
+                  "startTime": "2021-11-03T02:03:02.057Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.071Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.080Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -332,7 +332,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.167Z",
+              "startTime": "2021-11-03T02:03:02.086Z",
               "duration": 0,
               "snippet": "   50 |         const response = await request.get(`${baseURL}${cartPath}?precoTotal=${carrinho.precoTotal}`)\n   51 |         expect(response.status()).toBe(200)\n      |                                   ^\n   52 |",
               "steps": [],
@@ -344,7 +344,7 @@
             },
             {
               "title": "expect.toBeGreaterThanOrEqual",
-              "startTime": "2021-10-31T02:59:39.168Z",
+              "startTime": "2021-11-03T02:03:02.087Z",
               "duration": 0,
               "snippet": "   53 |         const responseData = await response.json()\n   54 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n      |                                         ^\n   55 |         expect(responseData).toHaveProperty(\"carrinhos\", expect.arrayContaining([carrinho]))",
               "steps": [],
@@ -356,7 +356,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.168Z",
+              "startTime": "2021-11-03T02:03:02.087Z",
               "duration": 0,
               "snippet": "   54 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n   55 |         expect(responseData).toHaveProperty(\"carrinhos\", expect.arrayContaining([carrinho]))\n      |                              ^\n   56 |     })",
               "steps": [],
@@ -368,7 +368,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.168Z",
+              "startTime": "2021-11-03T02:03:02.087Z",
               "duration": 1,
               "steps": []
             }
@@ -389,7 +389,7 @@
         "line": 58,
         "column": 5
       },
-      "duration": 48,
+      "duration": 42,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:58",
@@ -397,44 +397,20 @@
       ],
       "results": [
         {
-          "duration": 48,
-          "startTime": "2021-10-31T02:59:39.172Z",
+          "duration": 42,
+          "startTime": "2021-11-03T02:03:02.090Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.172Z",
-              "duration": 40,
+              "startTime": "2021-11-03T02:03:02.090Z",
+              "duration": 35,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.188Z",
+                  "startTime": "2021-11-03T02:03:02.096Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.195Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.202Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -444,13 +420,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.211Z",
+                  "startTime": "2021-11-03T02:03:02.104Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.118Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.125Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -458,7 +458,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.218Z",
+              "startTime": "2021-11-03T02:03:02.130Z",
               "duration": 0,
               "snippet": "   59 |         const response = await request.get(`${baseURL}${cartPath}?quantidadeTotal=${carrinho.quantidadeTotal}`)\n   60 |         expect(response.status()).toBe(200)\n      |                                   ^\n   61 |",
               "steps": [],
@@ -470,7 +470,7 @@
             },
             {
               "title": "expect.toBeGreaterThanOrEqual",
-              "startTime": "2021-10-31T02:59:39.219Z",
+              "startTime": "2021-11-03T02:03:02.131Z",
               "duration": 0,
               "snippet": "   62 |         const responseData = await response.json()\n   63 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n      |                                         ^\n   64 |         expect(responseData).toHaveProperty(\"carrinhos\", expect.arrayContaining([carrinho]))",
               "steps": [],
@@ -482,8 +482,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.220Z",
-              "duration": 0,
+              "startTime": "2021-11-03T02:03:02.131Z",
+              "duration": 1,
               "snippet": "   63 |         expect(responseData.quantidade).toBeGreaterThanOrEqual(1)\n   64 |         expect(responseData).toHaveProperty(\"carrinhos\", expect.arrayContaining([carrinho]))\n      |                              ^\n   65 |     })",
               "steps": [],
               "location": {
@@ -494,7 +494,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.220Z",
+              "startTime": "2021-11-03T02:03:02.132Z",
               "duration": 0,
               "steps": []
             }
@@ -515,7 +515,7 @@
         "line": 67,
         "column": 5
       },
-      "duration": 64,
+      "duration": 40,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:67",
@@ -523,44 +523,20 @@
       ],
       "results": [
         {
-          "duration": 64,
-          "startTime": "2021-10-31T02:59:39.202Z",
+          "duration": 40,
+          "startTime": "2021-11-03T02:03:02.116Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.202Z",
-              "duration": 58,
+              "startTime": "2021-11-03T02:03:02.117Z",
+              "duration": 35,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.209Z",
-                  "duration": 1,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.218Z",
+                  "startTime": "2021-11-03T02:03:02.124Z",
                   "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.233Z",
-                  "duration": 1,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -570,13 +546,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.259Z",
+                  "startTime": "2021-11-03T02:03:02.130Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.141Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.148Z",
+                  "duration": 1,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -584,7 +584,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.264Z",
+              "startTime": "2021-11-03T02:03:02.155Z",
               "duration": 0,
               "snippet": "   68 |         const response = await request.get(`${baseURL}${cartPath}?idUsuario=${carrinho.idUsuario}`)\n   69 |         expect(response.status()).toBe(200)\n      |                                   ^\n   70 |",
               "steps": [],
@@ -596,8 +596,8 @@
             },
             {
               "title": "expect.toEqual",
-              "startTime": "2021-10-31T02:59:39.265Z",
-              "duration": 0,
+              "startTime": "2021-11-03T02:03:02.155Z",
+              "duration": 1,
               "snippet": "   71 |         const responseData = await response.json()\n   72 |         expect(responseData.quantidade).toEqual(1)\n      |                                         ^\n   73 |         expect(responseData).toHaveProperty(\"carrinhos\", expect.arrayContaining([carrinho]))",
               "steps": [],
               "location": {
@@ -608,7 +608,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.266Z",
+              "startTime": "2021-11-03T02:03:02.156Z",
               "duration": 0,
               "snippet": "   72 |         expect(responseData.quantidade).toEqual(1)\n   73 |         expect(responseData).toHaveProperty(\"carrinhos\", expect.arrayContaining([carrinho]))\n      |                              ^\n   74 |     })",
               "steps": [],
@@ -620,8 +620,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.266Z",
-              "duration": 0,
+              "startTime": "2021-11-03T02:03:02.156Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -641,7 +641,7 @@
         "line": 76,
         "column": 5
       },
-      "duration": 56,
+      "duration": 35,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:76",
@@ -649,44 +649,20 @@
       ],
       "results": [
         {
-          "duration": 56,
-          "startTime": "2021-10-31T02:59:39.221Z",
+          "duration": 35,
+          "startTime": "2021-11-03T02:03:02.133Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.221Z",
-              "duration": 46,
+              "startTime": "2021-11-03T02:03:02.133Z",
+              "duration": 30,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.230Z",
+                  "startTime": "2021-11-03T02:03:02.139Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.240Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.248Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -696,13 +672,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.262Z",
+                  "startTime": "2021-11-03T02:03:02.146Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.150Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.163Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -710,8 +710,8 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.271Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.166Z",
+              "duration": 0,
               "snippet": "   77 |         const response = await request.get(`${baseURL}${cartPath}?idUsuario=abc`)\n   78 |         expect(response.status()).toBe(200)\n      |                                   ^\n   79 |",
               "steps": [],
               "location": {
@@ -722,8 +722,8 @@
             },
             {
               "title": "expect.toEqual",
-              "startTime": "2021-10-31T02:59:39.272Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.167Z",
+              "duration": 0,
               "snippet": "   80 |         const responseData = await response.json()\n   81 |         expect(responseData.quantidade).toEqual(0)\n      |                                         ^\n   82 |         expect(responseData).toHaveProperty(\"carrinhos\", [])",
               "steps": [],
               "location": {
@@ -734,7 +734,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.273Z",
+              "startTime": "2021-11-03T02:03:02.167Z",
               "duration": 0,
               "snippet": "   81 |         expect(responseData.quantidade).toEqual(0)\n   82 |         expect(responseData).toHaveProperty(\"carrinhos\", [])\n      |                              ^\n   83 |     })",
               "steps": [],
@@ -746,8 +746,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.273Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.168Z",
+              "duration": 0,
               "steps": []
             }
           ],
@@ -767,7 +767,7 @@
         "line": 85,
         "column": 5
       },
-      "duration": 48,
+      "duration": 47,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:85",
@@ -775,44 +775,20 @@
       ],
       "results": [
         {
-          "duration": 48,
-          "startTime": "2021-10-31T02:59:39.268Z",
+          "duration": 47,
+          "startTime": "2021-11-03T02:03:02.158Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.268Z",
-              "duration": 35,
+              "startTime": "2021-11-03T02:03:02.158Z",
+              "duration": 37,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.275Z",
+                  "startTime": "2021-11-03T02:03:02.171Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.281Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.293Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -822,13 +798,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.303Z",
+                  "startTime": "2021-11-03T02:03:02.179Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.186Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.195Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -836,8 +836,8 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.310Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.204Z",
+              "duration": 0,
               "snippet": "   86 |         const response = await request.get(`${baseURL}${cartPath}?precoTotal=a&quantidadeTotal=b`)\n   87 |         expect(response.status()).toBe(400)\n      |                                   ^\n   88 |",
               "steps": [],
               "location": {
@@ -848,7 +848,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.315Z",
+              "startTime": "2021-11-03T02:03:02.205Z",
               "duration": 0,
               "snippet": "   89 |         const responseData = await response.json()\n   90 |         expect(responseData).toHaveProperty(\"precoTotal\", \"precoTotal deve ser um número\")\n      |                              ^\n   91 |         expect(responseData).toHaveProperty(\"quantidadeTotal\", \"quantidadeTotal deve ser um número\")",
               "steps": [],
@@ -860,7 +860,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.315Z",
+              "startTime": "2021-11-03T02:03:02.205Z",
               "duration": 0,
               "snippet": "   90 |         expect(responseData).toHaveProperty(\"precoTotal\", \"precoTotal deve ser um número\")\n   91 |         expect(responseData).toHaveProperty(\"quantidadeTotal\", \"quantidadeTotal deve ser um número\")\n      |                              ^\n   92 |     })",
               "steps": [],
@@ -872,8 +872,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.315Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.205Z",
+              "duration": 0,
               "steps": []
             }
           ],
@@ -893,7 +893,7 @@
         "line": 94,
         "column": 5
       },
-      "duration": 40,
+      "duration": 25,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:94",
@@ -901,44 +901,20 @@
       ],
       "results": [
         {
-          "duration": 40,
-          "startTime": "2021-10-31T02:59:39.280Z",
+          "duration": 25,
+          "startTime": "2021-11-03T02:03:02.169Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.280Z",
-              "duration": 33,
+              "startTime": "2021-11-03T02:03:02.169Z",
+              "duration": 20,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.288Z",
+                  "startTime": "2021-11-03T02:03:02.173Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.293Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.301Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -948,13 +924,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.313Z",
+                  "startTime": "2021-11-03T02:03:02.177Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.181Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.188Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -962,7 +962,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.318Z",
+              "startTime": "2021-11-03T02:03:02.193Z",
               "duration": 0,
               "snippet": "   95 |         const response = await request.get(`${baseURL}${cartPath}?precoTotal=-1&quantidadeTotal=-2`)\n   96 |         expect(response.status()).toBe(400)\n      |                                   ^\n   97 |",
               "steps": [],
@@ -974,7 +974,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.319Z",
+              "startTime": "2021-11-03T02:03:02.193Z",
               "duration": 0,
               "snippet": "   98 |         const responseData = await response.json()\n   99 |         expect(responseData).toHaveProperty(\"precoTotal\", \"precoTotal deve ser um número positivo\")\n      |                              ^\n  100 |         expect(responseData).toHaveProperty(\"quantidadeTotal\", \"quantidadeTotal deve ser um número positivo\")",
               "steps": [],
@@ -986,7 +986,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.320Z",
+              "startTime": "2021-11-03T02:03:02.193Z",
               "duration": 0,
               "snippet": "   99 |         expect(responseData).toHaveProperty(\"precoTotal\", \"precoTotal deve ser um número positivo\")\n  100 |         expect(responseData).toHaveProperty(\"quantidadeTotal\", \"quantidadeTotal deve ser um número positivo\")\n      |                              ^\n  101 |     })",
               "steps": [],
@@ -998,7 +998,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.320Z",
+              "startTime": "2021-11-03T02:03:02.194Z",
               "duration": 0,
               "steps": []
             }
@@ -1019,7 +1019,7 @@
         "line": 103,
         "column": 5
       },
-      "duration": 61,
+      "duration": 37,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:103",
@@ -1027,44 +1027,20 @@
       ],
       "results": [
         {
-          "duration": 61,
-          "startTime": "2021-10-31T02:59:39.317Z",
+          "duration": 37,
+          "startTime": "2021-11-03T02:03:02.196Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.317Z",
-              "duration": 51,
+              "startTime": "2021-11-03T02:03:02.196Z",
+              "duration": 29,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.327Z",
+                  "startTime": "2021-11-03T02:03:02.202Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.337Z",
-                  "duration": 1,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.352Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -1074,13 +1050,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.367Z",
+                  "startTime": "2021-11-03T02:03:02.208Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.218Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.225Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -1088,8 +1088,8 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.372Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.231Z",
+              "duration": 0,
               "snippet": "  104 |         const response = await request.get(`${baseURL}${cartPath}?precoTotal=0.1&quantidadeTotal=0.2`)\n  105 |         expect(response.status()).toBe(400)\n      |                                   ^\n  106 |",
               "steps": [],
               "location": {
@@ -1100,8 +1100,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.376Z",
-              "duration": 0,
+              "startTime": "2021-11-03T02:03:02.231Z",
+              "duration": 1,
               "snippet": "  107 |         const responseData = await response.json()\n  108 |         expect(responseData).toHaveProperty(\"precoTotal\", \"precoTotal deve ser um inteiro\")\n      |                              ^\n  109 |         expect(responseData).toHaveProperty(\"quantidadeTotal\", \"quantidadeTotal deve ser um inteiro\")",
               "steps": [],
               "location": {
@@ -1112,7 +1112,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.376Z",
+              "startTime": "2021-11-03T02:03:02.232Z",
               "duration": 0,
               "snippet": "  108 |         expect(responseData).toHaveProperty(\"precoTotal\", \"precoTotal deve ser um inteiro\")\n  109 |         expect(responseData).toHaveProperty(\"quantidadeTotal\", \"quantidadeTotal deve ser um inteiro\")\n      |                              ^\n  110 |     })",
               "steps": [],
@@ -1124,7 +1124,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.376Z",
+              "startTime": "2021-11-03T02:03:02.232Z",
               "duration": 1,
               "steps": []
             }
@@ -1145,7 +1145,7 @@
         "line": 112,
         "column": 5
       },
-      "duration": 72,
+      "duration": 43,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:112",
@@ -1153,44 +1153,20 @@
       ],
       "results": [
         {
-          "duration": 72,
-          "startTime": "2021-10-31T02:59:39.323Z",
+          "duration": 43,
+          "startTime": "2021-11-03T02:03:02.206Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.323Z",
-              "duration": 42,
+              "startTime": "2021-11-03T02:03:02.206Z",
+              "duration": 26,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.332Z",
+                  "startTime": "2021-11-03T02:03:02.210Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.338Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.353Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -1200,13 +1176,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.362Z",
+                  "startTime": "2021-11-03T02:03:02.217Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.223Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.232Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -1214,31 +1214,31 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.374Z",
+              "startTime": "2021-11-03T02:03:02.236Z",
               "duration": 0,
-              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+              "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
               "steps": [],
               "location": {
                 "file": "../../api/fixtures.js",
-                "line": 34,
+                "line": 53,
                 "column": 39
               }
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.379Z",
+              "startTime": "2021-11-03T02:03:02.240Z",
               "duration": 0,
-              "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
+              "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
               "steps": [],
               "location": {
                 "file": "../../api/fixtures.js",
-                "line": 19,
+                "line": 31,
                 "column": 39
               }
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.392Z",
+              "startTime": "2021-11-03T02:03:02.247Z",
               "duration": 0,
               "snippet": "  125 |         })\n  126 |         expect(response.status()).toBe(201)\n      |                                   ^\n  127 |",
               "steps": [],
@@ -1250,7 +1250,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.393Z",
+              "startTime": "2021-11-03T02:03:02.248Z",
               "duration": 0,
               "snippet": "  128 |         const responseData = await response.json()\n  129 |         expect(responseData).toHaveProperty(\"message\", \"Cadastro realizado com sucesso\")\n      |                              ^\n  130 |         expect(responseData).toHaveProperty(\"_id\", responseData._id)",
               "steps": [],
@@ -1262,8 +1262,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.393Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.248Z",
+              "duration": 0,
               "snippet": "  129 |         expect(responseData).toHaveProperty(\"message\", \"Cadastro realizado com sucesso\")\n  130 |         expect(responseData).toHaveProperty(\"_id\", responseData._id)\n      |                              ^\n  131 |     })",
               "steps": [],
               "location": {
@@ -1274,8 +1274,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.394Z",
-              "duration": 0,
+              "startTime": "2021-11-03T02:03:02.248Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -1295,7 +1295,7 @@
         "line": 133,
         "column": 5
       },
-      "duration": 71,
+      "duration": 44,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:133",
@@ -1303,44 +1303,20 @@
       ],
       "results": [
         {
-          "duration": 71,
-          "startTime": "2021-10-31T02:59:39.378Z",
+          "duration": 44,
+          "startTime": "2021-11-03T02:03:02.234Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.378Z",
-              "duration": 49,
+              "startTime": "2021-11-03T02:03:02.234Z",
+              "duration": 28,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.390Z",
+                  "startTime": "2021-11-03T02:03:02.242Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.401Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.414Z",
-                  "duration": 1,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -1350,13 +1326,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.424Z",
+                  "startTime": "2021-11-03T02:03:02.246Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.256Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.262Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -1364,32 +1364,32 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.436Z",
+              "startTime": "2021-11-03T02:03:02.267Z",
               "duration": 0,
-              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+              "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
               "steps": [],
               "location": {
                 "file": "../../api/fixtures.js",
-                "line": 34,
+                "line": 53,
                 "column": 39
               }
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.440Z",
+              "startTime": "2021-11-03T02:03:02.271Z",
               "duration": 0,
-              "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
+              "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
               "steps": [],
               "location": {
                 "file": "../../api/fixtures.js",
-                "line": 19,
+                "line": 31,
                 "column": 39
               }
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.445Z",
-              "duration": 0,
+              "startTime": "2021-11-03T02:03:02.276Z",
+              "duration": 1,
               "snippet": "  157 |\n  158 |         expect(response.status()).toBe(400)\n      |                                   ^\n  159 |",
               "steps": [],
               "location": {
@@ -1400,7 +1400,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.449Z",
+              "startTime": "2021-11-03T02:03:02.277Z",
               "duration": 0,
               "snippet": "  160 |         const responseData = await response.json()\n  161 |         expect(responseData).toHaveProperty(\"message\", \"Não é permitido possuir produto duplicado\")\n      |                              ^\n  162 |     })",
               "steps": [],
@@ -1412,8 +1412,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.449Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.278Z",
+              "duration": 0,
               "steps": []
             }
           ],
@@ -1433,7 +1433,7 @@
         "line": 164,
         "column": 5
       },
-      "duration": 38,
+      "duration": 34,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:164",
@@ -1441,44 +1441,20 @@
       ],
       "results": [
         {
-          "duration": 38,
-          "startTime": "2021-10-31T02:59:39.395Z",
+          "duration": 34,
+          "startTime": "2021-11-03T02:03:02.249Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.395Z",
-              "duration": 30,
+              "startTime": "2021-11-03T02:03:02.250Z",
+              "duration": 28,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.402Z",
+                  "startTime": "2021-11-03T02:03:02.255Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.406Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.412Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -1488,13 +1464,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.423Z",
+                  "startTime": "2021-11-03T02:03:02.260Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.272Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.278Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -1502,7 +1502,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.431Z",
+              "startTime": "2021-11-03T02:03:02.283Z",
               "duration": 0,
               "snippet": "  180 |\n  181 |         expect(response.status()).toBe(400)\n      |                                   ^\n  182 |",
               "steps": [],
@@ -1514,7 +1514,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.432Z",
+              "startTime": "2021-11-03T02:03:02.283Z",
               "duration": 0,
               "snippet": "  183 |         const responseData = await response.json()\n  184 |         expect(responseData).toHaveProperty(\"message\", \"Não é permitido ter mais de 1 carrinho\")\n      |                              ^\n  185 |     })",
               "steps": [],
@@ -1526,7 +1526,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.432Z",
+              "startTime": "2021-11-03T02:03:02.283Z",
               "duration": 1,
               "steps": []
             }
@@ -1547,7 +1547,7 @@
         "line": 187,
         "column": 5
       },
-      "duration": 50,
+      "duration": 43,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:187",
@@ -1555,44 +1555,20 @@
       ],
       "results": [
         {
-          "duration": 50,
-          "startTime": "2021-10-31T02:59:39.434Z",
+          "duration": 43,
+          "startTime": "2021-11-03T02:03:02.279Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.434Z",
-              "duration": 29,
+              "startTime": "2021-11-03T02:03:02.279Z",
+              "duration": 28,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.446Z",
+                  "startTime": "2021-11-03T02:03:02.286Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.450Z",
-                  "duration": 1,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.456Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -1602,13 +1578,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.461Z",
+                  "startTime": "2021-11-03T02:03:02.289Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.297Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.302Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -1616,31 +1616,31 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.468Z",
+              "startTime": "2021-11-03T02:03:02.311Z",
               "duration": 0,
-              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+              "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
               "steps": [],
               "location": {
                 "file": "../../api/fixtures.js",
-                "line": 34,
+                "line": 53,
                 "column": 39
               }
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.476Z",
+              "startTime": "2021-11-03T02:03:02.315Z",
               "duration": 0,
-              "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
+              "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
               "steps": [],
               "location": {
                 "file": "../../api/fixtures.js",
-                "line": 19,
+                "line": 31,
                 "column": 39
               }
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.483Z",
+              "startTime": "2021-11-03T02:03:02.320Z",
               "duration": 0,
               "snippet": "  207 |\n  208 |         expect(response.status()).toBe(400)\n      |                                   ^\n  209 |",
               "steps": [],
@@ -1652,7 +1652,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.484Z",
+              "startTime": "2021-11-03T02:03:02.321Z",
               "duration": 0,
               "snippet": "  210 |         const responseData = await response.json()\n  211 |         expect(responseData).toHaveProperty(\"message\", \"Produto não encontrado\")\n      |                              ^\n  212 |     })",
               "steps": [],
@@ -1664,8 +1664,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.484Z",
-              "duration": 0,
+              "startTime": "2021-11-03T02:03:02.321Z",
+              "duration": 1,
               "steps": []
             }
           ],
@@ -1685,7 +1685,7 @@
         "line": 214,
         "column": 5
       },
-      "duration": 53,
+      "duration": 48,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:214",
@@ -1693,44 +1693,20 @@
       ],
       "results": [
         {
-          "duration": 53,
-          "startTime": "2021-10-31T02:59:39.453Z",
+          "duration": 48,
+          "startTime": "2021-11-03T02:03:02.284Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.453Z",
-              "duration": 28,
+              "startTime": "2021-11-03T02:03:02.284Z",
+              "duration": 26,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.459Z",
-                  "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.465Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.469Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "startTime": "2021-11-03T02:03:02.290Z",
+                  "duration": 1,
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -1740,13 +1716,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.480Z",
+                  "startTime": "2021-11-03T02:03:02.295Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.298Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.309Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -1754,31 +1754,31 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.485Z",
+              "startTime": "2021-11-03T02:03:02.314Z",
               "duration": 0,
-              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+              "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
               "steps": [],
               "location": {
                 "file": "../../api/fixtures.js",
-                "line": 34,
+                "line": 53,
                 "column": 39
               }
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.490Z",
+              "startTime": "2021-11-03T02:03:02.319Z",
               "duration": 0,
-              "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
+              "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
               "steps": [],
               "location": {
                 "file": "../../api/fixtures.js",
-                "line": 19,
+                "line": 31,
                 "column": 39
               }
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.504Z",
+              "startTime": "2021-11-03T02:03:02.330Z",
               "duration": 0,
               "snippet": "  244 |\n  245 |         expect(response.status()).toBe(400)\n      |                                   ^\n  246 |",
               "steps": [],
@@ -1790,7 +1790,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.505Z",
+              "startTime": "2021-11-03T02:03:02.331Z",
               "duration": 0,
               "snippet": "  247 |         const responseData = await response.json()\n  248 |         expect(responseData).toHaveProperty(\"message\", \"Produto não possui quantidade suficiente\")\n      |                              ^\n  249 |     })",
               "steps": [],
@@ -1802,7 +1802,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.505Z",
+              "startTime": "2021-11-03T02:03:02.331Z",
               "duration": 1,
               "steps": []
             }
@@ -1823,7 +1823,7 @@
         "line": 251,
         "column": 5
       },
-      "duration": 34,
+      "duration": 33,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:251",
@@ -1831,44 +1831,20 @@
       ],
       "results": [
         {
-          "duration": 34,
-          "startTime": "2021-10-31T02:59:39.487Z",
+          "duration": 33,
+          "startTime": "2021-11-03T02:03:02.324Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.487Z",
-              "duration": 27,
+              "startTime": "2021-11-03T02:03:02.324Z",
+              "duration": 29,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.496Z",
+                  "startTime": "2021-11-03T02:03:02.328Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.502Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.507Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -1878,13 +1854,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.514Z",
+                  "startTime": "2021-11-03T02:03:02.339Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.345Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.351Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -1892,7 +1892,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.519Z",
+              "startTime": "2021-11-03T02:03:02.355Z",
               "duration": 0,
               "snippet": "  262 |\n  263 |         expect(response.status()).toBe(401)\n      |                                   ^\n  264 |",
               "steps": [],
@@ -1904,7 +1904,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.520Z",
+              "startTime": "2021-11-03T02:03:02.356Z",
               "duration": 0,
               "snippet": "  265 |         const responseData = await response.json()\n  266 |         expect(responseData).toHaveProperty(\n      |                              ^\n  267 |             \"message\",",
               "steps": [],
@@ -1916,7 +1916,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.520Z",
+              "startTime": "2021-11-03T02:03:02.356Z",
               "duration": 0,
               "steps": []
             }
@@ -1937,7 +1937,7 @@
         "line": 272,
         "column": 5
       },
-      "duration": 41,
+      "duration": 28,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:272",
@@ -1945,44 +1945,20 @@
       ],
       "results": [
         {
-          "duration": 41,
-          "startTime": "2021-10-31T02:59:39.509Z",
+          "duration": 28,
+          "startTime": "2021-11-03T02:03:02.336Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.509Z",
-              "duration": 34,
+              "startTime": "2021-11-03T02:03:02.336Z",
+              "duration": 22,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.516Z",
+                  "startTime": "2021-11-03T02:03:02.340Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.527Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.536Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -1992,13 +1968,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.542Z",
+                  "startTime": "2021-11-03T02:03:02.343Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.349Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.357Z",
+                  "duration": 1,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -2006,7 +2006,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.547Z",
+              "startTime": "2021-11-03T02:03:02.362Z",
               "duration": 0,
               "snippet": "  279 |\n  280 |         expect(response.status()).toBe(400)\n      |                                   ^\n  281 |",
               "steps": [],
@@ -2018,7 +2018,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.548Z",
+              "startTime": "2021-11-03T02:03:02.363Z",
               "duration": 0,
               "snippet": "  282 |         const responseData = await response.json()\n  283 |         expect(responseData).toHaveProperty(\"inexistente\", \"inexistente não é permitido\")\n      |                              ^\n  284 |     })",
               "steps": [],
@@ -2030,7 +2030,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.548Z",
+              "startTime": "2021-11-03T02:03:02.363Z",
               "duration": 1,
               "steps": []
             }
@@ -2051,7 +2051,7 @@
         "line": 286,
         "column": 5
       },
-      "duration": 39,
+      "duration": 32,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:286",
@@ -2059,44 +2059,20 @@
       ],
       "results": [
         {
-          "duration": 39,
-          "startTime": "2021-10-31T02:59:39.525Z",
+          "duration": 32,
+          "startTime": "2021-11-03T02:03:02.357Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.525Z",
-              "duration": 29,
+              "startTime": "2021-11-03T02:03:02.357Z",
+              "duration": 24,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.534Z",
+                  "startTime": "2021-11-03T02:03:02.364Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.538Z",
-                  "duration": 1,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.545Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -2106,13 +2082,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.553Z",
+                  "startTime": "2021-11-03T02:03:02.368Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.372Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.380Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -2120,7 +2120,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.560Z",
+              "startTime": "2021-11-03T02:03:02.385Z",
               "duration": 0,
               "snippet": "  287 |         const response = await request.get(`${baseURL}${cartPath}/${carrinho._id}`)\n  288 |         expect(response.status()).toBe(200)\n      |                                   ^\n  289 |",
               "steps": [],
@@ -2132,7 +2132,7 @@
             },
             {
               "title": "expect.toEqual",
-              "startTime": "2021-10-31T02:59:39.561Z",
+              "startTime": "2021-11-03T02:03:02.386Z",
               "duration": 0,
               "snippet": "  290 |         const responseData = await response.json()\n  291 |         expect(responseData).toEqual(carrinho)\n      |                              ^\n  292 |     })",
               "steps": [],
@@ -2144,8 +2144,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.561Z",
-              "duration": 2,
+              "startTime": "2021-11-03T02:03:02.386Z",
+              "duration": 3,
               "steps": []
             }
           ],
@@ -2165,7 +2165,7 @@
         "line": 294,
         "column": 5
       },
-      "duration": 40,
+      "duration": 30,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:294",
@@ -2173,44 +2173,20 @@
       ],
       "results": [
         {
-          "duration": 40,
-          "startTime": "2021-10-31T02:59:39.550Z",
+          "duration": 30,
+          "startTime": "2021-11-03T02:03:02.366Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.550Z",
-              "duration": 33,
+              "startTime": "2021-11-03T02:03:02.366Z",
+              "duration": 21,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.556Z",
+                  "startTime": "2021-11-03T02:03:02.370Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.570Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.575Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -2220,13 +2196,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.582Z",
+                  "startTime": "2021-11-03T02:03:02.376Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.381Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.386Z",
+                  "duration": 1,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -2234,7 +2234,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.588Z",
+              "startTime": "2021-11-03T02:03:02.395Z",
               "duration": 0,
               "snippet": "  295 |         const response = await request.get(`${baseURL}${cartPath}/1`)\n  296 |         expect(response.status()).toBe(400)\n      |                                   ^\n  297 |",
               "steps": [],
@@ -2246,8 +2246,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.588Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.396Z",
+              "duration": 0,
               "snippet": "  298 |         const responseData = await response.json()\n  299 |         expect(responseData).toHaveProperty(\"message\", \"Carrinho não encontrado\")\n      |                              ^\n  300 |     })",
               "steps": [],
               "location": {
@@ -2258,7 +2258,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.589Z",
+              "startTime": "2021-11-03T02:03:02.396Z",
               "duration": 0,
               "steps": []
             }
@@ -2279,7 +2279,7 @@
         "line": 302,
         "column": 5
       },
-      "duration": 51,
+      "duration": 41,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:302",
@@ -2287,44 +2287,20 @@
       ],
       "results": [
         {
-          "duration": 51,
-          "startTime": "2021-10-31T02:59:39.564Z",
+          "duration": 41,
+          "startTime": "2021-11-03T02:03:02.390Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.564Z",
-              "duration": 31,
+              "startTime": "2021-11-03T02:03:02.390Z",
+              "duration": 29,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.569Z",
-                  "duration": 1,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.578Z",
+                  "startTime": "2021-11-03T02:03:02.397Z",
                   "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.585Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -2334,13 +2310,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.594Z",
+                  "startTime": "2021-11-03T02:03:02.402Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.411Z",
+                  "duration": 2,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.418Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -2348,8 +2348,8 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.612Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.428Z",
+              "duration": 0,
               "snippet": "  305 |         })\n  306 |         expect(response.status()).toBe(200)\n      |                                   ^\n  307 |",
               "steps": [],
               "location": {
@@ -2360,8 +2360,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.613Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.429Z",
+              "duration": 0,
               "snippet": "  308 |         const responseData = await response.json()\n  309 |         expect(responseData).toHaveProperty(\"message\", \"Registro excluído com sucesso\")\n      |                              ^\n  310 |     })",
               "steps": [],
               "location": {
@@ -2372,8 +2372,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.614Z",
-              "duration": 0,
+              "startTime": "2021-11-03T02:03:02.429Z",
+              "duration": 2,
               "steps": []
             }
           ],
@@ -2393,7 +2393,7 @@
         "line": 312,
         "column": 5
       },
-      "duration": 97,
+      "duration": 61,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:312",
@@ -2401,44 +2401,20 @@
       ],
       "results": [
         {
-          "duration": 97,
-          "startTime": "2021-10-31T02:59:39.591Z",
+          "duration": 61,
+          "startTime": "2021-11-03T02:03:02.398Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.591Z",
-              "duration": 71,
+              "startTime": "2021-11-03T02:03:02.398Z",
+              "duration": 38,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.611Z",
+                  "startTime": "2021-11-03T02:03:02.403Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.625Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.652Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -2448,13 +2424,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.661Z",
+                  "startTime": "2021-11-03T02:03:02.409Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.416Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.436Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -2462,31 +2462,31 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.673Z",
+              "startTime": "2021-11-03T02:03:02.446Z",
               "duration": 0,
-              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
+              "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
               "steps": [],
               "location": {
                 "file": "../../api/fixtures.js",
-                "line": 34,
+                "line": 53,
                 "column": 39
               }
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.680Z",
-              "duration": 0,
-              "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
+              "startTime": "2021-11-03T02:03:02.449Z",
+              "duration": 1,
+              "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
               "steps": [],
               "location": {
                 "file": "../../api/fixtures.js",
-                "line": 19,
+                "line": 31,
                 "column": 39
               }
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.687Z",
+              "startTime": "2021-11-03T02:03:02.455Z",
               "duration": 0,
               "snippet": "  323 |         })\n  324 |         expect(response.status()).toBe(200)\n      |                                   ^\n  325 |",
               "steps": [],
@@ -2498,8 +2498,8 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.688Z",
-              "duration": 0,
+              "startTime": "2021-11-03T02:03:02.456Z",
+              "duration": 1,
               "snippet": "  326 |         const responseData = await response.json()\n  327 |         expect(responseData).toHaveProperty(\"message\", \"Não foi encontrado carrinho para esse usuário\")\n      |                              ^\n  328 |     })",
               "steps": [],
               "location": {
@@ -2510,8 +2510,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.688Z",
-              "duration": 1,
+              "startTime": "2021-11-03T02:03:02.457Z",
+              "duration": 2,
               "steps": []
             }
           ],
@@ -2531,7 +2531,7 @@
         "line": 330,
         "column": 5
       },
-      "duration": 53,
+      "duration": 30,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:330",
@@ -2539,44 +2539,20 @@
       ],
       "results": [
         {
-          "duration": 53,
-          "startTime": "2021-10-31T02:59:39.616Z",
+          "duration": 30,
+          "startTime": "2021-11-03T02:03:02.432Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.616Z",
-              "duration": 47,
+              "startTime": "2021-11-03T02:03:02.432Z",
+              "duration": 26,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.640Z",
+                  "startTime": "2021-11-03T02:03:02.439Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.646Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.653Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -2586,13 +2562,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.662Z",
-                  "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "startTime": "2021-11-03T02:03:02.442Z",
+                  "duration": 1,
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.453Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.457Z",
+                  "duration": 1,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -2600,7 +2600,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.667Z",
+              "startTime": "2021-11-03T02:03:02.461Z",
               "duration": 0,
               "snippet": "  333 |         })\n  334 |         expect(response.status()).toBe(401)\n      |                                   ^\n  335 |",
               "steps": [],
@@ -2612,7 +2612,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.668Z",
+              "startTime": "2021-11-03T02:03:02.462Z",
               "duration": 0,
               "snippet": "  336 |         const responseData = await response.json()\n  337 |         expect(responseData).toHaveProperty(\n      |                              ^\n  338 |             \"message\",",
               "steps": [],
@@ -2624,7 +2624,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.668Z",
+              "startTime": "2021-11-03T02:03:02.462Z",
               "duration": 0,
               "steps": []
             }
@@ -2645,7 +2645,7 @@
         "line": 343,
         "column": 5
       },
-      "duration": 31,
+      "duration": 28,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:343",
@@ -2653,44 +2653,20 @@
       ],
       "results": [
         {
-          "duration": 31,
-          "startTime": "2021-10-31T02:59:39.669Z",
+          "duration": 28,
+          "startTime": "2021-11-03T02:03:02.460Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.669Z",
-              "duration": 26,
+              "startTime": "2021-11-03T02:03:02.460Z",
+              "duration": 21,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.675Z",
+                  "startTime": "2021-11-03T02:03:02.465Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.681Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.688Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -2700,13 +2676,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.694Z",
+                  "startTime": "2021-11-03T02:03:02.468Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.475Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.481Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -2714,7 +2714,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.699Z",
+              "startTime": "2021-11-03T02:03:02.486Z",
               "duration": 0,
               "snippet": "  346 |         })\n  347 |         expect(response.status()).toBe(200)\n      |                                   ^\n  348 |",
               "steps": [],
@@ -2726,7 +2726,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.700Z",
+              "startTime": "2021-11-03T02:03:02.487Z",
               "duration": 0,
               "snippet": "  349 |         const responseData = await response.json()\n  350 |         expect(responseData).toHaveProperty(\n      |                              ^\n  351 |             \"message\",",
               "steps": [],
@@ -2738,7 +2738,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.700Z",
+              "startTime": "2021-11-03T02:03:02.487Z",
               "duration": 0,
               "steps": []
             }
@@ -2759,7 +2759,7 @@
         "line": 356,
         "column": 5
       },
-      "duration": 63,
+      "duration": 38,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:356",
@@ -2767,44 +2767,20 @@
       ],
       "results": [
         {
-          "duration": 63,
-          "startTime": "2021-10-31T02:59:39.690Z",
+          "duration": 38,
+          "startTime": "2021-11-03T02:03:02.463Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.690Z",
-              "duration": 42,
+              "startTime": "2021-11-03T02:03:02.463Z",
+              "duration": 25,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.697Z",
+                  "startTime": "2021-11-03T02:03:02.470Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.707Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.720Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -2814,13 +2790,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.731Z",
+                  "startTime": "2021-11-03T02:03:02.473Z",
                   "duration": 0,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.479Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.487Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -2828,32 +2828,32 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.739Z",
+              "startTime": "2021-11-03T02:03:02.491Z",
+              "duration": 0,
+              "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
+              "steps": [],
+              "location": {
+                "file": "../../api/fixtures.js",
+                "line": 53,
+                "column": 39
+              }
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-11-03T02:03:02.494Z",
+              "duration": 0,
+              "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
+              "steps": [],
+              "location": {
+                "file": "../../api/fixtures.js",
+                "line": 31,
+                "column": 39
+              }
+            },
+            {
+              "title": "expect.toBe",
+              "startTime": "2021-11-03T02:03:02.498Z",
               "duration": 1,
-              "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 34,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.747Z",
-              "duration": 0,
-              "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-              "steps": [],
-              "location": {
-                "file": "../../api/fixtures.js",
-                "line": 19,
-                "column": 39
-              }
-            },
-            {
-              "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.751Z",
-              "duration": 0,
               "snippet": "  367 |         })\n  368 |         expect(response.status()).toBe(200)\n      |                                   ^\n  369 |",
               "steps": [],
               "location": {
@@ -2864,7 +2864,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.752Z",
+              "startTime": "2021-11-03T02:03:02.499Z",
               "duration": 0,
               "snippet": "  370 |         const responseData = await response.json()\n  371 |         expect(responseData).toHaveProperty(\"message\", \"Não foi encontrado carrinho para esse usuário\")\n      |                              ^\n  372 |     })",
               "steps": [],
@@ -2876,7 +2876,7 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.752Z",
+              "startTime": "2021-11-03T02:03:02.499Z",
               "duration": 1,
               "steps": []
             }
@@ -2897,7 +2897,7 @@
         "line": 374,
         "column": 5
       },
-      "duration": 47,
+      "duration": 48,
       "outcome": "expected",
       "path": [
         "carrinhos.spec.js:374",
@@ -2905,44 +2905,20 @@
       ],
       "results": [
         {
-          "duration": 47,
-          "startTime": "2021-10-31T02:59:39.701Z",
+          "duration": 48,
+          "startTime": "2021-11-03T02:03:02.489Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-31T02:59:39.701Z",
-              "duration": 40,
+              "startTime": "2021-11-03T02:03:02.489Z",
+              "duration": 43,
               "steps": [
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.708Z",
+                  "startTime": "2021-11-03T02:03:02.496Z",
                   "duration": 0,
-                  "snippet": "  33 |             })\n  34 |             expect(response.status()).toBe(201)\n     |                                       ^\n  35 |             responseData = await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 34,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.711Z",
-                  "duration": 0,
-                  "snippet": "  18 |             })\n  19 |             expect(response.status()).toBe(200)\n     |                                       ^\n  20 |             return await response.json()",
-                  "steps": [],
-                  "location": {
-                    "file": "../../api/fixtures.js",
-                    "line": 19,
-                    "column": 39
-                  }
-                },
-                {
-                  "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.718Z",
-                  "duration": 0,
-                  "snippet": "  52 |             })\n  53 |             expect(response.status()).toBe(201)\n     |                                       ^\n  54 |             responseData = await response.json()",
+                  "snippet": "   52 |             })\n   53 |             expect(response.status()).toBe(201)\n      |                                       ^\n   54 |             responseData = await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
@@ -2952,13 +2928,37 @@
                 },
                 {
                   "title": "expect.toBe",
-                  "startTime": "2021-10-31T02:59:39.739Z",
-                  "duration": 1,
-                  "snippet": "  74 |             })\n  75 |             expect(response.status()).toBe(201)\n     |                                       ^\n  76 |             responseData = await response.json()",
+                  "startTime": "2021-11-03T02:03:02.501Z",
+                  "duration": 0,
+                  "snippet": "   30 |             })\n   31 |             expect(response.status()).toBe(200)\n      |                                       ^\n   32 |             return await response.json()",
                   "steps": [],
                   "location": {
                     "file": "../../api/fixtures.js",
-                    "line": 75,
+                    "line": 31,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.506Z",
+                  "duration": 0,
+                  "snippet": "   77 |             })\n   78 |             expect(response.status()).toBe(201)\n      |                                       ^\n   79 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 78,
+                    "column": 39
+                  }
+                },
+                {
+                  "title": "expect.toBe",
+                  "startTime": "2021-11-03T02:03:02.531Z",
+                  "duration": 0,
+                  "snippet": "  106 |             })\n  107 |             expect(response.status()).toBe(201)\n      |                                       ^\n  108 |             responseData = await response.json()",
+                  "steps": [],
+                  "location": {
+                    "file": "../../api/fixtures.js",
+                    "line": 107,
                     "column": 39
                   }
                 }
@@ -2966,7 +2966,7 @@
             },
             {
               "title": "expect.toBe",
-              "startTime": "2021-10-31T02:59:39.745Z",
+              "startTime": "2021-11-03T02:03:02.536Z",
               "duration": 0,
               "snippet": "  377 |         })\n  378 |         expect(response.status()).toBe(401)\n      |                                   ^\n  379 |",
               "steps": [],
@@ -2978,7 +2978,7 @@
             },
             {
               "title": "expect.toHaveProperty",
-              "startTime": "2021-10-31T02:59:39.746Z",
+              "startTime": "2021-11-03T02:03:02.536Z",
               "duration": 0,
               "snippet": "  380 |         const responseData = await response.json()\n  381 |         expect(responseData).toHaveProperty(\n      |                              ^\n  382 |             \"message\",",
               "steps": [],
@@ -2990,8 +2990,8 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-31T02:59:39.746Z",
-              "duration": 3,
+              "startTime": "2021-11-03T02:03:02.536Z",
+              "duration": 1,
               "steps": []
             }
           ],
