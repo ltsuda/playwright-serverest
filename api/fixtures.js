@@ -2,12 +2,24 @@ const base = require("@playwright/test")
 const { expect } = require("@playwright/test")
 const faker = require("faker")
 
+/**
+ * Test fixtures (https://playwright.dev/docs/test-fixtures)
+ * This is extending the base/test import { base } from @playwright/test to include
+ * new fixtures like the endpoints of the API and functions that setup new users,
+ * produtos, carrinhos and performs login, retrieving the authorization token
+ * for administrator actions
+ */
 module.exports = base.test.extend({
     loginPath: "/login",
     cartPath: "/carrinhos",
     userPath: "/usuarios",
     productsPath: "/produtos",
 
+    /**
+     * Fixture that performs API authentication and returns the authorization token
+     * It uses the baseURL, request and loginPath from Playwright's environment
+     * Then, the login fixture receives an email and a password as parameter
+     */
     login: async ({ baseURL, request, loginPath }, use) => {
         await use(async (email, password) => {
             const response = await request.post(`${baseURL}${loginPath}`, {
@@ -20,6 +32,13 @@ module.exports = base.test.extend({
             return await response.json()
         })
     },
+
+    /**
+     * Fixture that creates a new user on the ServeRest server
+     * It uses the baseURL, request and userPath from Playwright's environment
+     * Then, the cadastrarUsuario fixture receives an object with the administrator
+     * parameter to select if the new user will have administrator permission
+     */
     cadastrarUsuario: async ({ baseURL, request, userPath }, use) => {
         await use(async ({ administrador = false } = {}) => {
             let data = {
@@ -37,6 +56,12 @@ module.exports = base.test.extend({
             return data
         })
     },
+
+    /**
+     * Fixture that creates a new product on the ServeRest server
+     * It uses the baseURL, request and productsPath from Playwright's environment
+     * Then, the cadastrarProduto fixture receives a bearer authorization token as parameter
+     */
     cadastrarProduto: async ({ baseURL, request, productsPath }, use) => {
         await use(async (authorization) => {
             let data = {
@@ -56,6 +81,13 @@ module.exports = base.test.extend({
             return data
         })
     },
+
+    /**
+     * Fixture that creates a new shopping cart on the ServeRest server
+     * It uses the baseURL, request and cartPath from Playwright's environment
+     * Then, the cadastrarCarrinho fixture receives a bearer authorization token and
+     * a list of products as parameter
+     */
     cadastrarCarrinho: async ({ baseURL, request, cartPath }, use) => {
         await use(async (authorization, produtos) => {
             let data = { produtos: [] }
