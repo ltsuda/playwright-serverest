@@ -3,16 +3,16 @@
     "description": "Estudo de Teste de API utilizando Playwright/Test e [ServeRest](https://serverest.dev/)",
     "version": "1.0.0",
     "devDependencies": {
-        "@playwright/test": "^1.16.3",
+        "@playwright/test": "^1.17.0",
         "faker": "^5.5.3",
         "joi": "^17.4.2",
-        "serverest": "^2.18.4"
+        "serverest": "^2.25.1"
     },
     "scripts": {
-        "test:api": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep-invert '@schema'",
-        "test:match": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep $MATCH",
-        "test:schema": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep '@schema'",
-        "test:all": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test ||:",
+        "test:api": "npx playwright test --grep-invert '@schema'",
+        "test:match": "npx playwright test --grep $MATCH",
+        "test:schema": "npx playwright test --grep '@schema'",
+        "test:all": "npx playwright test ||:",
         "test:docker": "npx playwright test",
         "posttest:docker": "npm run reporter:html",
         "reporter:html": "npx playwright show-report test-results"

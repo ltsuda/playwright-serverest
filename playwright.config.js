@@ -2,8 +2,8 @@ const config = {
     testDir: "tests/api",
     retries: 1,
     reporter: process.env.CI
-        ? [["dot"], ["html", { outputFolder: "test-results" }]]
-        : [["line"], ["html", { outputFolder: "test-results" }]],
+        ? [["dot"], ["html", { outputFolder: "test-results", open: "never" }]]
+        : [["line"], ["html", { outputFolder: "test-results", open: "never" }]],
     workers: process.env.CI ? 2 : undefined,
 
     webServer: {
