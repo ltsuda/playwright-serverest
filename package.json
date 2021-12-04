@@ -3,7 +3,7 @@
     "description": "Estudo de Teste de API utilizando Playwright/Test e [ServeRest](https://serverest.dev/)",
     "version": "1.0.0",
     "devDependencies": {
-        "@playwright/test": "^1.17.0",
+        "@playwright/test": "^1.17.1",
         "faker": "^5.5.3",
         "joi": "^17.4.2",
         "serverest": "^2.25.1"
