@@ -6,7 +6,7 @@
         "@playwright/test": "^1.17.1",
         "faker": "^5.5.3",
         "joi": "^17.4.2",
-        "serverest": "^2.25.1"
+        "serverest": "^2.18.4"
     },
     "scripts": {
         "test:api": "npx playwright test --grep-invert '@schema'",
