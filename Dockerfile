@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.17.1-focal
+FROM mcr.microsoft.com/playwright:v1.17.2-focal
 
 WORKDIR /tester
 
