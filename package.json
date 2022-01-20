@@ -3,10 +3,10 @@
     "description": "Estudo de Teste de API utilizando Playwright/Test e [ServeRest](https://serverest.dev/)",
     "version": "1.0.0",
     "devDependencies": {
-        "@playwright/test": "^1.17.2",
+        "@playwright/test": "^1.18.0",
         "faker": "5.5.3",
         "joi": "^17.4.2",
-        "serverest": "^2.18.4"
+        "serverest": "^2.25.2"
     },
     "scripts": {
         "test:api": "npx playwright test --grep-invert '@schema'",
