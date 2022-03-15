@@ -18,6 +18,19 @@ const config = {
         headless: true,
         baseURL: "http://localhost:3000",
     },
+
+    projects: [
+        {
+            name: "api",
+            outputDir: "../test-results/api/",
+            grepInvert: "@schema",
+        },
+        {
+            name: "schema",
+            outputDir: "../test-results/schema/",
+            grep: "@schema",
+        },
+    ],
 }
 
 module.exports = config
