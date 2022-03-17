@@ -23,12 +23,12 @@ const config = {
         {
             name: "api",
             outputDir: "../test-results/api/",
-            grepInvert: "@schema",
+            grepInvert: /@schema/,
         },
         {
             name: "schema",
             outputDir: "../test-results/schema/",
-            grep: "@schema",
+            grep: /@schema/,
         },
     ],
 }
