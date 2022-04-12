@@ -9,9 +9,9 @@
         "serverest": "^2.25.2"
     },
     "scripts": {
-        "test:api": "npx playwright test --grep-invert '@schema'",
+        "test:api": "npx playwright test --project 'api'",
         "test:match": "npx playwright test --grep $MATCH",
-        "test:schema": "npx playwright test --grep '@schema'",
+        "test:schema": "npx playwright test --project 'schema'",
         "test:all": "npx playwright test ||:",
         "test:docker": "npx playwright test",
         "posttest:docker": "npm run reporter:html",
