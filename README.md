@@ -45,13 +45,13 @@ For example:
 
 ```bash
 # to run all API tests
-npx playwright test:api
+npm run test:api
 
 # to run all Schema tests
-npx playwright test:schema
+npm run test:schema
 
 # to run both API and Schema tests
-npx playwright test:all
+npm run test:all
 
 # to run all test with specific tag
 npx playwright test --grep <tag>
