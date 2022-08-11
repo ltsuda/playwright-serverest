@@ -60,7 +60,6 @@ Todos os scripts geram os arquivos de resultados utilizando o relatório em form
 
 ```bash
 npm run reporter:html
-# o diretório 'test-results' está configurado no arquivo playwright.config.js
 ```
 
 Este comando irá iniciar um servidor web com o relatório dos testes, segure CTRL e clique no endereço ou abra o endereço diretamente em um navegador
@@ -77,7 +76,7 @@ Para criar a imagem e executar todos os testes, execute os seguintes comandos:
 
 # Para executar o script padrão, utilize o comando abaixo
 # O container permanecerá em execução com o servidor web aberto, navegue para o endereço http://localhost para visualizar o relatório dos testes e pressione CTRL+C para desligar o servidor e remover o container
-# opcionalmente é possível obter os arquivos de resultados no caso de falhas em alguns testes, basta montar um volume local interligado ao container utilizando o parametro "-v /fullpath:/tester/test-results/"
+# opcionalmente é possível obter os arquivos de resultados no caso de falhas em alguns testes, basta montar um volume local interligado ao container utilizando o parametro "-v /fullpath:/tester/"
 ❯ docker run --rm --ipc=host -p 80:9323 playwright:docker
 
 > playwright-serverest@1.0.0 test:docker
@@ -97,8 +96,7 @@ All tests passed. To open last HTML report run:
 
 
 > playwright-serverest@1.0.0 reporter:html
-> npx playwright show-report test-results
-
+> npx playwright show-report
 
   Serving HTML report at http://127.0.0.1:9323. Press Ctrl+C to quit.
 

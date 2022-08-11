@@ -4,6 +4,7 @@
 
 ### Playwright ####
 test_results/
+playwright-report
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:

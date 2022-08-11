@@ -14,7 +14,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     })
 
     test("Listar produtos cadastrados", async ({ baseURL, productsPath, request }) => {
-        const response = await request.get(`${baseURL}${productsPath}`)
+        const response = await request.get(`${baseURL}${productsPath}`, { headers: { monitor: "false" } })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -23,7 +23,9 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     })
 
     test("Listar produtos filtrados por ID", async ({ baseURL, productsPath, request }) => {
-        const response = await request.get(`${baseURL}${productsPath}?_id=${produto._id}`)
+        const response = await request.get(`${baseURL}${productsPath}?_id=${produto._id}`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -32,7 +34,9 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     })
 
     test("Listar produtos filtrados por Nome", async ({ baseURL, productsPath, request }) => {
-        const response = await request.get(`${baseURL}${productsPath}?nome=${produto.nome}`)
+        const response = await request.get(`${baseURL}${productsPath}?nome=${produto.nome}`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -41,7 +45,9 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     })
 
     test("Listar produtos filtrados por Preço", async ({ baseURL, productsPath, request }) => {
-        const response = await request.get(`${baseURL}${productsPath}?preco=${produto.preco}`)
+        const response = await request.get(`${baseURL}${productsPath}?preco=${produto.preco}`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -50,7 +56,9 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     })
 
     test("Listar produtos filtrados por Descrição", async ({ baseURL, productsPath, request }) => {
-        const response = await request.get(`${baseURL}${productsPath}?descricao=${produto.descricao}`)
+        const response = await request.get(`${baseURL}${productsPath}?descricao=${produto.descricao}`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -59,7 +67,9 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     })
 
     test("Listar produtos filtrados por Quantidade", async ({ baseURL, productsPath, request }) => {
-        const response = await request.get(`${baseURL}${productsPath}?quantidade=${produto.quantidade}`)
+        const response = await request.get(`${baseURL}${productsPath}?quantidade=${produto.quantidade}`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -68,7 +78,9 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     })
 
     test("Listar produtos inexistentes", async ({ baseURL, productsPath, request }) => {
-        const response = await request.get(`${baseURL}${productsPath}?_id=inexistente`)
+        const response = await request.get(`${baseURL}${productsPath}?_id=inexistente`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -77,7 +89,9 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     })
 
     test("Listar produtos por campo invalido", async ({ baseURL, productsPath, request }) => {
-        const response = await request.get(`${baseURL}${productsPath}?invalido=invalido`)
+        const response = await request.get(`${baseURL}${productsPath}?invalido=invalido`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(400)
 
         const responseData = await response.json()
@@ -85,7 +99,9 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     })
 
     test("Listar produtos por preco e quantidade como texto", async ({ baseURL, productsPath, request }) => {
-        const response = await request.get(`${baseURL}${productsPath}?preco=a&quantidade=b`)
+        const response = await request.get(`${baseURL}${productsPath}?preco=a&quantidade=b`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(400)
 
         const responseData = await response.json()
@@ -94,7 +110,9 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     })
 
     test("Listar produtos por preco e quantidade decimais", async ({ baseURL, productsPath, request }) => {
-        const response = await request.get(`${baseURL}${productsPath}?preco=0.1&quantidade=0.2`)
+        const response = await request.get(`${baseURL}${productsPath}?preco=0.1&quantidade=0.2`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(400)
 
         const responseData = await response.json()
@@ -103,7 +121,9 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     })
 
     test("Listar produtos por preco e quantidade negativos", async ({ baseURL, productsPath, request }) => {
-        const response = await request.get(`${baseURL}${productsPath}?preco=-1&quantidade=-2`)
+        const response = await request.get(`${baseURL}${productsPath}?preco=-1&quantidade=-2`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(400)
 
         const responseData = await response.json()
@@ -119,7 +139,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
                 descricao: faker.commerce.productDescription(),
                 quantidade: faker.datatype.number(1000),
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
 
         expect(response.status()).toBe(201)
@@ -137,7 +157,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
                 descricao: faker.commerce.productDescription(),
                 quantidade: faker.datatype.number(1000),
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
 
         expect(response.status()).toBe(400)
@@ -148,6 +168,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
 
     test("Cadastrar produto com Token ausente", async ({ baseURL, productsPath, request }) => {
         const response = await request.post(`${baseURL}${productsPath}`, {
+            headers: { monitor: "false" },
             data: {
                 nome: faker.commerce.productName(),
                 preco: Number(faker.commerce.price(undefined, undefined, 0)),
@@ -181,7 +202,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
                 descricao: faker.commerce.productDescription(),
                 quantidade: faker.datatype.number(1000),
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
 
         expect(response.status()).toBe(403)
@@ -193,7 +214,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     test("Cadastrar produto sem campos obrigatórios", async ({ baseURL, productsPath, request }) => {
         const response = await request.post(`${baseURL}${productsPath}`, {
             data: {},
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
 
         expect(response.status()).toBe(400)
@@ -214,7 +235,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
                 quantidade: faker.datatype.number(1000),
                 inexistente: "inexistente",
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
 
         expect(response.status()).toBe(400)
@@ -231,7 +252,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
                 descricao: faker.commerce.productAdjective(),
                 quantidade: -100,
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
 
         expect(response.status()).toBe(400)
@@ -242,7 +263,9 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     })
 
     test("Buscar produto por ID", async ({ baseURL, productsPath, request }) => {
-        const response = await request.get(`${baseURL}${productsPath}/${produto._id}`)
+        const response = await request.get(`${baseURL}${productsPath}/${produto._id}`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -250,7 +273,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     })
 
     test("Buscar produto por ID não existente", async ({ baseURL, productsPath, request }) => {
-        const response = await request.get(`${baseURL}${productsPath}/1`)
+        const response = await request.get(`${baseURL}${productsPath}/1`, { headers: { monitor: "false" } })
         expect(response.status()).toBe(400)
 
         const responseData = await response.json()
@@ -259,7 +282,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
 
     test("Excluir produto", async ({ baseURL, productsPath, request }) => {
         const response = await request.delete(`${baseURL}${productsPath}/${produto._id}`, {
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
         expect(response.status()).toBe(200)
 
@@ -269,7 +292,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
 
     test("Excluir produto inexistente", async ({ baseURL, productsPath, request }) => {
         const response = await request.delete(`${baseURL}${productsPath}/1`, {
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
         expect(response.status()).toBe(200)
 
@@ -285,7 +308,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
     }) => {
         const carrinho = await cadastrarCarrinho(authorization, produto)
         const response = await request.delete(`${baseURL}${productsPath}/${produto._id}`, {
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
         expect(response.status()).toBe(400)
 
@@ -296,7 +319,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
 
     test("Excluir produto com Token inválido", async ({ baseURL, productsPath, request }) => {
         const response = await request.delete(`${baseURL}${productsPath}/${produto._id}`, {
-            headers: { Authorization: "Bearer abc" },
+            headers: { Authorization: "Bearer abc", monitor: "false" },
         })
         expect(response.status()).toBe(401)
 
@@ -317,7 +340,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
         const { email, password } = await cadastrarUsuario({ administrador: false })
         const { authorization } = await login(email, password)
         const response = await request.delete(`${baseURL}${productsPath}/${produto._id}`, {
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
         expect(response.status()).toBe(403)
 
@@ -333,7 +356,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
                 descricao: produto.descricao,
                 quantidade: produto.quantidade,
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
         expect(response.status()).toBe(200)
 
@@ -349,7 +372,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
                 descricao: faker.commerce.productDescription(),
                 quantidade: faker.datatype.number(1000),
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
         expect(response.status()).toBe(201)
 
@@ -374,7 +397,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
                 descricao: faker.commerce.productDescription(),
                 quantidade: faker.datatype.number(1000),
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
         expect(response.status()).toBe(400)
 
@@ -390,7 +413,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
                 descricao: produto.descricao,
                 quantidade: produto.quantidade,
             },
-            headers: { Authorization: "Bearear abc" },
+            headers: { Authorization: "Bearear abc", monitor: "false" },
         })
         expect(response.status()).toBe(401)
 
@@ -417,7 +440,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
                 descricao: faker.commerce.productDescription(),
                 quantidade: faker.datatype.number(1000),
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
         expect(response.status()).toBe(403)
 
@@ -431,7 +454,7 @@ test.describe.parallel("Produtos endpoint @produtos", () => {
                 nome: faker.commerce.productName(),
                 inexistente: "inexistente",
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
 
         expect(response.status()).toBe(400)

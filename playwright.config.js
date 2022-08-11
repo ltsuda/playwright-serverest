@@ -1,9 +1,7 @@
 const config = {
     testDir: "tests/api",
     retries: 1,
-    reporter: process.env.CI
-        ? [["dot"], ["html", { outputFolder: "test-results", open: "never" }]]
-        : [["line"], ["html", { outputFolder: "test-results", open: "never" }]],
+    reporter: process.env.CI ? [["dot"], ["html", { open: "never" }]] : [["line"], ["html", { open: "never" }]],
     workers: process.env.CI ? 2 : undefined,
 
     webServer: {
@@ -22,12 +20,10 @@ const config = {
     projects: [
         {
             name: "api",
-            outputDir: "../test-results/api/",
             grepInvert: /@schema/,
         },
         {
             name: "schema",
-            outputDir: "../test-results/schema/",
             grep: /@schema/,
         },
     ],

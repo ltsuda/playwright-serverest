@@ -3,10 +3,10 @@
     "description": "Estudo de Teste de API utilizando Playwright/Test e [ServeRest](https://serverest.dev/)",
     "version": "1.0.0",
     "devDependencies": {
-        "@playwright/test": "^1.23.0",
+        "@playwright/test": "latest",
         "faker": "5.5.3",
         "joi": "^17.4.2",
-        "serverest": "^2.26.0"
+        "serverest": "latest"
     },
     "scripts": {
         "test:api": "npx playwright test --project 'api'",
@@ -15,7 +15,7 @@
         "test:all": "npx playwright test ||:",
         "test:docker": "npx playwright test",
         "posttest:docker": "npm run reporter:html",
-        "reporter:html": "npx playwright show-report test-results"
+        "reporter:html": "npx playwright show-report"
     },
     "repository": {
         "type": "git",

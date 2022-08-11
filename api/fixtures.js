@@ -23,6 +23,7 @@ module.exports = base.test.extend({
     login: async ({ baseURL, request, loginPath }, use) => {
         await use(async (email, password) => {
             const response = await request.post(`${baseURL}${loginPath}`, {
+                headers: { monitor: "false" },
                 data: {
                     email: email,
                     password: password,
@@ -48,10 +49,11 @@ module.exports = base.test.extend({
                 administrador: String(administrador),
             }
             const response = await request.post(`${baseURL}${userPath}`, {
+                headers: { monitor: "false" },
                 data: data,
             })
             expect(response.status()).toBe(201)
-            responseData = await response.json()
+            const responseData = await response.json()
             data["_id"] = responseData["_id"]
             return data
         })
@@ -73,10 +75,10 @@ module.exports = base.test.extend({
             }
             const response = await request.post(`${baseURL}${productsPath}`, {
                 data: data,
-                headers: { Authorization: authorization },
+                headers: { Authorization: authorization, monitor: "false" },
             })
             expect(response.status()).toBe(201)
-            responseData = await response.json()
+            const responseData = await response.json()
             data["_id"] = responseData["_id"]
             return data
         })
@@ -94,7 +96,7 @@ module.exports = base.test.extend({
             if (produtos instanceof Object) {
                 produtos = [produtos]
             }
-            for (produto of produtos) {
+            for (let produto of produtos) {
                 data.produtos.push({
                     idProduto: produto._id,
                     quantidade: produto.quantidade,
@@ -102,10 +104,10 @@ module.exports = base.test.extend({
             }
             const response = await request.post(`${baseURL}${cartPath}`, {
                 data: data,
-                headers: { Authorization: authorization },
+                headers: { Authorization: authorization, monitor: "false" },
             })
             expect(response.status()).toBe(201)
-            responseData = await response.json()
+            const responseData = await response.json()
             data["_id"] = responseData["_id"]
             return data
         })

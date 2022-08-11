@@ -5,7 +5,7 @@ const faker = require("faker")
 test.describe.parallel("Usuários endpoint @usuarios", () => {
     test("Listar usuários cadastrados", async ({ baseURL, userPath, request, cadastrarUsuario }) => {
         const usuario = await cadastrarUsuario()
-        const response = await request.get(`${baseURL}${userPath}`)
+        const response = await request.get(`${baseURL}${userPath}`, { headers: { monitor: "false" } })
 
         expect(response.status()).toBe(200)
 
@@ -16,7 +16,9 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
 
     test("Listar usuários filtrados por ID", async ({ baseURL, userPath, request, cadastrarUsuario }) => {
         const usuario = await cadastrarUsuario()
-        const response = await request.get(`${baseURL}${userPath}?_id=${usuario["_id"]}`)
+        const response = await request.get(`${baseURL}${userPath}?_id=${usuario["_id"]}`, {
+            headers: { monitor: "false" },
+        })
 
         expect(response.status()).toBe(200)
 
@@ -27,7 +29,9 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
 
     test("Listar usuários filtrados por Nome", async ({ baseURL, userPath, request, cadastrarUsuario }) => {
         const usuario = await cadastrarUsuario()
-        const response = await request.get(`${baseURL}${userPath}?nome=${usuario["nome"]}`)
+        const response = await request.get(`${baseURL}${userPath}?nome=${usuario["nome"]}`, {
+            headers: { monitor: "false" },
+        })
 
         expect(response.status()).toBe(200)
 
@@ -38,7 +42,9 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
 
     test("Listar usuários filtrados por Email", async ({ baseURL, userPath, request, cadastrarUsuario }) => {
         const usuario = await cadastrarUsuario()
-        const response = await request.get(`${baseURL}${userPath}?email=${usuario["email"]}`)
+        const response = await request.get(`${baseURL}${userPath}?email=${usuario["email"]}`, {
+            headers: { monitor: "false" },
+        })
 
         expect(response.status()).toBe(200)
 
@@ -49,7 +55,9 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
 
     test("Listar usuários filtrados por Password", async ({ baseURL, userPath, request, cadastrarUsuario }) => {
         const usuario = await cadastrarUsuario()
-        const response = await request.get(`${baseURL}${userPath}?password=${usuario["password"]}`)
+        const response = await request.get(`${baseURL}${userPath}?password=${usuario["password"]}`, {
+            headers: { monitor: "false" },
+        })
 
         expect(response.status()).toBe(200)
 
@@ -60,7 +68,9 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
 
     test("Listar usuários filtrados por Administrador", async ({ baseURL, userPath, request, cadastrarUsuario }) => {
         const usuario = await cadastrarUsuario({ administrador: true })
-        const response = await request.get(`${baseURL}${userPath}?administrador=${usuario["administrador"]}`)
+        const response = await request.get(`${baseURL}${userPath}?administrador=${usuario["administrador"]}`, {
+            headers: { monitor: "false" },
+        })
 
         expect(response.status()).toBe(200)
 
@@ -77,7 +87,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
     })
 
     test("Listar usuários inexistente", async ({ baseURL, userPath, request }) => {
-        const response = await request.get(`${baseURL}${userPath}?_id=a`)
+        const response = await request.get(`${baseURL}${userPath}?_id=a`, { headers: { monitor: "false" } })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -86,7 +96,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
     })
 
     test("Listar usuários por campo invalido", async ({ baseURL, userPath, request }) => {
-        const response = await request.get(`${baseURL}${userPath}?invalido=a`)
+        const response = await request.get(`${baseURL}${userPath}?invalido=a`, { headers: { monitor: "false" } })
         expect(response.status()).toBe(400)
 
         const responseData = await response.json()
@@ -95,6 +105,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
 
     test("Cadastrar usuário com sucesso", async ({ baseURL, userPath, request }) => {
         const response = await request.post(`${baseURL}${userPath}`, {
+            headers: { monitor: "false" },
             data: {
                 nome: faker.name.findName(),
                 email: faker.internet.email(),
@@ -113,6 +124,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
     test("Cadastrar usuário com email já existente", async ({ baseURL, userPath, cadastrarUsuario, request }) => {
         const { email } = await cadastrarUsuario()
         const response = await request.post(`${baseURL}${userPath}`, {
+            headers: { monitor: "false" },
             data: {
                 nome: faker.name.findName(),
                 email: email,
@@ -129,6 +141,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
 
     test("Cadastrar usuário sem campos obrigatórios", async ({ baseURL, userPath, request }) => {
         const response = await request.post(`${baseURL}${userPath}`, {
+            headers: { monitor: "false" },
             data: {},
         })
 
@@ -149,6 +162,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
     }) => {
         const { email } = await cadastrarUsuario()
         const response = await request.post(`${baseURL}${userPath}`, {
+            headers: { monitor: "false" },
             data: {
                 nome: faker.name.findName(),
                 email: email,
@@ -171,6 +185,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
     }) => {
         const { email } = await cadastrarUsuario()
         const response = await request.post(`${baseURL}${userPath}`, {
+            headers: { monitor: "false" },
             data: {
                 nome: faker.name.findName(),
                 email: email,
@@ -187,7 +202,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
 
     test("Buscar usuário por ID", async ({ baseURL, userPath, request, cadastrarUsuario }) => {
         const usuario = await cadastrarUsuario()
-        const response = await request.get(`${baseURL}${userPath}/${usuario["_id"]}`)
+        const response = await request.get(`${baseURL}${userPath}/${usuario["_id"]}`, { headers: { monitor: "false" } })
 
         expect(response.status()).toBe(200)
 
@@ -196,7 +211,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
     })
 
     test("Buscar usuário não encontrado", async ({ baseURL, userPath, request }) => {
-        const response = await request.get(`${baseURL}${userPath}/1`)
+        const response = await request.get(`${baseURL}${userPath}/1`, { headers: { monitor: "false" } })
 
         expect(response.status()).toBe(400)
 
@@ -206,7 +221,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
 
     test("Excluir usuário", async ({ baseURL, userPath, cadastrarUsuario, request }) => {
         const { _id } = await cadastrarUsuario()
-        const response = await request.delete(`${baseURL}${userPath}/${_id}`)
+        const response = await request.delete(`${baseURL}${userPath}/${_id}`, { headers: { monitor: "false" } })
 
         expect(response.status()).toBe(200)
 
@@ -215,7 +230,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
     })
 
     test("Excluir usuário não existente", async ({ baseURL, userPath, request }) => {
-        const response = await request.delete(`${baseURL}${userPath}/1`)
+        const response = await request.delete(`${baseURL}${userPath}/1`, { headers: { monitor: "false" } })
 
         expect(response.status()).toBe(200)
 
@@ -236,7 +251,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
         const { authorization } = await login(email, password)
         const produto = await cadastrarProduto(authorization)
         const carrinho = await cadastrarCarrinho(authorization, produto)
-        const response = await request.delete(`${baseURL}${userPath}/${_id}`)
+        const response = await request.delete(`${baseURL}${userPath}/${_id}`, { headers: { monitor: "false" } })
 
         expect(response.status()).toBe(400)
 
@@ -248,6 +263,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
     test("Editar usuário", async ({ baseURL, userPath, cadastrarUsuario, request }) => {
         const usuario = await cadastrarUsuario()
         const response = await request.put(`${baseURL}${userPath}/${usuario._id}`, {
+            headers: { monitor: "false" },
             data: {
                 nome: usuario.nome,
                 email: usuario.email,
@@ -264,6 +280,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
 
     test("Editar usuário com ID não encontrado", async ({ baseURL, userPath, request }) => {
         const response = await request.put(`${baseURL}${userPath}/${faker.random.alphaNumeric()}`, {
+            headers: { monitor: "false" },
             data: {
                 nome: faker.name.findName(),
                 email: faker.internet.email(),
@@ -283,6 +300,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
         const usuario1 = await cadastrarUsuario()
         const { email } = await cadastrarUsuario()
         const response = await request.put(`${baseURL}${userPath}/${usuario1._id}`, {
+            headers: { monitor: "false" },
             data: {
                 nome: usuario1.nome,
                 email: email,
@@ -300,6 +318,7 @@ test.describe.parallel("Usuários endpoint @usuarios", () => {
     test("Editar usuário com campo invalido", async ({ baseURL, userPath, cadastrarUsuario, request }) => {
         const usuario = await cadastrarUsuario()
         const response = await request.put(`${baseURL}${userPath}/${usuario._id}`, {
+            headers: { monitor: "false" },
             data: {
                 nome: usuario.nome,
                 email: usuario.email,

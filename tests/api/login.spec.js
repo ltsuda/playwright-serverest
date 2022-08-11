@@ -5,6 +5,7 @@ test.describe.parallel("Login endpoint @login", () => {
     test("Login com usuário válido", async ({ baseURL, loginPath, cadastrarUsuario, request }) => {
         const { email, password } = await cadastrarUsuario()
         const response = await request.post(`${baseURL}${loginPath}`, {
+            headers: { monitor: "false" },
             data: { email: email, password: password },
         })
 
@@ -17,6 +18,7 @@ test.describe.parallel("Login endpoint @login", () => {
 
     test("Login com email e/ou senha inválidos", async ({ baseURL, loginPath, request }) => {
         const response = await request.post(`${baseURL}${loginPath}`, {
+            headers: { monitor: "false" },
             data: { email: "user@qa.com", password: "invalido" },
         })
         expect(response.status()).toBe(401)
@@ -28,6 +30,7 @@ test.describe.parallel("Login endpoint @login", () => {
     test("Login com campo inválido", async ({ baseURL, loginPath, cadastrarUsuario, request }) => {
         const { email, password } = await cadastrarUsuario()
         const response = await request.post(`${baseURL}${loginPath}`, {
+            headers: { monitor: "false" },
             data: { email: email, password: password, invalido: "invalido" },
         })
         expect(response.status()).toBe(400)
@@ -39,6 +42,7 @@ test.describe.parallel("Login endpoint @login", () => {
     test("Login com email inválido", async ({ baseURL, loginPath, cadastrarUsuario, request }) => {
         const { password } = await cadastrarUsuario()
         const response = await request.post(`${baseURL}${loginPath}`, {
+            headers: { monitor: "false" },
             data: { email: "email", password: password },
         })
         expect(response.status()).toBe(400)
@@ -50,6 +54,7 @@ test.describe.parallel("Login endpoint @login", () => {
     test("Login com email em branco", async ({ baseURL, loginPath, cadastrarUsuario, request }) => {
         const { email, password } = await cadastrarUsuario()
         const response = await request.post(`${baseURL}${loginPath}`, {
+            headers: { monitor: "false" },
             data: { email: "", password: password },
         })
         expect(response.status()).toBe(400)

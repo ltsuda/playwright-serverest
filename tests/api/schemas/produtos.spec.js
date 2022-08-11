@@ -14,14 +14,16 @@ test.describe.parallel("@schema-produtos", () => {
 
     test("Listar produtos cadastrados", async ({ baseURL, productsPath, request, cadastrarProduto }) => {
         await cadastrarProduto(authorization)
-        const response = await request.get(`${baseURL}${productsPath}`)
+        const response = await request.get(`${baseURL}${productsPath}`, { headers: { monitor: "false" } })
 
         expect(response.ok()).toBeTruthy()
         Joi.assert(await response.json(), produtos.get)
     })
 
     test("Cadastrar produto com body vazio", async ({ baseURL, productsPath, request }) => {
-        const response = await request.post(`${baseURL}${productsPath}`, { headers: { Authorization: authorization } })
+        const response = await request.post(`${baseURL}${productsPath}`, {
+            headers: { Authorization: authorization, monitor: "false" },
+        })
 
         expect(response.ok()).toBeFalsy()
         Joi.assert(await response.json(), produtos.post)
@@ -30,7 +32,7 @@ test.describe.parallel("@schema-produtos", () => {
     test("Editar usuário produto com vazio", async ({ baseURL, productsPath, request, cadastrarUsuario }) => {
         const { _id } = await cadastrarUsuario()
         const response = await request.put(`${baseURL}${productsPath}/${_id}`, {
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
 
         expect(response.ok()).toBeFalsy()

@@ -29,7 +29,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
     })
 
     test("Listar carrinhos cadastrados", async ({ baseURL, cartPath, request }) => {
-        const response = await request.get(`${baseURL}${cartPath}`)
+        const response = await request.get(`${baseURL}${cartPath}`, { headers: { monitor: "false" } })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -38,7 +38,9 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
     })
 
     test("Listar carrinhos filtrados por ID", async ({ baseURL, cartPath, request }) => {
-        const response = await request.get(`${baseURL}${cartPath}?_id=${carrinho._id}`)
+        const response = await request.get(`${baseURL}${cartPath}?_id=${carrinho._id}`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -47,7 +49,9 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
     })
 
     test("Listar carrinhos filtrados por Preco Total", async ({ baseURL, cartPath, request }) => {
-        const response = await request.get(`${baseURL}${cartPath}?precoTotal=${carrinho.precoTotal}`)
+        const response = await request.get(`${baseURL}${cartPath}?precoTotal=${carrinho.precoTotal}`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -56,7 +60,9 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
     })
 
     test("Listar carrinhos filtrados por Quantidade Total", async ({ baseURL, cartPath, request }) => {
-        const response = await request.get(`${baseURL}${cartPath}?quantidadeTotal=${carrinho.quantidadeTotal}`)
+        const response = await request.get(`${baseURL}${cartPath}?quantidadeTotal=${carrinho.quantidadeTotal}`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -65,7 +71,9 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
     })
 
     test("Listar carrinhos filtrados por ID do usuário", async ({ baseURL, cartPath, request }) => {
-        const response = await request.get(`${baseURL}${cartPath}?idUsuario=${carrinho.idUsuario}`)
+        const response = await request.get(`${baseURL}${cartPath}?idUsuario=${carrinho.idUsuario}`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -74,7 +82,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
     })
 
     test("Listar carrinho inexistente", async ({ baseURL, cartPath, request }) => {
-        const response = await request.get(`${baseURL}${cartPath}?idUsuario=abc`)
+        const response = await request.get(`${baseURL}${cartPath}?idUsuario=abc`, { headers: { monitor: "false" } })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -83,7 +91,9 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
     })
 
     test("Listar carrinho com preco e quantidade como texto", async ({ baseURL, cartPath, request }) => {
-        const response = await request.get(`${baseURL}${cartPath}?precoTotal=a&quantidadeTotal=b`)
+        const response = await request.get(`${baseURL}${cartPath}?precoTotal=a&quantidadeTotal=b`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(400)
 
         const responseData = await response.json()
@@ -92,7 +102,9 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
     })
 
     test("Listar carrinho com preco e quantidade negativos", async ({ baseURL, cartPath, request }) => {
-        const response = await request.get(`${baseURL}${cartPath}?precoTotal=-1&quantidadeTotal=-2`)
+        const response = await request.get(`${baseURL}${cartPath}?precoTotal=-1&quantidadeTotal=-2`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(400)
 
         const responseData = await response.json()
@@ -101,7 +113,9 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
     })
 
     test("Listar carrinho com preco e quantidade decimais", async ({ baseURL, cartPath, request }) => {
-        const response = await request.get(`${baseURL}${cartPath}?precoTotal=0.1&quantidadeTotal=0.2`)
+        const response = await request.get(`${baseURL}${cartPath}?precoTotal=0.1&quantidadeTotal=0.2`, {
+            headers: { monitor: "false" },
+        })
         expect(response.status()).toBe(400)
 
         const responseData = await response.json()
@@ -121,7 +135,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
                     },
                 ],
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
         expect(response.status()).toBe(201)
 
@@ -152,7 +166,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
                     },
                 ],
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
 
         expect(response.status()).toBe(400)
@@ -175,7 +189,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
                     },
                 ],
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
 
         expect(response.status()).toBe(400)
@@ -202,7 +216,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
                     },
                 ],
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
 
         expect(response.status()).toBe(400)
@@ -228,7 +242,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
                 descricao: produto.descricao,
                 quantidade: 0,
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
         const response = await request.post(`${baseURL}${cartPath}`, {
             data: {
@@ -239,7 +253,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
                     },
                 ],
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
 
         expect(response.status()).toBe(400)
@@ -250,6 +264,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
 
     test("Cadastrar carrinho com Token ausente", async ({ baseURL, cartPath, request }) => {
         const response = await request.post(`${baseURL}${cartPath}`, {
+            headers: { monitor: "false" },
             data: {
                 produtos: [
                     {
@@ -274,7 +289,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
             data: {
                 inexistente: "inexistente",
             },
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
 
         expect(response.status()).toBe(400)
@@ -284,7 +299,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
     })
 
     test("Buscar carrinho por ID", async ({ baseURL, cartPath, request }) => {
-        const response = await request.get(`${baseURL}${cartPath}/${carrinho._id}`)
+        const response = await request.get(`${baseURL}${cartPath}/${carrinho._id}`, { headers: { monitor: "false" } })
         expect(response.status()).toBe(200)
 
         const responseData = await response.json()
@@ -292,7 +307,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
     })
 
     test("Buscar produto por ID não existente", async ({ baseURL, cartPath, request }) => {
-        const response = await request.get(`${baseURL}${cartPath}/1`)
+        const response = await request.get(`${baseURL}${cartPath}/1`, { headers: { monitor: "false" } })
         expect(response.status()).toBe(400)
 
         const responseData = await response.json()
@@ -301,7 +316,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
 
     test("Excluir carrinho (concluir compra)", async ({ baseURL, cartPath, request }) => {
         const response = await request.delete(`${baseURL}${cartPath}/concluir-compra`, {
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
         expect(response.status()).toBe(200)
 
@@ -319,7 +334,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
         const { email, password } = await cadastrarUsuario({ administrador: false })
         const { authorization } = await login(email, password)
         const response = await request.delete(`${baseURL}${cartPath}/concluir-compra`, {
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
         expect(response.status()).toBe(200)
 
@@ -329,7 +344,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
 
     test("Excluir carrinho (concluir compra) com Token inválido", async ({ baseURL, cartPath, request }) => {
         const response = await request.delete(`${baseURL}${cartPath}/concluir-compra`, {
-            headers: { Authorization: "Bearer abc" },
+            headers: { Authorization: "Bearer abc", monitor: "false" },
         })
         expect(response.status()).toBe(401)
 
@@ -342,7 +357,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
 
     test("Excluir carrinho (cancelar compra)", async ({ baseURL, cartPath, request }) => {
         const response = await request.delete(`${baseURL}${cartPath}/cancelar-compra`, {
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
         expect(response.status()).toBe(200)
 
@@ -363,7 +378,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
         const { email, password } = await cadastrarUsuario({ administrador: false })
         const { authorization } = await login(email, password)
         const response = await request.delete(`${baseURL}${cartPath}/cancelar-compra`, {
-            headers: { Authorization: authorization },
+            headers: { Authorization: authorization, monitor: "false" },
         })
         expect(response.status()).toBe(200)
 
@@ -373,7 +388,7 @@ test.describe.parallel("Carrinhos endpoint @carrinhos", () => {
 
     test("Excluir carrinho (cancelar compra) com Token inválido", async ({ baseURL, cartPath, request }) => {
         const response = await request.delete(`${baseURL}${cartPath}/cancelar-compra`, {
-            headers: { Authorization: "Bearer abc" },
+            headers: { Authorization: "Bearer abc", monitor: "false" },
         })
         expect(response.status()).toBe(401)
 
