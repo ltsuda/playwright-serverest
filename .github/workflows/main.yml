@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js/Playwright Test environment
         uses: actions/setup-node@v2.4.0
         with:
-          node-version: "16"
+          node-version: "18"
           cache: npm
       - run: npm ci
       - run: npm run test:api
@@ -31,7 +31,7 @@ jobs:
       - name: Setup Node.js/Playwright Test environment
         uses: actions/setup-node@v2.4.0
         with:
-          node-version: "16"
+          node-version: "18"
           cache: npm
       - run: npm ci
       - run: npm run test:schema
@@ -45,7 +45,7 @@ jobs:
       - name: Setup Node.js/Playwright Test environment
         uses: actions/setup-node@v2.4.0
         with:
-          node-version: "16"
+          node-version: "18"
           cache: npm
       - run: npm ci
       - run: npm run test:all
