@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.25.0-jammy
+FROM mcr.microsoft.com/playwright:v1.32.3-jammy
 
 WORKDIR /tester
 
